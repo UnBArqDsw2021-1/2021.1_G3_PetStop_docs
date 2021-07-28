@@ -1,0 +1,18 @@
+site_name: "Petshop docs"
+
+theme:
+  favicon: assets/logo.png
+  name: material
+  logo: assets/logo.png
+  language: pt
+  features:
+    - navigation.instant
+  palette:
+    primary: green
+    accent: green
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Início: index.md
