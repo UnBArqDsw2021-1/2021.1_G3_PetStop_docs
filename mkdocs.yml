@@ -16,3 +16,4 @@ extra_css:
 
 nav:
   - Início: index.md
+  - Manual GhPages: manual.md
