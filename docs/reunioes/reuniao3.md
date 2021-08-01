@@ -1,19 +1,18 @@
 # ATA de reunião (28/07):
 
-## Pauta
-- Apresentação do 5W2H 
-- A partir do 5W2H foram debatidas sugestões iniciais do escopo do projeto
-  - Discussão sobre a regra de negócio baseada em 3 pontos principais 
-    - Organização de eventos com o oferecimento de serviços básicos para pets
-      - Eventos organizados por voluntários e com flexibilidade de região
-    - Cadastramento de voluntários e participantes dos eventos 
-      - 2 tipos de voluntários:
-        - Organizadores 
-        - Ajudantes 
-      - Participantes: 
-        - Cadastro em eventos 
-        - Publicação de animais para adoção
-      - Divulgação de animais para adoção 
+## Pauta (Unpack)
+- Início da fase de Unpack da Design Sprint; Já que nem todos os integrantes estavam presentes o BrainStorm e o 5W2H foram adiados para o dia seguinte (29/07 Quinta Feira), porém alguns pontos foram levantados em relação ao escopo do projeto, dentre eles:
+    - Discussão sobre a regra de negócio baseada em 3 pontos principais 
+        - Organização de eventos com o oferecimento de serviços básicos para pets
+            - Eventos organizados por voluntários e com flexibilidade de região
+        - Cadastramento de voluntários e participantes dos eventos 
+          - 2 tipos de voluntários:
+            - Organizadores 
+            - Ajudantes 
+          - Participantes: 
+            - Cadastro em eventos 
+            - Publicação de animais para adoção
+        - Divulgação de animais para adoção 
 
 
 | <b>Presentes na reunião (20/07/2021)</b> | <b>Info</b> |
