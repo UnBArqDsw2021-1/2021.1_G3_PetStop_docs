@@ -1,9 +1,9 @@
 ## ATA de reunião (29/07):
-## Pauta
+## Pauta (Unpack)
 - Realização do 5W2H da solução computacional
 - <i>Brainswtorm</i> de ideias para a definição e fechamento do escopo do trabalho
 - Filtragem das ideias do <i>Brainswtorm</i>
-- Divisão dos grupos para a realização do RichPicture
+- Divisão dos grupos para a realização do RichPicture (Sketch Fase)
 
 | <b>Presentes na reunião (29/07/2021)</b> | <b>Info</b> |
 | --- | --- |
