@@ -13,11 +13,16 @@
 
 ![Storyboard1](../images/storyboard1.jpeg)
 
+### Storyboard 2
+
+![Storyboard2](../images/storyboard2.jpeg)
+
 ## Versionamentos
 
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------------------:|
 |03/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
-|03/08/2021| 0.2 | Adição do Storyboard 1 | Paulo Gonçalves Pedro Vítor de Salles Cella | 
+|03/08/2021| 0.2 | Adição do Storyboard 1 | Paulo Gonçalves e Pedro Vítor de Salles Cella | 
+|03/08/2021| 0.3 | Adição do Storyboard 2 | Paulo Gonçalves e Pedro Vítor de Salles Cella | 
 
 ## Referências
