@@ -22,3 +22,5 @@
 |03/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella | 
 
 ## Referências
+[Slide Desenho de Software - Milene Serrano](https://aprender3.unb.br/pluginfile.php/897124/mod_label/intro/Arquitetura%20e%20Desenho%20de%20software%20-%20Aula%20Projeto-DSW%20-%20Profa.%20Milene.pdf)<br>
+[Respositório A Monitoria](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/design_sprint/)
