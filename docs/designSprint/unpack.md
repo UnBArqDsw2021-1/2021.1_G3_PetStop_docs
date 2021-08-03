@@ -17,7 +17,7 @@
 ![Computacional - V1](../images/5W2Hcomp.png)
 
 ## Causa-Efeito (Diagrama de Ishikawa)
-<p>O Diagrama de Causa-Efeito, também conhecido como Diagrama de Ishikawa ou Espinha de Peixe é um método que consiste em entender possíveis eventos e as causa que influenciam seu acontecimento, tratamos como eventos e não como problemas pois o evento pode ser tant algo negativo, quanto algo positivo, então seu uso não necessariamente se limita a algum problema em que o projeto possa vir a ter.</p>
+<p>O Diagrama de Causa-Efeito, também conhecido como Diagrama de Ishikawa ou Espinha de Peixe é um método que consiste em entender possíveis eventos e as causa que influenciam seu acontecimento, tratamos como eventos e não como problemas pois o evento pode ser tanto algo negativo, quanto algo positivo, então seu uso não necessariamente se limita a algum problema em que o projeto possa vir a ter.</p>
 <p>O grupo resolveu utilizar de dois eventos, são eles o <b>sucesso no trabalho</b> e o <b>fracasso no trabalho</b>, dessa forma ficaria claro as causas que acarretariam ambos e de que forma aliada a nossa metodologia o grupo poderia fazer para evitar ou seguir essas possíveis situações.</p>
 
 ### Sucesso no Trabalho
