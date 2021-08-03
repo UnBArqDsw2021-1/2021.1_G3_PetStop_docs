@@ -1,4 +1,5 @@
-## ATA de reunião (29/07):
+# ATA de reunião (29/07):
+
 ## Pauta (Unpack)
 - Realização do 5W2H da solução computacional
 - <i>Brainswtorm</i> de ideias para a definição e fechamento do escopo do trabalho
