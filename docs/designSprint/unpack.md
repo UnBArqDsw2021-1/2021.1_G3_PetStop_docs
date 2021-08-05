@@ -21,10 +21,10 @@
 <p>O grupo resolveu utilizar de dois eventos, são eles o <b>sucesso no trabalho</b> e o <b>fracasso no trabalho</b>, dessa forma ficaria claro as causas que acarretariam ambos e de que forma aliada a nossa metodologia o grupo poderia fazer para evitar ou seguir essas possíveis situações.</p>
 
 ### Sucesso no Trabalho
-![Causa-Efeito - Sucesso](../images/Sucesso.jpg)
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_l4WSH8g=/?moveToViewport=-482,-357,1329,641" frameBorder="0" scrolling="no" allowFullScreen></iframe>
 
 ### Fracasso no Trabalho
-![Causa-Efeito - Fracasso](../images/Fracasso.jpg)
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_l4WDCrE=/?moveToViewport=-368,-314,1216,639" frameBorder="0" scrolling="no" allowFullScreen></iframe>
 
 ## <i>Brainstorm</i>
 <p>Assim como nome sugere esse método é realizado em grupo onde cada um tenta dar o máximo de ideas possível, sempre tentando focar no tema, mas não tendo nenhuma limitação quanto ao tipo de ideia, dessa forma os integrantes podem trazer diversos possibilidades de soluções ao mesmo em que eles possuem uma liberdade criativa que facilita esse processo. Geralmente após o <i>Brainstorm</i> usa-se um Mapa Mental para documentar todas as ideias levantadas.</p>
@@ -64,7 +64,7 @@
 | Rankeamento de voluntários | Antonio Ruan | 0 |
 
 ### Mapa Mental
-![Mapa Mental](../images/MapaMental.jpg)
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_l4Zm8oc=/?moveToViewport=-651,-295,1288,712" frameBorder="0" scrolling="no" allowFullScreen></iframe>
 
 <p><b>Legenda:</b></p>
 1. <b>Vermelho:</b> Ideias descartadas ou fora do escopo definido<br>
