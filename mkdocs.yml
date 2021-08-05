@@ -33,4 +33,7 @@ nav:
       - Escolha: designSprint/decision.md
       - <i>Storyboard</i>: artefatos/storyboard.md
       - BPMN: artefatos/bpmn.md
+      - Priorização:
+        - Brainstorm: priorizacao/brainstorm-moscow.md
+        - Introspecção: priorizacao/introspeccao-moscow.md
     - <i>Prototype</i>: designSprint/prototype.md
