@@ -4,7 +4,7 @@
 
 ## RichPicture Escolhido - Arthur Sena, Júlio César e Sara Campos
 
-![RichPicture - Grupo2](../images/richpicturegrupo2.png)
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FViqHT2jZSLtXBDsJ7DFVVw%2FRichpicture%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
 
 ## StoryBoard
 <p>O <i>storyboard</i> serve para ilustrar de uma maneira mais fácil e não tão técnica situações do mundo real em que a aplicaçãopossa vir a fazer parte como uma forma de solução</p>
