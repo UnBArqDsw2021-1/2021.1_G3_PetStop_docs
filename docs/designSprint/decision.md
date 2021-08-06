@@ -6,23 +6,13 @@
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FViqHT2jZSLtXBDsJ7DFVVw%2FRichpicture%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
 
-## StoryBoard
-<p>O <i>storyboard</i> serve para ilustrar de uma maneira mais fácil e não tão técnica situações do mundo real em que a aplicaçãopossa vir a fazer parte como uma forma de solução</p>
 
-### Storyboard 1
-
-![Storyboard1](../images/storyboard1.jpeg)
-
-### Storyboard 2
-
-![Storyboard2](../images/storyboard2.jpeg)
 
 ## Versionamentos
 
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------------------:|
 |03/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
-|03/08/2021| 0.2 | Adição do Storyboard 1 | Paulo Gonçalves e Pedro Vítor de Salles Cella | 
-|03/08/2021| 0.3 | Adição do Storyboard 2 | Paulo Gonçalves e Pedro Vítor de Salles Cella | 
+|05/08/2021| 0.2 | Atualização do documento | Pedro Vítor de Salles Cella | 
 
 ## Referências

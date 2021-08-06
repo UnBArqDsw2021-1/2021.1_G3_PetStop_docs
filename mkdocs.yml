@@ -25,7 +25,17 @@ nav:
   - Manual GhPages: manual.md
   - Design Sprint:
     - About: designSprint/about.md 
-    - <i>Unpack</i>: designSprint/unpack.md
+    - <i>Unpack</i>: 
+      - 5W2H: artefatos/5w2h.md
+      - Causa-Efeito: artefatos/causa-efeito.md
+      - <i>Brainstorm</i>: artefatos/brainstorm.md 
     - <i>Sketch</i>: designSprint/sketch.md
-    - <i>Decision</i>: designSprint/decision.md
+    - <i>Decision</i>: 
+      - Escolha: designSprint/decision.md
+      - <i>Storyboard</i>: artefatos/storyboard.md
+      - BPMN: artefatos/bpmn.md
+      - Introspecção: artefatos/introspeccao.md
+      - Priorização:
+        - Brainstorm: priorizacao/brainstorm-moscow.md
+        - Introspecção: priorizacao/introspeccao-moscow.md
     - <i>Prototype</i>: designSprint/prototype.md
