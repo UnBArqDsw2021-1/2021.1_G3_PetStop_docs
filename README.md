@@ -18,7 +18,7 @@
 | 17/0045269  |  Sara Campos |
 | 17/0032591  |  Edvan Gomes |
 
-## Acesse nossa documentação [aqui](https://unbarqdsw2021-1.github.io/2021.1_G3_petshop_docs/)
+## Acesse nossa documentação [aqui](https://unbarqdsw2021-1.github.io/2021.1_G3_PetStop_docs/)
 <!--
 ## Sobre 
 
