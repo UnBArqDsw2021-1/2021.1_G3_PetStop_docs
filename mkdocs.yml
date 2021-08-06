@@ -37,7 +37,6 @@ nav:
           - Introspecção: artefatos/introspeccao.md
           - Priorização:
             - Brainstorm: priorizacao/brainstorm-moscow.md
-            - Introspecção: priorizacao/introspeccao-moscow.md
         - <i>Prototype</i>: designSprint/prototype.md
     - Processos, metodologias e abordagens:
       - BPMN: artefatos/bpmn.md
