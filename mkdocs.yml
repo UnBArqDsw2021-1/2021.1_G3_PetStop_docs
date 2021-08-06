@@ -16,26 +16,29 @@ extra_css:
 
 nav:
   - Início: index.md
-  - Reuniões:
-    - Reunião 1 - (20/07): reunioes/reuniao1.md
-    - Reunião 2 - (27/07): reunioes/reuniao2.md
-    - Reunião 3 (Unpack) - (28/07): reunioes/reuniao3.md
-    - Reunião 4 (Unpack) - (29/07): reunioes/reuniao4.md
-    - Reunião 5 (Decision) - (03/08): reunioes/reuniao5.md
-  - Manual GhPages: manual.md
-  - Design Sprint:
-    - About: designSprint/about.md 
-    - <i>Unpack</i>: 
-      - 5W2H: artefatos/5w2h.md
-      - Causa-Efeito: artefatos/causa-efeito.md
-      - <i>Brainstorm</i>: artefatos/brainstorm.md 
-    - <i>Sketch</i>: designSprint/sketch.md
-    - <i>Decision</i>: 
-      - Escolha: designSprint/decision.md
-      - <i>Storyboard</i>: artefatos/storyboard.md
+  - Módulo Desenho de Software Base:
+    - Projeto não orientado a abordagens específicas:
+      - Reuniões:
+        - Reunião 1 - (20/07): reunioes/reuniao1.md
+        - Reunião 2 - (27/07): reunioes/reuniao2.md
+        - Reunião 3 (Unpack) - (28/07): reunioes/reuniao3.md
+        - Reunião 4 (Unpack) - (29/07): reunioes/reuniao4.md
+        - Reunião 5 (Decision) - (03/08): reunioes/reuniao5.md
+      - Design Sprint:
+        - About: designSprint/about.md 
+        - <i>Unpack</i>: 
+          - 5W2H: artefatos/5w2h.md
+          - Causa-Efeito: artefatos/causa-efeito.md
+          - <i>Brainstorm</i>: artefatos/brainstorm.md 
+        - <i>Sketch</i>: designSprint/sketch.md
+        - <i>Decision</i>: 
+          - Escolha: designSprint/decision.md
+          - <i>Storyboard</i>: artefatos/storyboard.md
+          - Introspecção: artefatos/introspeccao.md
+          - Priorização:
+            - Brainstorm: priorizacao/brainstorm-moscow.md
+            - Introspecção: priorizacao/introspeccao-moscow.md
+        - <i>Prototype</i>: designSprint/prototype.md
+    - Processos, metodologias e abordagens:
       - BPMN: artefatos/bpmn.md
-      - Introspecção: artefatos/introspeccao.md
-      - Priorização:
-        - Brainstorm: priorizacao/brainstorm-moscow.md
-        - Introspecção: priorizacao/introspeccao-moscow.md
-    - <i>Prototype</i>: designSprint/prototype.md
+  - Manual GhPages: manual.md
