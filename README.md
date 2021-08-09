@@ -1,4 +1,4 @@
-# Temp
+# PetStop 
 
 **Código da Disciplina**: FGA0208<br>
 **Número do Grupo**: 03<br>
@@ -18,29 +18,51 @@
 | 17/0045269  |  Sara Campos |
 | 17/0032591  |  Edvan Gomes |
 
-## Acesse nossa documentação [aqui](https://unbarqdsw2021-1.github.io/2021.1_G3_PetStop_docs/)
-<!--
-## Sobre 
 
-Descreva o seu projeto em linhas gerais. 
+## Sobre ([documentação](https://unbarqdsw2021-1.github.io/2021.1_G3_PetStop_docs/))
+
+O projeto se trata de uma aplicação web que tem como seu principal objetivo a organização de eventos de prestação de serviços voluntários para pets.
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Primeira Entrega.
+
+### Protótipo
+![Protótipo](./docs/images/prototipo-print.png)
+
+### Rich Picture
+![RichPicture](./docs/images/richpicturegrupo2.png)
+
+### StoryBoard
+![StoryBoard](./docs/images/storyboard1.jpeg)
+
+### Causa e Efeito - Sucesso
+![CausaeEfeitoSucesso](./docs/images/Sucesso.jpg)
+### Causa e Efeito - Fracasso
+![CausaeEfeitoFracasso](./docs/images/Fracasso.jpg)
+
+### BPMN versão 2
+![BPMNv2](./docs/images/BPMNv2.svg)
+
 
 ## Vídeo(s) Primeira Entrega <<FOCO: DSW(Base)>>
-Adicione o(s)s vídeo(s) da Primeira Entrega.
+https://drive.google.com/file/d/1s6C7L65R517N8h6CABqgup6tIsr6Dxj5/view?usp=sharing
 
+
+<!--
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
 
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione o(s)s vídeo(s) da Segunda Entrega.
 
+
+
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
 
 ## Vídeo(s) Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione o(s)s vídeo(s) da Terceira Entrega.
+
+
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
