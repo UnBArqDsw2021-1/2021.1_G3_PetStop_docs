@@ -8,8 +8,8 @@ theme:
   features:
     - navigation.instant
   palette:
-    primary: green
-    accent: green
+    primary: indigo
+    accent: indigo
 
 extra_css:
   - stylesheets/extra.css
@@ -40,4 +40,5 @@ nav:
         - <i>Prototype</i>: designSprint/prototype.md
     - Processos, metodologias e abordagens:
       - BPMN: artefatos/bpmn.md
+      - Glossário: artefatos/glossario.md
   - Manual GhPages: manual.md
