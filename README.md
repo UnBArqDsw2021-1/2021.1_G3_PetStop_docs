@@ -4,19 +4,20 @@
 **Número do Grupo**: 03<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| 18/0030345  |  Arthur Manuel Florêncio Sena |
-| 17/0115500  |  Vinícius Vieira de Souza |
-| 18/0030272  |  Antonio Ruan Moura Barreto |
-| 18/0028685  |  Victor Samuel dos Santos Lucas |
-| 18/0028324  |  Thiago Luiz de Souza Gomes |
-| 17/0122549  |  Paulo Gonçalves Lima |
-| 17/0113060  |  Pedro Vítor de Salles Cella |
-| 18/0052845  |  Gabriela da Gama Pivetta |
-| 16/0032903  |  Júlio César Schneider Martins |
-| 17/0045269  |  Sara Campos |
-| 17/0032591  |  Edvan Gomes |
+
+| Matrícula | Aluno | GitHub |
+| -- | -- | -- |
+| 18/0030345  |  Arthur Manuel Florêncio Sena | @senaarth |
+| 17/0115500  |  Vinícius Vieira de Souza | @faco400 |
+| 18/0030272  |  Antonio Ruan Moura Barreto | @RuanMoura |
+| 18/0028685  |  Victor Samuel dos Santos Lucas | @victordsantoss |
+| 18/0028324  |  Thiago Luiz de Souza Gomes | @thiagomesUNB |
+| 17/0122549  |  Paulo Gonçalves Lima | @PauloGoncalvesLima |
+| 17/0113060  |  Pedro Vítor de Salles Cella | @pedro-cella |
+| 18/0052845  |  Gabriela da Gama Pivetta | @gabrielapivetta |
+| 16/0032903  |  Júlio César Schneider Martins | @jschneiderm98 |
+| 17/0045269  |  Sara Campos | @saracampss |
+| 17/0032591  |  Edvan Gomes | @eddie-gomes |
 
 
 ## Sobre ([documentação](https://unbarqdsw2021-1.github.io/2021.1_G3_PetStop_docs/))
