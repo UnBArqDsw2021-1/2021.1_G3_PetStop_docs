@@ -5,7 +5,7 @@
 
 ## Sobre O Projeto
 
-O PetStop é uma Plataforma Web de fácil acesso que visa ser um mecanismo de união entre prestadores de atividades voluntárias e donos de animais domésticos de pequeno porte. Nosso objetivo é disponibilizar a prestação de serviços com um preço acessível ou de forma gratuita, ocorrendo por meio de eventos aos finais de semana que disponibilizam cuidados básicos, feiras de adoção e doações diversas, visando principalmente populações carentes das regiões administrativas do Distrito Federal.
+O PetStop é uma Plataforma Web de fácil acesso, que desenvolvida por estudantes da Faculdade do Gama - FGA, visa ser um mecanismo de união entre prestadores de atividades voluntárias e donos de animais domésticos de pequeno porte. Nosso objetivo é disponibilizar a prestação de serviços com um preço acessível ou de forma gratuita, ocorrendo por meio de eventos beneficentes aos finais de semana que disponibilizam cuidados básicos, feiras de adoção e doações diversas, visando principalmente populações carentes das regiões administrativas do Distrito Federal.
 
 ## Alunos
 | Matrícula | Aluno | GitHub |
