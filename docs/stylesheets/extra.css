@@ -1,5 +1,9 @@
-[data-md-color-primary="deep-purple"] .md-header {
-    background-color: white !important;
+* {
+    --search-color: #05445E
+}
+
+[data-md-color-primary="indigo"] .md-header {
+    background-color: #05445E !important;
 }
 
 .md-logo img {
@@ -17,17 +21,36 @@
 }
 
 .md-typeset table:not([class]) th {
-    background-color: rgb(38, 170, 97);
+    background-color: #05445E;
 }
 
 .md-search__input{
-    background-color: rgb(27, 94, 32);
+    background-color: rgb(212, 241, 244);
     border: 1px;
     border-radius: 1rem;
     border-color: black;
+    color: var(--search-color) !important;
 }
 
 .md-search__input:hover {
-    background-color: rgba(27, 94, 32, 0.5);
+    background-color: rgb(212, 241, 244, 0.5);
 }
+
+.md-icon.md-search__icon {
+    color: var(--search-color);
+}
+
+::placeholder {
+    color: var(--search-color) !important;
+    opacity: 1 !important; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--search-color) !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--search-color) !important;
+}
+
 
