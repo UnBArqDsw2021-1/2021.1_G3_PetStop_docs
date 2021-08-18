@@ -9,7 +9,7 @@ O Modelo Entidade Relacionamento tem por finalidade modelar todo o banco de dado
 
 **PET** (nome,especie,tamanho,genero,<ins> idPet </ins>,dtNascimento)
 
-**VOLUNTARIO** (telefone)
+**VOLUNTARIO** (cpf,telefone)
 
 **USUARIO** (cpf)
 
@@ -96,3 +96,4 @@ Um ou vários _VOLUNTARIO_ ajudam em um ou vários _EVENTO_ e um _EVENTO_ recebe
 |18/08/2021| 0.3 | Criação do MER | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves | 
 |18/08/2021| 0.4 | Criação do DLD | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves | 
 |18/08/2021| 0.5 | Atualização do Documento | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves | 
+|18/08/2021| 0.6 | Correção do atributo do VOLUNTARIO | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves |
