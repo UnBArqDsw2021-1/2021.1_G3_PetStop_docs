@@ -20,7 +20,7 @@ O Modelo Entidade Relacionamento tem por finalidade modelar todo o banco de dado
 **PESSOA** (horario,dtInicio,dtFinal,hInicial,hFinal,<ins> idEvento </ins>,titulo)
 
 
-## Relacionamentos
+### Relacionamentos
 
 **USUARIO** - tem - **PET**<br>
 Um _USUARIO_ tem um ou vários _PET_ e um _PET_ pertence a um _USUARIO_ 
@@ -96,4 +96,4 @@ Um ou vários _VOLUNTARIO_ ajudam em um ou vários _EVENTO_ e um _EVENTO_ recebe
 |18/08/2021| 0.3 | Criação do MER | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves | 
 |18/08/2021| 0.4 | Criação do DLD | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves | 
 |18/08/2021| 0.5 | Atualização do Documento | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves | 
-|18/08/2021| 0.6 | Correção do atributo do VOLUNTARIO | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves |
+|18/08/2021| 0.6 | Correção do atributo do VOLUNTARIO  e do markdown| Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves |
