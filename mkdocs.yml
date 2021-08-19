@@ -41,4 +41,8 @@ nav:
     - Processos, metodologias e abordagens:
       - BPMN: artefatos/bpmn.md
       - Glossário: artefatos/glossario.md
+  - Módulo Modelagem:
+    - Módulo Projeto Orientado a Abordagens Tradicionais:
+      - Modelagem UML Estática:
+        - Diagrama de Pacotes: modelagem/umlEstaticos/pacotes.md
   - Manual GhPages: manual.md
