@@ -12,5 +12,7 @@ Concepção e desenvolvimento do protótipo através da implementação de 4 lay
 |04/08/2021| 0.2 | Criação do Layout | Arthur Sena, Gabriela Pivetta, Victor Samuel, Thiago Gomes, Vinícius Vieira, Antonio Ruan | 
 |05/08/2021| 0.2.1 | Adição de 3 novas páginas | Vinícius Vieira, Victor Samuel | 
 |19/08/2021| 0.2.2 | Criação da página de voluntário | Vinícius Vieira, Victor Samuel | 
+|19/08/2021| 0.2.3 | Criação da página de adoção | Vinícius Vieira, Victor Samuel | 
+
 
 ## Referências
