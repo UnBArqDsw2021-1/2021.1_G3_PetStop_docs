@@ -13,7 +13,7 @@ Para confecção, foi usado o <a href="https://draw.io/">Draw.io</a>, que é um 
 * Logar e cadastrar
 * Cadastro de Pets
 * Cadastro como voluntário
-* Criar eventos
+* Criar e publicar evento
 * Visualizar e inscrever-se em eventos
 * Realizar doações 
 * Cadastrar pet para adoção
@@ -21,7 +21,7 @@ Para confecção, foi usado o <a href="https://draw.io/">Draw.io</a>, que é um 
 
 ## Versão 0.1
 
-Para esta primeira versão dos Diagramas de Atividades foram escolhidos diagramas voltados a principal regra de negócio da aplicação, que relembrando, baseia-se em ser uma aplicação que visa ser um mecanismo de união entre prestadores de atividades voluntárias e donos de animais domésticos de pequeno porte. 
+Para esta primeira versão do Diagrama de Atividades foram escolhidos diagramas voltados a principal regra de negócio da aplicação, que relembrando, baseia-se em ser um mecanismo de união entre prestadores de atividades voluntárias e donos de animais domésticos de pequeno porte, por meio de eventos beneficentes. 
 
 ### Processo de logar e cadastrar
 
@@ -35,7 +35,7 @@ Para esta primeira versão dos Diagramas de Atividades foram escolhidos diagrama
 
 <img src="/images/atividades_ser_voluntario.png">
 
-### Processo de criar eventos
+### Processo de criar e publicar evento
 
 <img src="/images/atividades_criar_eventos.png">
 
