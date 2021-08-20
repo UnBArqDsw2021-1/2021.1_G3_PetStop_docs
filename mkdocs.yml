@@ -45,5 +45,7 @@ nav:
     - Módulo Projeto Orientado a Abordagens Tradicionais:
       - Modelagem UML Estática:
         - Diagrama de Pacotes: modelagem/umlEstaticos/pacotes.md
-        - Diagrama de Atividades: modelagem/umlEstaticos/atividades.md
+      - Modelagem UML Dinâmica: 
+        - Diagrama de Atividades: modelagem/umlDinamicos/atividades.md
+        - Diagrama de Estados: modelagem/umlDinamicos/estados.md
   - Manual GhPages: manual.md
