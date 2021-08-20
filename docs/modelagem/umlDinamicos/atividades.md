@@ -4,20 +4,20 @@
 
 Um diagrama de atividade é essencialmente um fluxograma que mostra as atividades executadas por um sistema. Diagramas de atividade, junto com diagramas de caso de uso e de máquina de estados, são considerados diagramas de comportamento porque descrevem o que é necessário acontecer no sistema sendo modelado. 
 
-## Ferramanta
+## Ferramenta
 Para confecção, foi usado o <a href="https://draw.io/">Draw.io</a>, que é um editor gráfico online no qual é possível desenvolver desenhos, gráficos e outros sem a necessidade de usar um software caro e pesado. Ele disponibiliza recursos para criação de qualquer tipo de desenho porém, possui uma parte dedicada à arquitetura da informação.
 
 <a target="_blank""><img src="/images/drawio.jpg" width="240px"></a>
 
 ## Processos implementados 
 * Logar e cadastrar
-* Visualizar e inscrever-se em eventos
-* Criar eventos
-* Realizar doações 
-* Realizar e visualizar adoções
-* Cadastro como voluntário
 * Cadastro de Pets
-
+* Cadastro como voluntário
+* Criar eventos
+* Visualizar e inscrever-se em eventos
+* Realizar doações 
+* Cadastrar pet para adoção
+* Visualizar adoções
 
 ## Versão 0.1
 
@@ -27,25 +27,32 @@ Para esta primeira versão dos Diagramas de Atividades foram escolhidos diagrama
 
 <img src="/images/atividades_login.png">
 
-### Processo de visualizar e inscrever-se em eventos 
+### Processo de cadastro de pets
 
-<img src="/images/atividades_eventos.png">
-
-### Processo de Doações
-
-<img src="/images/atividades_doacao.png">
-
-### Processo de realizar e visualizar adoções
-
-<img src="/images/atividades_adocao.png">
+<img src="/images/atividades_cadastrar_pets.png">
 
 ### Processo de cadastro como voluntário
 
 <img src="/images/atividades_ser_voluntario.png">
 
-### Processo de cadastro de pets
+### Processo de criar eventos
 
-<img src="/images/atividades_cadastrar_pets.png">
+<img src="/images/atividades_criar_eventos.png">
+
+### Processo de visualizar e inscrever-se em eventos 
+
+<img src="/images/atividades_eventos.png">
+
+### Processo de realizar doações
+
+<img src="/images/atividades_doacao.png">
+
+### Processo de cadastrar pet para adoção
+
+
+### Processo de visualizar adoções
+
+<img src="/images/atividades_adocao.png">
 
 ## Referências
 
@@ -61,3 +68,4 @@ Para esta primeira versão dos Diagramas de Atividades foram escolhidos diagrama
 |20/08/2021| 0.2 | Inserção do Diagrama de processo de doações | Victor Samuel | 
 |20/08/2021| 0.3 | Inserção do Diagrama de processo de cadastro de usuário | Victor Samuel | 
 |20/08/2021| 0.4 | Inserção do Diagrama de processo de cadastro de pets | Victor Samuel | 
+|20/08/2021| 0.5 | Inserção do Diagrama de processo de criação de evento | Victor Samuel | 
