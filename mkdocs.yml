@@ -48,4 +48,5 @@ nav:
       - Modelagem UML Dinâmica: 
         - Diagrama de Atividades: modelagem/umlDinamicos/atividades.md
         - Diagrama de Estados: modelagem/umlDinamicos/estados.md
+        - Diagrama de Comunicação: modelagem/umlDinamicos/comunicacao.md
   - Manual GhPages: manual.md
