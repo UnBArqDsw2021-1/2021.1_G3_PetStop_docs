@@ -49,6 +49,7 @@ Para esta primeira versão do Diagrama de Atividades foram escolhidos diagramas 
 
 ### Processo de cadastrar pet para adoção
 
+<img src="/images/atividades_cadastro_pet_adocao.png">
 
 ### Processo de visualizar adoções
 
@@ -69,3 +70,4 @@ Para esta primeira versão do Diagrama de Atividades foram escolhidos diagramas 
 |20/08/2021| 0.3 | Inserção do Diagrama de processo de cadastro de usuário | Victor Samuel | 
 |20/08/2021| 0.4 | Inserção do Diagrama de processo de cadastro de pets | Victor Samuel | 
 |20/08/2021| 0.5 | Inserção do Diagrama de processo de criação de evento | Victor Samuel | 
+|20/08/2021| 0.5 | Inserção do Diagrama de processo de cadastramento de pets para adoção | Victor Samuel | 
