@@ -10,27 +10,32 @@ Para confecção, foi usado o <a href="https://draw.io/">Draw.io</a>, que é um 
 <a target="_blank""><img src="/images/drawio.jpg" width="240px"></a>
 
 ## Processos implementados 
-* Login e Cadastro
-* Visualização e inscrição em eventos
-* Criação de eventos
-* Visualização de adoções
+* Logar e cadastrar
+* Visualizar e inscrever-se em eventos
+* Criar eventos
+* Realizar doações 
+* Realizar e visualizar adoções
 * Cadastro como voluntário
 * Cadastro de Pets
 
 
 ## Versão 0.1
 
-### Processo de Login e Cadastro
+### Processo de logar e cadastrar
 
 <img src="/images/atividades_login.png">
 
-### Processo de Adoção
-
-<img src="/images/atividades_adocao.png">
-
-### Processo de Eventos
+### Processo de visualizar e inscrever-se em eventos 
 
 <img src="/images/atividades_eventos.png">
+
+### Processo de Doações
+
+<img src="/images/atividades_doacao.png">
+
+### Processo de realizar e visualizar adoções
+
+<img src="/images/atividades_adocao.png">
 
 ## Referências
 
@@ -43,3 +48,4 @@ Para confecção, foi usado o <a href="https://draw.io/">Draw.io</a>, que é um 
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------:|
 |19/08/2021| 0.1 | Criação do documento e inserções iniciais | Victor Samuel | 
+|20/08/2021| 0.2 | Inserção do Diagrama de processo de doações| Victor Samuel | 
