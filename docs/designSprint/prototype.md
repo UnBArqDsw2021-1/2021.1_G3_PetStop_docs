@@ -10,9 +10,10 @@ Concepção e desenvolvimento do protótipo através da implementação de 4 lay
 |:--------:|:---:|:-------------------: |:-----------------------:|
 |03/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
 |04/08/2021| 0.2 | Criação do Layout | Arthur Sena, Gabriela Pivetta, Victor Samuel, Thiago Gomes, Vinícius Vieira, Antonio Ruan | 
-|05/08/2021| 0.2.1 | Adição de 3 novas páginas | Vinícius Vieira, Victor Samuel | 
-|19/08/2021| 0.2.2 | Criação da página de voluntário | Vinícius Vieira, Victor Samuel | 
-|19/08/2021| 0.2.3 | Criação da página de adoção | Vinícius Vieira, Victor Samuel | 
+|05/08/2021| 0.3 | Adição de 3 novas páginas | Vinícius Vieira, Victor Samuel | 
+|19/08/2021| 0.4 | Criação da página de voluntário | Vinícius Vieira, Victor Samuel | 
+|19/08/2021| 0.5 | Criação da página de adoção | Vinícius Vieira, Victor Samuel | 
+|19/08/2021| 0.6 | Modificação de atributos na tela de login e Seja Voluntário | Vinícius Vieira, Victor Samuel, Gabriela Pivetta, Thiago Gomes, Paulo Gonçalves, Antonio Ruan | 
 
 
 ## Referências
