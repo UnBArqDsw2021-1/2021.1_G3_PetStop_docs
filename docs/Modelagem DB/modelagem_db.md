@@ -61,7 +61,27 @@ Um ou vários _VOLUNTARIO_ ajudam em um ou vários _EVENTO_ e um _EVENTO_ recebe
 ![Diagrama Entidade Relacionamento](./img/dld.png)
 
 ## Dicionário de Dados
+### Entidades
 
+![Dicionario de Dados](./img/dicionario_usuario.png)
+
+![Dicionario de Dados](./img/dicionario_voluntario.png)
+
+![Dicionario de Dados](./img/dicionario_pet.png)
+
+![Dicionario de Dados](./img/dicionario_evento.png)
+
+![Dicionario de Dados](./img/dicionario_tipo.png)
+
+![Dicionario de Dados](./img/dicionario_local.png)
+
+### Relacionamentos
+
+![Dicionario de Dados](./img/dicionario_ajuda.png)
+
+![Dicionario de Dados](./img/dicionario_cria.png)
+
+![Dicionario de Dados](./img/dicionario_participa.png)
 ## Referências
 
 - Software para Diagramação do Modelo Entidade Relacionamento - brModelo <http://www.sis4.com/brModelo/>. Último acesso em 17/08/2021
@@ -77,4 +97,4 @@ Um ou vários _VOLUNTARIO_ ajudam em um ou vários _EVENTO_ e um _EVENTO_ recebe
 |18/08/2021| 0.5 | Atualização do Documento | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves |
 |18/08/2021| 0.6 | Correção do atributo do VOLUNTARIO  e do markdown| Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves |
 |19/08/2021| 0.7 | Mudança nas entidades, v0.2 DER e DLD | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves |
-
+|19/08/2021| 0.8 | Adicionado dicionario de dados | Thiago Luiz,Gabriela Pivetta, Paulo Gonçalves |
