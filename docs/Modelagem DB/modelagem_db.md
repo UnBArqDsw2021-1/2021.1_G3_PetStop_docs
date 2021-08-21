@@ -6,17 +6,17 @@ O Modelo Entidade Relacionamento tem por finalidade modelar todo o banco de dado
 
 ### Entidades
 
-**USUARIO** (<u>email</u>,nome,senha, descricao)
+**USUARIO** (<ins>email</ins>,nome,senha, descricao)
 
 **VOLUNTARIO** (email, telefone, endereco, dtNascimento)
 
-**PET** (<u>idPet</u>, nome,especie,tamanho,genero,dtNascimento)
+**PET** (<ins>idPet</ins>, nome,especie,tamanho,genero,dtNascimento)
 
-**TIPO** (<u>idTipo</u>, tipo)
+**TIPO** (<ins>idTipo</ins>, tipo)
 
-**LOCAL** (descricao,bairro,complemento,cep,cidade)
+**LOCAL** (<ins>localizacao</ins>,descricao,bairro,complemento,cep,cidade)
 
-**EVENTO** (<u>idEvento</u>,dtInicio,dtFinal,hInicial,hFinal,titulo)
+**EVENTO** (<ins>idEvento</ins>,dtInicio,dtFinal,hInicial,hFinal,titulo)
 
 ### Relacionamentos
 
