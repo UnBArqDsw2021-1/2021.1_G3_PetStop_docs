@@ -50,4 +50,5 @@ nav:
         - Diagrama de Atividades: modelagem/umlDinamicos/atividades.md
         - Diagrama de Estados: modelagem/umlDinamicos/estados.md
         - Diagrama de Comunicação: modelagem/umlDinamicos/comunicacao.md
+        - Diagrama de Sequência: modelagem/umlDinamicos/sequencia.md
   - Manual GhPages: manual.md
