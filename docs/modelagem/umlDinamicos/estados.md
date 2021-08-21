@@ -1,4 +1,4 @@
-# Diagrama de Pacotes
+# Diagrama de Estados
 
 ## Definição
 
@@ -11,6 +11,12 @@ Dado que estados indicam as várias combinações de informações que um objeto
 ### Diagrama de Estado - Evento
 <img src="/images/Diagrama_Estados_Evento.png">
 
+### Diagrama de Estado - Pet
+<img src ="/images/Diagrama_Estados_Pet.png">
+
+### Diagrama de Estado - Conta de Usuário
+<img src ="/images/Diagrama_Estados_ContaUsuario.png">
+
 ## Referências
 
 > Vídeo Aula Diagrama de Estados, Milene Serrano <a target="_blank" href="https://unbbr-my.sharepoint.com/:v:/r/personal/mileneserrano_unb_br/Documents/ArqDSW%20-%20V%C3%ADdeosOriginais/06d%20-%20VideoAula%20-%20DSW-Modelagem%20-%20Estados.mp4?csf=1&web=1&e=h813iu">Disponível Aqui</a>
@@ -21,4 +27,5 @@ Dado que estados indicam as várias combinações de informações que um objeto
 
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------:|
-|20/08/2021| 0.1 | Criação do documento | Vinícius Souza | 
+|20/08/2021| 0.1 | Criação do documento | Vinícius Souza |
+|21/08/2021| 0.2 | Adição de diagramas de estado para Conta e Pet | Vinícius Souza |  
