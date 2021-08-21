@@ -41,4 +41,8 @@ nav:
     - Processos, metodologias e abordagens:
       - BPMN: artefatos/bpmn.md
       - Glossário: artefatos/glossario.md
+  - Módulo Desenho de Software Modelagem:
+    - Módulo Projeto Orientado a Abordagens Tradicionais:
+      - Módulo Modelagem Ágil:
+        - Backlog: backlog/backlog.md
   - Manual GhPages: manual.md

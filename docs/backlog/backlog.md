@@ -4,7 +4,7 @@
 
 | Tema | Descrição |
 | --- | ---|
-| T01 | Gerência de eventos, serviços e doações |
+| T01 | Cuidado animal |
 
 ## Épicos
 
@@ -24,8 +24,7 @@
 | E02 | F04 | Solicitar prestação de serviços | 
 | E03 | F05 | Gerenciar programação do evento |
 | E03 | F06 | Gerenciar participantes dos eventos |
-| E03 | F07 | Gerenciar publicações dos eventos |
-| E03 | F08 | Divulgar fora da plataforma | 
+| E03 | F07 | Publicações dos eventos |
 
 
 
@@ -54,6 +53,8 @@
 | F05 | US14 | Eu como voluntário desejo deletar um evento com o objetivo de finalizá-lo |
 | F06 | US15 | Eu como voluntário desejo demonstrar interesse em um evento para colaborar |
 | F06 | US16 | Eu como voluntário criador do evento desejo organizar participantes do evento | 
+| F07 | US17 | Eu como voluntário ou Dono de pet desejo compartilhar um evento em outras plataformas |
+| F07 | US18 | Eu como Dono de pet desejo filtrar as publicações para ser mais objetivo | 
 
 
 --- 
@@ -63,3 +64,4 @@
 | --- | --- | --- | --- |
 | 0.1 | 16/08/2021 | Criação dos temas, épicos e features | Sara Campos, Edvan Gomes, Julio Schneider e Antonio Ruan |
 | 0.2 | 17/08/2021 | Criação das histórias de usuários e ajuste de features | Sara Campos, Edvan Gomes, Julio Schneider e Antonio Ruan |
+| 0.3 | 21/08/2021 | Ajuste nas features e histórias de usuários | Antonio Ruan |
