@@ -46,6 +46,7 @@ nav:
       - Modelagem UML Estática:
         - Diagrama de Classes: modelagem/umlEstaticos/classes.md
         - Diagrama de Pacotes: modelagem/umlEstaticos/pacotes.md
+        - Diagrama de Componentes: modelagem/umlEstaticos/componentes.md
       - Modelagem UML Dinâmica: 
         - Diagrama de Atividades: modelagem/umlDinamicos/atividades.md
         - Diagrama de Estados: modelagem/umlDinamicos/estados.md
