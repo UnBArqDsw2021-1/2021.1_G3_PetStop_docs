@@ -2,7 +2,8 @@
 
 ## Definição
 O diagrama de comunicação se baseia na apresentação dos objetos. Os diagramas de comunicação são utilizados para mostrar como os objetos interagem para executar o comportamento de um caso de uso específico ou de parte de um caso de uso.
-
+## Versão 0.2
+<img src="/images/diag_comunicacao_v0.2.jpg">
 
 ## Versão 0.1
 <img src="/images/diag_comunicacao.jpg">
@@ -19,4 +20,5 @@ O diagrama de comunicação se baseia na apresentação dos objetos. Os diagrama
 
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------:|
-|19/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella | 
+|19/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
+|22/08/2021| 0.2 | Atualização do documento | Arthur Sena, Paulo Gonçalves, Pedro Cella, Victor Santos, Vinicius Souza |  
