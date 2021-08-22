@@ -4,17 +4,19 @@
 
 Dado que estados indicam as várias combinações de informações que um objeto pode conter. Um diagrama de estados busca representar todos esses possíveis estados, e suas transições. Estados são geralmente representados com retângulos com cantos arredondados e rotulados com o nome de estado. As transições são marcadas com setas que fluem de um estado para outro, mostrando como ocorrem essas mudanças. No desenvolvimento deste diagrama foi utlizada a ferramenta <a target="_blank" href="https://draw.io/">Draw.io</a>.
 
-## Versão 0.1
-### Diagrama de Estado - Doação
+### Diagrama de Estado - Doação (v0.1)
 <img src="/images/Diagrama_Estados_Doacao.png">
 
-### Diagrama de Estado - Evento
+### Diagrama de Estado - Evento (v0.1)
 <img src="/images/Diagrama_Estados_Evento.png">
 
-### Diagrama de Estado - Pet
+### Diagrama de Estado - Evento (v0.2)
+<img src="/images/Diagrama_Estados_Evento_v02.png">
+
+### Diagrama de Estado - Pet (v0.1)
 <img src ="/images/Diagrama_Estados_Pet.png">
 
-### Diagrama de Estado - Conta de Usuário
+### Diagrama de Estado - Conta de Usuário (v0.1)
 <img src ="/images/Diagrama_Estados_ContaUsuario.png">
 
 ## Referências
@@ -28,4 +30,5 @@ Dado que estados indicam as várias combinações de informações que um objeto
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------:|
 |20/08/2021| 0.1 | Criação do documento | Vinícius Souza |
-|21/08/2021| 0.2 | Adição de diagramas de estado para Conta e Pet | Vinícius Souza |  
+|21/08/2021| 0.2 | Adição de diagramas de estado para Conta e Pet | Vinícius Souza |
+|22/08/2021| 0.3 | Atualização do Documento | Arthur Sena, Paulo Gonçalves, Pedro Cella, Victor Santos, Vinicius Souza |    
