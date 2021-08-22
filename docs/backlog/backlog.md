@@ -4,7 +4,7 @@
 
 | Tema | Descrição |
 | --- | ---|
-| T01 | Cuidado animal |
+| T01 | Gerência de eventos, serviços e doações para cuidados de *pets* |
 
 ## Épicos
 
@@ -57,7 +57,7 @@
 | F07 | US18 | Eu como Dono de pet desejo filtrar as publicações para ser mais objetivo | Could |
 
 
---- 
+
 ## Histórico de versionamento 
 
 | Versão | Data | Descrição | Autores |
@@ -66,3 +66,4 @@
 | 0.2 | 17/08/2021 | Criação das histórias de usuários e ajuste de features | Sara Campos, Edvan Gomes, Julio Schneider e Antonio Ruan |
 | 0.3 | 21/08/2021 | Ajuste nas features e histórias de usuários | Antonio Ruan |
 | 0.4 | 21/08/2021 | Priorização | Antonio Ruan |
+| 0.5 | 22/08/2021 | Revisão do documento e atualização do Tema | Gabriela Pivetta |
