@@ -43,7 +43,18 @@ nav:
       - Glossário: artefatos/glossario.md
   - Módulo Desenho de Software Modelagem:
     - Módulo Projeto Orientado a Abordagens Tradicionais:
+      - Modelagem UML Estática:
+        - Diagrama de Classes: modelagem/umlEstaticos/classes.md
+        - Diagrama de Pacotes: modelagem/umlEstaticos/pacotes.md
+        - Diagrama de Componentes: modelagem/umlEstaticos/componentes.md
+      - Modelagem UML Dinâmica: 
+        - Diagrama de Atividades: modelagem/umlDinamicos/atividades.md
+        - Diagrama de Estados: modelagem/umlDinamicos/estados.md
+        - Diagrama de Comunicação: modelagem/umlDinamicos/comunicacao.md
+        - Diagrama de Sequência: modelagem/umlDinamicos/sequencia.md
       - Módulo Modelagem Ágil:
         - Backlog: backlog/backlog.md
         - Personas: backlog/personas.md
+    - Iniciativas Extras: 
+      - Modelagem Banco de Dados: modelagemDB/modelagem_db.md
   - Manual GhPages: manual.md

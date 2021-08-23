@@ -17,6 +17,7 @@ A diferenciação dos tipos de usuário foi levantada a partir do [Rich Picture]
 | --- | ---|
 | T01 |  Gerência de eventos, serviços e doações para o cuidado de *pets* |
 
+
 ## Épicos
 
 | Tema | Épico | Descrição |
@@ -83,7 +84,7 @@ Toda a priorização foi feita de acordo com o que seria mais fundamental para a
 2. Sedano, T., Ralph, P., & Peraire, C. 2019. The Product Backlog. 2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE). doi:10.1109/icse.2019.00036 
 
 
---- 
+
 ## Histórico de versionamento 
 
 | Versão | Data | Descrição | Autores |
@@ -94,4 +95,4 @@ Toda a priorização foi feita de acordo com o que seria mais fundamental para a
 | 0.4 | 21/08/2021 | Priorização | Antonio Ruan |
 | 0.5 | 22/08/2021 | Revisão do documento e atualização do Tema | Gabriela Pivetta |
 | 0.6 | 22/08/2021 | Adição de referências | Júlio Schneider |
-| 0.7 | 23/08/2021 | Adição do épico 04 e utilização de personas | Antonio Ruan
+| 0.7 | 23/08/2021 | Adição do épico 04 e utilização de personas | Antonio Ruan |
