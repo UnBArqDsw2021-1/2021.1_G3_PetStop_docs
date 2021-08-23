@@ -41,7 +41,7 @@ nav:
     - Processos, metodologias e abordagens:
       - BPMN: artefatos/bpmn.md
       - Glossário: artefatos/glossario.md
-  - Módulo Modelagem:
+  - Módulo Desenho de Software Modelagem:
     - Módulo Projeto Orientado a Abordagens Tradicionais:
       - Modelagem UML Estática:
         - Diagrama de Classes: modelagem/umlEstaticos/classes.md
@@ -52,4 +52,8 @@ nav:
         - Diagrama de Estados: modelagem/umlDinamicos/estados.md
         - Diagrama de Comunicação: modelagem/umlDinamicos/comunicacao.md
         - Diagrama de Sequência: modelagem/umlDinamicos/sequencia.md
+      - Módulo Modelagem Ágil:
+        - Backlog: backlog/backlog.md
+    - Iniciativas Extras: 
+      - Modelagem Banco de Dados: modelagemDB/modelagem_db.md
   - Manual GhPages: manual.md
