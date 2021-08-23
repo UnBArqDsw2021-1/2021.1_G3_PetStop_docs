@@ -54,6 +54,7 @@ nav:
         - Diagrama de Sequência: modelagem/umlDinamicos/sequencia.md
       - Módulo Modelagem Ágil:
         - Backlog: backlog/backlog.md
+        - Personas: backlog/personas.md
     - Iniciativas Extras: 
       - Modelagem Banco de Dados: modelagemDB/modelagem_db.md
       - Personas: backlog/personas.md

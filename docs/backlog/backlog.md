@@ -15,7 +15,8 @@ A diferenciação dos tipos de usuário foi levantada a partir do [Rich Picture]
 
 | Tema | Descrição |
 | --- | ---|
-| T01 | Gerência de eventos, serviços e doações para cuidados de *pets* |
+| T01 |  Gerência de eventos, serviços e doações para o cuidado de *pets* |
+
 
 ## Épicos
 
@@ -94,4 +95,4 @@ Toda a priorização foi feita de acordo com o que seria mais fundamental para a
 | 0.4 | 21/08/2021 | Priorização | Antonio Ruan |
 | 0.5 | 22/08/2021 | Revisão do documento e atualização do Tema | Gabriela Pivetta |
 | 0.6 | 22/08/2021 | Adição de referências | Júlio Schneider |
-| 0.7 | 23/08/2021 | Adição do épico 04 e utilização de personas | Antonio Ruan
+| 0.7 | 23/08/2021 | Adição do épico 04 e utilização de personas | Antonio Ruan |
