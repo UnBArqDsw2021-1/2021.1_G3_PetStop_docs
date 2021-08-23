@@ -1,4 +1,18 @@
-# Backlog
+# Backlog do Produto
+
+## Descrição 
+
+Esse documento constitui a principal fonte requisitos do projeto. Foi utilizada granularidade similar ao [SAFe](https://www.scaledagileframework.com/).
+
+## Tipos de Usuários
+
+| Tipo de usuário | Descrição |
+| --- | --- |
+| Voluntário | Usuário em busca de donos de *pets* para prestar serviços |
+| Dono de *pet* | Usuário em busca de prestação de serviços acessível |
+
+A diferenciação dos tipos de usuário foi levantada a partir do [Rich Picture](/designSprint/decision/)
+
 
 ## Tema
 
@@ -14,6 +28,8 @@
 | T01 | E02 | Assistência às prestações de serviços | Should |
 | T01 | E03 | Gerência do evento | Must |
 
+Os épicos foram levantados a partir do [Rich Picture](/designSprint/decision/)
+
 ## Features
 
 | Épico | Feature | Descrição | Priorização (em relacao ao épico) |
@@ -26,14 +42,11 @@
 | E03 | F06 | Gerenciar participantes dos eventos | Should |
 | E03 | F07 | Publicações dos eventos | Should |
 
+As features foram levantadas utilizando o [Rich Picture](/designSprint/decision/), o [Protótipo](/designSprint/prototype/) e o [StoryBoard](/artefatos/storyboard/)
+
 
 
 ## Histórias de usuário
-
-| Tipo de usuário | Descrição |
-| --- | --- |
-| Voluntário | Usuário em busca de donos de *pets* para prestar serviços |
-| Dono de *pet* | Usuário em busca de prestação de serviços acessível |
 
 | Feature | História de usuário | Descrição | Priorização (em relação à feature) |
 | --- | --- | --- | --- |
@@ -56,6 +69,14 @@
 | F07 | US17 | Eu como voluntário ou Dono de pet desejo compartilhar um evento em outras plataformas | Must |
 | F07 | US18 | Eu como Dono de pet desejo filtrar as publicações para ser mais objetivo | Could |
 
+Os requisitos levantados na [introspecção](/artefatos/introspeccao/) serviram como base para as histórias de usuários. Além disso, o [Protótipo](/designSprint/prototype/) também serviu como guia para elicitação das histórias de usuário.
+
+## Referências
+
+1. 2021. Program and solution backlogs. Scaled Agile Framework. Available at: https://www.scaledagileframework.com/program-and-solution-backlogs/ [Accessed August 23, 2021]. 
+
+2. Sedano, T., Ralph, P., & Peraire, C. 2019. The Product Backlog. 2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE). doi:10.1109/icse.2019.00036 
+
 
 
 ## Histórico de versionamento 
@@ -67,3 +88,4 @@
 | 0.3 | 21/08/2021 | Ajuste nas features e histórias de usuários | Antonio Ruan |
 | 0.4 | 21/08/2021 | Priorização | Antonio Ruan |
 | 0.5 | 22/08/2021 | Revisão do documento e atualização do Tema | Gabriela Pivetta |
+| 0.6 | 22/08/2021 | Adição de referências | Júlio Schneider |
