@@ -68,7 +68,7 @@ https://drive.google.com/file/d/1s6C7L65R517N8h6CABqgup6tIsr6Dxj5/view?usp=shari
 ![DER PetStop](./docs/modelagemDB/img/der.png)
 
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
-Adicione o(s)s vídeo(s) da Segunda Entrega.
+https://drive.google.com/file/d/1-YvOTz77LuzXzfbfebm3dp7mOAN38tWj/view?usp=sharing
 
 <!--
 
