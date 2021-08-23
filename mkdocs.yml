@@ -45,4 +45,5 @@ nav:
     - Módulo Projeto Orientado a Abordagens Tradicionais:
       - Módulo Modelagem Ágil:
         - Backlog: backlog/backlog.md
+        - Personas: backlog/personas.md
   - Manual GhPages: manual.md
