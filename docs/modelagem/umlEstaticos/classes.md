@@ -6,7 +6,9 @@
 
 ## Versão 0.1
 
-<img src="/images/diagrama_classe.png">
+O iframe abaixo é interativo, possibilitando ao usuário dar zoom caso necessário.
+
+<iframe frameborder="0" style="width:100%;height:25rem;" src="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Diagrama_Classe#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iDop1bgmjHN9BBjhQ0jlfXaewRyO17f7%26export%3Ddownload"></iframe>
 
 ## Referências
 
@@ -17,3 +19,4 @@
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------:|
 |20/08/2021| 0.1 | Criação do documento | Arthur Sena, Paulo Gonçalves, Pedro Cella, Vinicius Souza | 
+|23/08/2021| 0.1 | Adição do iFrame | Arthur Sena | 
