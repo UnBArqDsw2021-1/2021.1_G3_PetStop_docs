@@ -70,8 +70,8 @@ As features foram levantadas utilizando o [Rich Picture](/designSprint/decision/
 | F07 | US18 | Eu Camila/João Pedro desejo filtrar as publicações para ser mais objetivo | Could |
 | F08 | US19 | Eu como usuário desejo possuir um pefil para poder me apresentar aos outros usuários | Must |
 | F08 | US20 | Eu como usuário desejo modificar as informações do meu perfil para mantelo atualizado | Should |
-| F08 | US21 | Eu como dono de usuário desejo deletar meu perfil para que ele não esteja mais disponível na aplicação | Could |
-| F08 | US22 | Eu como dono de usuário desejo realizar login/logout na minha sessão para segurança dos meus dados | Should |
+| F08 | US21 | Eu como usuário desejo deletar meu perfil para que ele não esteja mais disponível na aplicação | Could |
+| F08 | US22 | Eu como usuário desejo realizar login/logout na minha sessão para segurança dos meus dados | Should |
 
 Os requisitos levantados na [introspecção](/artefatos/introspeccao/) serviram como base para as histórias de usuários. Além disso, o [Protótipo](/designSprint/prototype/) também serviu como guia para elicitação das histórias de usuário.
 
