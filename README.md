@@ -49,14 +49,28 @@ O PetStop é uma Plataforma Web de fácil acesso, que desenvolvida por estudante
 https://drive.google.com/file/d/1s6C7L65R517N8h6CABqgup6tIsr6Dxj5/view?usp=sharing
 
 
-<!--
+
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
+
+### Diagrama de Pacotes
+![Diagrama de Pacotes](./docs/images/diag_pacotes.png)
+
+### Diagrama de Atividades
+![Diagrama de Atividades](./docs/images/atividades_login.png)
+
+### Diagrama de Comunicação
+![Diagrama de Comunicação](./docs/images/diag_comunicacao_v0.2.jpg)
+
+### Diagrama de Estado
+![Diagrama de Estado](./docs/images/Diagrama_Estados_ContaUsuario.png)
+
+### DER
+![DER PetStop](./docs/modelagemDB/img/der.png)
 
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione o(s)s vídeo(s) da Segunda Entrega.
 
-
+<!--
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
