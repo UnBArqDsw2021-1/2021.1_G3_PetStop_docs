@@ -4,7 +4,7 @@
 
 |              | Persona                                                                                         |
 | ------------ | ----------------------------------------------------------------------------------------------- |
-| Foto         | <img alt= "persona-1" src="./img/persona_adulto.jpg" width = "200" />                           |
+| Foto         | <img alt= "persona-1" src="../img/persona_adulto.jpg" width = "200" />                           |
 | Nome         | João Pedro                                                                                      |
 | Idade        | 37 anos                                                                                         |
 | Profissão    | Autônomo                                                                                        |
@@ -17,7 +17,7 @@
 
 |              | Persona                                                                       |
 | ------------ | ----------------------------------------------------------------------------- |
-| Foto         | <img alt= "persona-2" src="./img/persona_adolescente.jpeg" width = "200" /> |
+| Foto         | <img alt= "persona-2" src="../img/persona_adolescente.jpeg" width = "200" /> |
 | Nome         | Camila                                                                        |
 | Idade        | 16 anos                                                                       |
 | Profissão    | Estudante                                                                     |
@@ -30,7 +30,7 @@
 
 |              | Persona                                                                       |
 | ------------ | ----------------------------------------------------------------------------- |
-| Foto         | <img alt= "persona-3" src="./img/persona_jovem.jpg" width = "200" /> |
+| Foto         | <img alt= "persona-3" src="../img/persona_jovem.jpg" width = "200" /> |
 | Nome         | Lucas Henrique                                                                |
 | Idade        | 23 anos                                                                       |
 | Profissão    | Estudante de Engenharia                                                       |
@@ -43,7 +43,7 @@
 
 |              | Persona                                                                           |
 | ------------ | --------------------------------------------------------------------------------- |
-| Foto         | <img alt= "antipersona" src="./img/persona_crianca.jpg" width = "200" /> |
+| Foto         | <img alt= "antipersona" src="../img/persona_crianca.jpg" width = "200" /> |
 | Nome         | Ana Clara                                                                         |
 | Idade        | 8 anos                                                                            |
 | Profissão    | Estudante                                                                         |

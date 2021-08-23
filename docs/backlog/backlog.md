@@ -6,7 +6,7 @@ Esse documento constitui a principal fonte requisitos do projeto. Foi utilizada 
 
 ## Tipos de Usuários
 
-Todos os usuários foram retirados das [Personas](/backlog/personas.md)
+Todos os usuários foram retirados das [Personas](/backlog/personas)
 
 A diferenciação dos tipos de usuário foi levantada a partir do [Rich Picture](/designSprint/decision/)
 

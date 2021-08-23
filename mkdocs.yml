@@ -56,5 +56,5 @@ nav:
         - Backlog: backlog/backlog.md
     - Iniciativas Extras: 
       - Modelagem Banco de Dados: modelagemDB/modelagem_db.md
-        - Personas: backlog/personas.md
+      - Personas: backlog/personas.md
   - Manual GhPages: manual.md
