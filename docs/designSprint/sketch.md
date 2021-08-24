@@ -27,6 +27,6 @@
 
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------------------:|
-|03/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
+|03/08/2021| 0.1 | Criação do documento | Arthur Sena, Antonio Ruan,  Edvan Gomes, Gabriela Pivetta, Julio Schneider, Pedro Vítor de Salles Cella, Paulo Gonçalves, Sara Campos, Thiago Luiz, Victor Samuel, Vinícius Souza |
 
 ## Referências

@@ -16,6 +16,6 @@
 
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------------------:|
-|05/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
+|05/08/2021| 0.1 | Criação do documento | Julio Schneider, Edvan Gomes, Paulo Gonçalves Lima, Pedro Vítor de Salles Cella e Sara Paula |
 |05/08/2021| 0.2 | Adicionando o artefato | Paulo Gonçalves Lima |
 |05/08/2021| 0.3 | Adicionando a segunda versão do BPMN | Paulo Gonçalves Lima e Pedro Vítor de Salles Cella |
