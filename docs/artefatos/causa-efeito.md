@@ -12,5 +12,5 @@
 
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------------------:|
-|03/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
+|03/08/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella, Paulo Gonçalves |
 |05/08/2021| 0.2 | Atualização do documento | Pedro Vítor de Salles Cella |  
