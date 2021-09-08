@@ -58,4 +58,10 @@ nav:
     - Iniciativas Extras: 
       - Modelagem Banco de Dados: modelagemDB/modelagem_db.md
       - Personas: backlog/personas.md
+  - Módulo Padrões de Projeto: 
+      - Estudo Dirigido: padroes/estudoDirigido.md
+      - GRASP: padroes/grasp/grasp.md
+      - GoF Criacional: padroes/gofCriacional/gofCriacional.md
+      - GoF Estrutural: padroes/gofEstrutural/gofEstrutural.md
+      - GoF Comportamental: padroes/gofComportamental/gofComportamental.md
   - Manual GhPages: manual.md
