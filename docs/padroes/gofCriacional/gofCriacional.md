@@ -7,11 +7,13 @@
 ### Pontos Positivos
 
 - Garante que nenhuma outra classe cria novas instâncias, sem necessidade.
-- Auxilia no Desempenho
+- Auxilia no Desempenho.
+- Ganha um ponto de acesso global para aquela instancia.
 
 ### Pontos Negativos
 
 - Nenhuma outra classe pode instanciá-la, é necessário que sua própria classe a instancie
+- Pode mascarar um desing ruim, onde um componente sabe de muita coisa sobre o outro.
 
 ### É possível usar no projeto?
 
@@ -30,3 +32,7 @@
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------------------:|
 |11/09/2021| 0.1 | Criação do documento, adição do Padrão Singleton | Paulo Gonçalves Lima, Pedro Vítor de Salles Cella |
+
+## Referências
+
+- Site: <https://refactoring.guru/design-patterns/singleton>

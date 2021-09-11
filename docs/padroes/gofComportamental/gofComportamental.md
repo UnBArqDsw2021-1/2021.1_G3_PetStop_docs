@@ -62,7 +62,6 @@
 
 O Mediator é um padrão de projeto muito interessante, e que se assemelha bastante com o padrão [Facade](../gofEstrutural/gofEstrutural.md#Facade), porém a diferença entre ambos é que o Mediator não só delega as classes ele faz a mediação entre elas, ou seja, ele é o responsável por estabelecer a comunicação entre dois objetos.
 
-
 ### Pontos Positivos
 
 - Se pode extrais a comunicação entre diversos objetos e varios componentes em um so lugar.
@@ -89,6 +88,7 @@ Acredito que não, visto que as classes utilizadas são simples.
 |09/09/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
 |11/09/2021| 0.2 | Adição do Padrão Template Method | Paulo Gonçalves Lima |
 |11/09/2021| 0.3 | Adição do Padrão Mediator | Paulo Gonçalves Lima, Pedro Vítor de Salles Cella |
+
 ## Referências
 
 - Site: <https://pt.wikipedia.org/wiki/Strategy>
@@ -97,4 +97,5 @@ Acredito que não, visto que as classes utilizadas são simples.
 - Site: <https://refactoring.guru/design-patterns/template-method>
 - Video Aula 10c Milene serrano
 - Aula Milene: [Mediator](https://unbbr-my.sharepoint.com/personal/mileneserrano_unb_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmileneserrano%5Funb%5Fbr%2FDocuments%2FArqDSW%20%2D%20V%C3%ADdeosOriginais%2F10d%20%2D%20Video%2DAula%20%2D%20DSW%20%2D%20GoFs%20%2D%20Comportamentais%20%2D%20Demais%2Emp4&parent=%2Fpersonal%2Fmileneserrano%5Funb%5Fbr%2FDocuments%2FArqDSW%20%2D%20V%C3%ADdeosOriginais&originalPath=aHR0cHM6Ly91bmJici1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9taWxlbmVzZXJyYW5vX3VuYl9ici9FYVg0VWppb1BQQkFrWEFINzJtdDlCWUJOZjZrbDhyS29HaFNXV2lTakdJSlRRP3J0aW1lPU1QclZHVk4xMlVn)
-- Site: https://pt.wikipedia.org/wiki/Mediator
+- Site: <https://pt.wikipedia.org/wiki/Mediator>
+- Site: <https://refactoring.guru/design-patterns/mediator>
