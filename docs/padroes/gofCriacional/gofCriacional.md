@@ -1,6 +1,6 @@
 # GoF Criacional
 
-<p>Os padrões GoF Criacionais atuam em dois principais problemas: 
+<p>Os padrões GoF Criacionais são utilizados quando existe uma hierarquia que é muito acessada e têm muitas criações de instâncias sendo demandadas para ela, o que geralmente é complicado de ser administrado. Também atuam em dois principais problemas: 
 
 - "Definir qual classe concreta deve ser utilizada para criar o objeto"
 - "Definir como os objetos devem ser criados e como eles se
@@ -35,13 +35,27 @@ relacionam com outros objetos do sistema"</p>
 
 ## Factory Method
 
+O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento do software. Para isso são retiradas as dependências explícitas através do encapsulamento da escolha da classe concreta a ser utilizada na criação de objetos de um determinado tipo. Assim a instanciação é delegada às subclasses. Este padrão deve ser usado, principalmente, quando uma classe não pode antecipar ou conhecer a classe dos objetos que deve criar e quando uma classe quer suas subclasses para especificar os objetos que cria.
 ### Pontos Positivos
 
+- O principal ponto positivo é o baixo acoplamento. Se a implementação de um Product for alterado, não afeta sua Creator, pois a Creator não está fortemente ligada a alguma ConcreteProduct.
+- Há também uma melhora na coesão, já que cada classe tem funções específicas e bem definidas.
+- Maior flexibilidade para as classes.
+- Para acrescentar novos tipos concretos basta criar uma nova classe ConcreteCreator, sem alterar as demais, apenas
+criando instâncias para esse ConcreteProductX() no método createProduct() de ConcreteCreator. Portanto, ganhamos em  reutilização, manutenibilidade, coesão, dentre outros aspectos relevantes para a programação de sistemas Orientados a Objetos.
 ### Pontos Negativos
 
+- Especializar uma classe apenas para instanciar um objeto de uma subclasse de outra superclasse acaba sendo muito trabalho desnecessário, por isso deve-se analizar com cautela se o padrão é adequado para o projeto em questão.
 ### É possível usar no projeto?
 
+- Sim, como mostra no exemplo, no projeto a classe Eventos pode ser de alguns tipos diferentes e cada um tem suas peculiaridades. Para baixar o nível de acoplamento e repetição de código, pode ser utilizado o Factory Method.
 
+### Factory Method Base
+
+![Factory Method Base](./images/factory-method-base.png)
+### Factory Method Projeto
+
+![Factory Method Projeto](./images/factory-method-projeto.png)
 ## Versionamentos
 
 |Data|Versão|Descrição|Autor|
@@ -49,9 +63,11 @@ relacionam com outros objetos do sistema"</p>
 |11/09/2021| 0.1 | Criação do documento, adição do Padrão Singleton | Paulo Gonçalves Lima, Pedro Vítor de Salles Cella |
 |12/09/2021| 0.2 | Revisão do Padrão Singleton | Gabriela Pivetta |
 |12/09/2021| 0.3 | Adição da descrição geral dos GoFs Criacionais | Gabriela Pivetta |
-
+|12/09/2021| 0.4 | Adição do Padrão Factory Method | Gabriela Pivetta |
 
 ## Referências
 
-- Site: <https://refactoring.guru/design-patterns/singleton>
-- Vídeo aulas da professora Milene (acesso restrito para os alunos da disciplina). Último acesso em 12/09/2021.
+- SERRANO, Milene. Vídeo aulas sobre Padrões de Projeto. Último acesso em 12/09/2021.
+- [Refactoring Guru](https://refactoring.guru/design-patterns/singleton)
+- [Grupo STOCK](https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/EstudoDirigido?id=estudos)
+- [Dev Media](https://www.devmedia.com.br/patterns-factory-method/18954)
