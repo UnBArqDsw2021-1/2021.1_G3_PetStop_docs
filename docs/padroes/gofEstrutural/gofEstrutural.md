@@ -53,13 +53,34 @@ Não será necessario a utilização desse padrão, pois como estamos construind
 
 ## Facede
 
+<p>Esse padrão de projetoserve para como uma interface/mascara para uma estrutra de codigo mais complexa.</p>
+
+### Pontos Positivos
+
+- Consegue isolar o codigo da complexidade dos subsistemas.
+- As dependencias dos substemas serão possivelmentes minimizadas.
+- Subsistemas são mais faceis de ser usados.
+
+### Pontos Negativos
+
+- Pode se tornar um [objeto deus](https://en.wikipedia.org/wiki/God_object).
+
+### É possível utilizar esse padrão para o projeto?
+
+É possivel a utilização desse padrão, mas não necessaria pois não teremos subsistemas complexos o suficiente para que uma fachada seja necessaria.
+
+### Facede Base
+
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Facade%20Base#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1lVHbGQwmJsBhUOxOhxa-FYy9FbISRQWb%26export%3Ddownload"></iframe>
+
 ## Versionamentos
 
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------------------:|
 |08/09/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
 |08/09/2021| 0.2 | Adição do Decorator  | Pedro Vítor de Salles Cella |
-|11/09/2021| 0.2 | Adição do Adapter  | Paulo Gonçalves Lima |
+|11/09/2021| 0.3 | Adição do Adapter  | Paulo Gonçalves Lima |
+|14/09/2021| 0.4 | Adição do Facade  | Paulo Gonçalves Lima |
 
 ## Referências
 
@@ -69,3 +90,5 @@ Não será necessario a utilização desse padrão, pois como estamos construind
 - Site: <http://www.macoratti.net/13/02/net_decor1.htm>
 - Site: <https://en.wikipedia.org/wiki/Adapter_pattern>
 - Site: <https://refactoring.guru/design-patterns/adapter>
+- Site: <https://en.wikipedia.org/wiki/Facade_pattern>
+- Site: <https://refactoring.guru/design-patterns/facade>
