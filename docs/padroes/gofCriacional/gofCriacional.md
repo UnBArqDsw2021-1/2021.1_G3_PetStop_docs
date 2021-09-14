@@ -1,6 +1,6 @@
 # GoF Criacional
 
-<p>Os padrões GoF Criacionais são utilizados quando existe uma hierarquia que é muito acessada e têm muitas criações de instâncias sendo demandadas para ela, o que geralmente é complicado de ser administrado. Também atuam em dois principais problemas: 
+<p>Os padrões GoF Criacionais são utilizados quando existe uma hierarquia que é muito acessada e têm muitas criações de instâncias sendo demandadas para ela, o que geralmente é complicado de ser administrado. Também atuam em dois principais problemas:
 
 - "Definir qual classe concreta deve ser utilizada para criar o objeto"
 - "Definir como os objetos devem ser criados e como eles se
@@ -36,6 +36,7 @@ relacionam com outros objetos do sistema"</p>
 ## Factory Method
 
 O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento do software. Para isso são retiradas as dependências explícitas através do encapsulamento da escolha da classe concreta a ser utilizada na criação de objetos de um determinado tipo. Assim a instanciação é delegada às subclasses. Este padrão deve ser usado, principalmente, quando uma classe não pode antecipar ou conhecer a classe dos objetos que deve criar e quando uma classe quer suas subclasses para especificar os objetos que cria.
+
 ### Pontos Positivos
 
 - O principal ponto positivo é o baixo acoplamento. Se a implementação de um Product for alterado, não afeta sua Creator, pois a Creator não está fortemente ligada a alguma ConcreteProduct.
@@ -43,9 +44,11 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 - Maior flexibilidade para as classes.
 - Para acrescentar novos tipos concretos basta criar uma nova classe ConcreteCreator, sem alterar as demais, apenas
 criando instâncias para esse ConcreteProductX() no método createProduct() de ConcreteCreator. Portanto, ganhamos em  reutilização, manutenibilidade, coesão, dentre outros aspectos relevantes para a programação de sistemas Orientados a Objetos.
+
 ### Pontos Negativos
 
 - Especializar uma classe apenas para instanciar um objeto de uma subclasse de outra superclasse acaba sendo muito trabalho desnecessário, por isso deve-se analizar com cautela se o padrão é adequado para o projeto em questão.
+
 ### É possível usar no projeto?
 
 - Sim, como mostra no exemplo, no projeto a classe Eventos pode ser de alguns tipos diferentes e cada um tem suas peculiaridades. Para baixar o nível de acoplamento e repetição de código, pode ser utilizado o Factory Method.
@@ -53,9 +56,38 @@ criando instâncias para esse ConcreteProductX() no método createProduct() de C
 ### Factory Method Base
 
 ![Factory Method Base](./images/factory-method-base.png)
+
 ### Factory Method Projeto
 
 ![Factory Method Projeto](./images/factory-method-projeto.png)
+
+## Abstract Factory
+
+<p>Esse padão de projeto sugere que se deve explicitamente criar uma interface para cada variação de um produto.</p>
+<p>Tem como o objetivo isolar a criação dos objetos do seu uso e criar famílias de objetos relacionados sem depender das classes concretas.</p>
+
+### Pontos Positivos
+
+- Evita a acoplação entre os produtos concretos e o codigo do cliente.
+- Pode incluir novas variantes sem quebrar o codigo existente.
+- Extrai a criação do produto para um lugar, fazendo o codigo ser mais facil de ter suporte.
+
+### Pontos Negativos
+
+- O codigo pode se tornar mais complicado que deveria, ja que novas interfaces e classes são introduzidas junto com o padrão.
+
+### É possível usar no projeto?
+
+É possivel a utilização, pois no caso de criação de eventos temos diversos tipos de eventos que precisam ser criados.
+
+### Abstract Factory Base
+
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Abstract%20Factory%20Base#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1Bdmn4WVo7Au1DQzjRgwFcXYlUgNlxj7t%26export%3Ddownload"></iframe>
+
+### Abstract Factory Projeto
+
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Abstract%20Fatory%20Projeto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1zaLFZURbo-HfaTTqQ4NUhU5Bkt3sPnME%26export%3Ddownload"></iframe>
+
 ## Versionamentos
 
 |Data|Versão|Descrição|Autor|
@@ -64,6 +96,7 @@ criando instâncias para esse ConcreteProductX() no método createProduct() de C
 |12/09/2021| 0.2 | Revisão do Padrão Singleton | Gabriela Pivetta |
 |12/09/2021| 0.3 | Adição da descrição geral dos GoFs Criacionais | Gabriela Pivetta |
 |12/09/2021| 0.4 | Adição do Padrão Factory Method | Gabriela Pivetta |
+|14/09/2021| 0.5 | Adição do Padrão Abstract Factory | Paulo Gonçalves Lima |
 
 ## Referências
 
@@ -71,3 +104,4 @@ criando instâncias para esse ConcreteProductX() no método createProduct() de C
 - [Refactoring Guru](https://refactoring.guru/design-patterns/singleton)
 - [Grupo STOCK](https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/EstudoDirigido?id=estudos)
 - [Dev Media](https://www.devmedia.com.br/patterns-factory-method/18954)
+- [Wikpedia Factory Pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
