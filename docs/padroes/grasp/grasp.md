@@ -16,15 +16,16 @@ General Responsibilty Assignment Software Patterns (ou principles), também conh
 [1. Padrões GRASP e o conceito de responsabilidade](#1-Padrões-GRASP-e-o-conceito-de-responsabilidade)
 
 [2. GRASPS estudados](#2-grasps-estudados)
+
 * [2.1 Criador ou Creator](#21-criador-ou-creator)
 * [2.2 Especialista](#22-especialista)
-* [2.3 Alta Coesão](#23-alta-coesão)
+* [2.3 Alta Coesão](#23-alta-coesao)
 * [2.4 Baixo Acoplamento](#24-baixo-acoplamento)
 * [2.5 Controladora ou Controller](#25-controladora-ou-controller)
 * [2.6 Polimorfismo](#26-polimorfismo)
-* [2.7 Invenção Pura ou Fabricação Pura](#27-invenção-pura-ou-fabricação-pura)
-* [2.8 Indireção](#28-indireção)
-* [2.9 Variações Protegidas](#29-variações-protegidas)
+* [2.7 Invenção Pura ou Fabricação Pura](#27-invencao-pura-ou-fabricacao-pura)
+* [2.8 Indireção](#28-indirecao)
+* [2.9 Variações Protegidas](#29-variacoes-protegidas)
 
 ## **1. Padrões GRASP e o conceito de responsabilidade**
 
@@ -67,8 +68,10 @@ Se mais de uma opção for aplicada, prefira uma classe B que agrega ou contém 
 - Favorece o acomplamento fraco
 
 #### Rastreamento com o projeto
-- É possível adaptar a forma de organização do nosso projeto a esse padrão? Sim
-- Quais documentos necessitam de refatoração para a implementação desse padrão? Diagrama de classes, de sequência e comunicação. 
+- É possível adaptar a forma de organização do nosso projeto a esse padrão? 
+    - Sim
+- Quais documentos necessitam de refatoração para a implementação desse padrão? 
+    - Diagrama de classes. 
  
 ### 2.2 Especialista
 
@@ -85,7 +88,7 @@ A aplicação do padrão especialista rende os seguintes benefícios para o proj
 - É possível adaptar a forma de organização do nosso projeto a esse padrão?
     - Sim, os conceitos do padrão especialista já foram pensados no escopo do nosso projeto.
 - Quais documentos necessitam de refatoração para a implementação desse padrão?
-    - Nenhum
+    - Diagrama de Classes
 
 ### 2.3 Alta Coesão
 
@@ -196,7 +199,7 @@ Este padrão irá atribuir a responsabilidade a um objeto intermediário para me
 - É possível adaptar a forma de organização do nosso projeto a esse padrão? 
   - Sim
 - Quais documentos necessitam de refatoração para a implementação desse padrão? 
-  - Diagrama de classes, de sequência e comunicação, e possivelmente os diagramas documentais do Banco de Dados. 
+  - Diagrama de classes, de sequência, comunicação e talvez atividades. 
 
 ### 2.9 Variações Protegidas
 
