@@ -35,7 +35,7 @@ relacionam com outros objetos do sistema"</p>
 
 ## Factory Method
 
-O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento do software. Para isso são retiradas as dependências explícitas através do encapsulamento da escolha da classe concreta a ser utilizada na criação de objetos de um determinado tipo. Assim a instanciação é delegada às subclasses. Este padrão deve ser usado, principalmente, quando uma classe não pode antecipar ou conhecer a classe dos objetos que deve criar e quando uma classe quer suas subclasses para especificar os objetos que cria.
+O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento do software, assim como no padrão de [Mediator](../gofComportamental/gofComportamental.md#Mediator). Para isso são retiradas as dependências explícitas através do encapsulamento da escolha da classe concreta a ser utilizada na criação de objetos de um determinado tipo. Assim a instanciação é delegada às subclasses. Este padrão deve ser usado, principalmente, quando uma classe não pode antecipar ou conhecer a classe dos objetos que deve criar e quando uma classe quer suas subclasses para especificar os objetos que cria.
 
 ### Pontos Positivos
 
@@ -97,6 +97,7 @@ criando instâncias para esse ConcreteProductX() no método createProduct() de C
 |12/09/2021| 0.3 | Adição da descrição geral dos GoFs Criacionais | Gabriela Pivetta |
 |12/09/2021| 0.4 | Adição do Padrão Factory Method | Gabriela Pivetta |
 |14/09/2021| 0.5 | Adição do Padrão Abstract Factory | Paulo Gonçalves Lima |
+|16/09/2021| 0.6 | Revisão do Padrão Factory Method | Paulo Gonçalves Lima |
 
 ## Referências
 
@@ -105,3 +106,4 @@ criando instâncias para esse ConcreteProductX() no método createProduct() de C
 - [Grupo STOCK](https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/EstudoDirigido?id=estudos)
 - [Dev Media](https://www.devmedia.com.br/patterns-factory-method/18954)
 - [Wikpedia Factory Pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
+- [Refactoring Guru Factory Method](https://refactoring.guru/design-patterns/factory-method)
