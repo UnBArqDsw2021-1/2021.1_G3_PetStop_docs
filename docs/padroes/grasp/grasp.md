@@ -17,15 +17,15 @@ General Responsibilty Assignment Software Patterns (ou principles), também conh
 
 [2. GRASPS estudados](#2-grasps-estudados)
 
-* [2.1 Criador ou Creator](#21-criador-ou-creator)
-* [2.2 Especialista](#22-especialista)
-* [2.3 Alta Coesão](#23-alta-coesao)
-* [2.4 Baixo Acoplamento](#24-baixo-acoplamento)
-* [2.5 Controladora ou Controller](#25-controladora-ou-controller)
-* [2.6 Polimorfismo](#26-polimorfismo)
-* [2.7 Invenção Pura ou Fabricação Pura](#27-invencao-pura-ou-fabricacao-pura)
-* [2.8 Indireção](#28-indirecao)
-* [2.9 Variações Protegidas](#29-variacoes-protegidas)
+- [2.1 Criador ou Creator](#21-criador-ou-creator)
+- [2.2 Especialista](#22-especialista)
+- [2.3 Alta Coesão](#23-alta-coesão)
+- [2.4 Baixo Acoplamento](#24-baixo-acoplamento)
+- [2.5 Controladora ou Controller](#25-controladora-ou-controller)
+- [2.6 Polimorfismo](#26-polimorfismo)
+- [2.7 Invenção Pura ou Fabricação Pura](#27-invenção-pura-ou-fabricação-pura)
+- [2.8 Indireção](#28-indireção)
+- [2.9 Variações Protegidas](#29-variações-protegidas)
 
 ## **1. Padrões GRASP e o conceito de responsabilidade**
 
@@ -50,9 +50,9 @@ Responsabilidades do tipo <b>Saber</b> de um objeto inclui:
 
 ## **2. GRASPS estudados**
 ### 2.1 Criador ou Creator
-Esse modelo é estudado após o questionamento sobre quais classes possuem a atribuição de criar intâncias de outros elementos. Seu objetivo é definir o objeto que que precise ser conectado ao objeto criado em algum evento. 
+Esse modelo é estudado após o questionamento sobre quais classes possuem a atribuição de criar instâncias de outros elementos. Seu objetivo é definir o objeto que que precise ser conectado ao objeto criado em algum evento. 
 
-Atribua à classe B a responsabilidade de criar uma nova intância da classe A se um ou mais dos itens seguintes for verdade:
+Atribua à classe B a responsabilidade de criar uma nova instância da classe A se um ou mais dos itens seguintes for verdade:
 
 - B agrega objetos de A.
 - B "contém" objetos de A.
@@ -76,15 +76,16 @@ Se mais de uma opção for aplicada, prefira uma classe B que agrega ou contém 
 ### 2.2 Especialista
 
 O padrão especialista tem como preocupação a distribuição coesa de responsabilidades entre as classes, o que tende 
-a um projeto ser mais fácil de entender, manter e estender, além de aumentar as oportunidades de reutilização.
+a fazer um projeto ser mais fácil de entender, manter e estender, além de aumentar as oportunidades de reutilização.
 
 Com isso é recomendavel a implementação de métodos em classes que detenham as informações necessárias para a execução dos mesmos.
 
-A aplicação do padrão especialista rende os seguintes benefícios para o projeto:
+#### Benefícios
 - Encapsulamento da informação
 - Baixo acoplamento
 - Alta coesão
 
+#### Rastreamento com o projeto
 - É possível adaptar a forma de organização do nosso projeto a esse padrão?
     - Sim, os conceitos do padrão especialista já foram pensados no escopo do nosso projeto.
 - Quais documentos necessitam de refatoração para a implementação desse padrão?
@@ -92,7 +93,7 @@ A aplicação do padrão especialista rende os seguintes benefícios para o proj
 
 ### 2.3 Alta Coesão
 
-A alta coesão ou High Cohesion é um padrão que se refere a criação de classes com assuntos bem específicos e definidos. Um elemento com responsabilidades amplamente relacionadas, e que não realiza uma tremenda quantidade de trabalho tem alta coesão. Esses elementos incluem classes, subsistemas e afins. Uma classe com baixa coesão trata de diversos assuntos o que dificulta muito a sua manutenibilidade. Tais classes devem ser evitadas e geram problemas como:
+A alta coesão ou High Cohesion é um padrão que se refere a criação de classes com assuntos bem específicos e definidos. Um elemento com responsabilidades amplamente relacionadas e que não realiza uma tremenda quantidade de trabalho tem alta coesão. Esses elementos incluem classes, subsistemas e afins. Uma classe com baixa coesão trata de diversos assuntos o que dificulta muito a sua manutenibilidade. Tais classes devem ser evitadas e geram problemas como:
 - Difícil compeensão.
 
 - Difícil de se reutilizar.
@@ -100,7 +101,7 @@ A alta coesão ou High Cohesion é um padrão que se refere a criação de class
 - Instáveis e constantemente afetados por mudanças.
 Vale lembrar que a Alta Coesão também suporta Baixo Acoplamento.
 
-### Benefícios
+#### Benefícios
 - Fácil compreensão do design.
 - Manutenção e melhorias se tornam mais simples.
 - Apoio ao baixo acoplamento.
@@ -108,22 +109,20 @@ Vale lembrar que a Alta Coesão também suporta Baixo Acoplamento.
 
 #### Rastreamento com o projeto
 - É possível adaptar a forma de organização do nosso projeto a esse padrão?
-    - Sim. Conforme estamos desenvolvendo o projeto estamos buscando a criação de classes coesivas.
+    - Sim. Conforme estamos desenvolvendo o projeto estamos buscando a criação de classes coesas.
 - Quais documentos necessitam de refatoração para a implementação desse padrão?
-    - Conforme ocorre o desenvolvimento do projeto e caso surgem novas classes, acredita-se que haverá necessidade de alterações nos de classe, comunicação e sequência.
+    - Conforme ocorre o desenvolvimento do projeto e caso surjam novas classes, acredita-se que haverá necessidade de alterações nos documentos de classe, comunicação e sequência.
 
 ### 2.4 Baixo Acoplamento
 
 Acoplamento é a medida de quão um elemento esta conectado com outro, isto é, um elemento com baixo acoplamento é um elemento que não depende de muitos outros elementos. Essa medida de "muitos outros" é dependente do contexto a ser analizado.
 
-O alto acoplamento causa os seguintes problemas:
-
-- Mudanças em uma classe causam mudanças em diversas outras;
-- Difícil entendimento de uma classe isolada;
-- Difícil reuso, pois será necessario a presença das dependencias.
-
 Um extremo caso de baixo acoplamento acontece quando não há acoplamento entre as classes. Porém um baixo acoplamento nesse nivél não é desejável, porque representa um projeto incoerente, inchado e com objetos complexos que fazem todo o trabalho. Então um moderado grau de acoplamento é normal e necessário para um sistema que tenha uma boa colaboração entre seus objetos.
 
+#### Benefícios
+- Mudanças em uma classe não causam mudanças em diversas outras;
+- Fácil entendimento de uma classe isolada;
+- Fácil reuso, pois não será necessária a presença das dependências.
 #### Rastreamento com o projeto
 - É possível adaptar a forma de organização do nosso projeto a esse padrão?
     - Sim, já foi aplicado os conceitos de baixo acoplamento no nosso projeto.
@@ -139,9 +138,9 @@ Este padrão define a quem cabe a responsabilidade de tratamento de um evento em
 
 Corolário: Note que classes "window", "applet", "widget", "view" e "document" não devem cumprir tarefas associadas a eventos do sistema, elas tipicamente recebem esses eventos que são em seguida delegados a uma controladora.
 
-### Benefícios
+#### Benefícios
 
-- Ajuda a verifica a sequencia de operações do sistema através dos estados do controlador.
+- Ajuda a verificar a sequência de operações do sistema através dos estados do controlador.
 - Amplia a possibilidade de reutilizar classes.
 - Aumenta a possibilidade de interfaces "plugáveis".
 
@@ -150,45 +149,44 @@ Corolário: Note que classes "window", "applet", "widget", "view" e "document" n
 - É possível adaptar a forma de organização do nosso projeto a esse padrão? 
     - Sim, com o modelo MVC, haverá a presença de classes controladoras para diversos eventos do sistema.
 - Quais documentos necessitam de refatoração para a implementação desse padrão? 
-    - Possívelmente alterações no diagrama de sequência, e de componentes para adequar corretamente esse padrão.
+    - Possivelmente alterações no diagrama de sequência, e de componentes para adequar corretamente a esse padrão.
 
 ### 2.6 Polimorfismo
-Este padrão define quem é o responsável quando o comportamento varia de acordo com o tipo (classe). Com isso, atribua a responsabilidade pelo comportamento - usando operações polimórficas - para as classes para quais o comportamento varia. Isso resulta em seções de código menos acopladas e mais coesas.
+Sobrescrita de métodos de classes abstratas; Este padrão define quem é o responsável quando o comportamento varia de acordo com o tipo (classe). Com isso, é atribuída a responsabilidade pelo comportamento - usando operações polimórficas - para as classes cujo comportamento varia. Isso resulta em seções de código menos acopladas e mais coesas.
 
 Corolário: Não teste o tipo de um objeto, e nem use a lógica condicional (if ou switch) para excutar várias alternativas com base no tipo.
 
 #### Benefícios 
 - Acoplamento de código
-- Facíl manutenção 
+- Fácil manutenção 
 - Reuso de código
 
 #### Rastreamento com o projeto
 - É possível adaptar a forma de organização do nosso projeto a esse padrão? 
-  - Sim, já temos métodos que usam esse padrão de relacionamento entre objetos.
+    - Sim, já temos métodos que usam esse padrão de relacionamento entre objetos.
 - Quais documentos necessitam de refatoração para a implementação desse padrão? 
-  - Diagrama de classes
+    - Diagrama de classes
 
 ### 2.7 Invenção Pura ou Fabricação Pura
 
-Uma classe com métodos que, apesar do GRASP Especialista recomendar a sua implementação na propria classe, possa vir a ter baixa coesão por possuir métodos que tratam questões técnicas não pertencentes do domínio do objeto no mundo real. Com isso há a criação de uma classe artificial ou conveniente, que não representa um conceito de domínio do problema para ser distribuído esses métodos tipicos do mundo de software.
-
-A invenção dessa classe artificil auxilia na:
-- alta coesão;
-- baixo acoplamento;
-- reuso de metódos.
-
+Uma classe com métodos que, apesar do GRASP Especialista recomendar a sua implementação na propria classe, podem vir a ter baixa coesão por possuir métodos que tratam questões técnicas não pertencentes do domínio do objeto no mundo real. Com isso há a criação de uma classe artificial ou conveniente, que não representa um conceito de domínio do problema, mas para melhor distribuir esses métodos.
 Se usada demasiadamente, a Fabricação Pura pode levar a vários objetos que dependem de informações de outros objetos para o seu funcinameto, afetando assim o acoplamento.
+
+#### Benefícios
+- Alta coesão;
+- Baixo acoplamento;
+- Reuso de metódos.
 
 #### Rastreamento com o projeto
 - É possível adaptar a forma de organização do nosso projeto a esse padrão?
-    - Sim. Como vamos utilizar o conceito de back e front end no nosso projeto, uma das aplicaões da Invenção Pura pode ser a criação de uma classe no front-end para se comunicar com o back-end, e também a criação de classes focadas na persistência de dados.
+    - Sim. Algumas das classes que criamos demonstram potencial para classes do tipo Invenção Pura, como a de Eventos.
 - Quais documentos necessitam de refatoração para a implementação desse padrão?
     - Diagrama de classes
 
 ### 2.8 Indireção
-Este padrão irá atribuir a responsabilidade a um objeto intermediário para mediar entre outros componentes ou serviços que não sejam diretamente acoplados. O intermediário cria uma indireção entre os outros componentes, com isso, os componentes que estão entre o intermediário não dependem mais um do outro, mas sim da indireção. 
+Este padrão irá atribuir a responsabilidade a um objeto intermediário para fazer a comunicação entre outros componentes ou serviços que não sejam diretamente acoplados. O intermediário cria uma indireção entre os outros componentes, com isso, os componentes que estão entre o intermediário não dependem mais um do outro, mas sim da indireção. 
 
-<i>A maior parte dos problemas em Ciência da Computação pode ser resolvida por um nível adicional de indireção</i>. É um velho provérbio com especial relevância para sistemas orientados a objetos. Larman, p 427.
+<i>"A maior parte dos problemas em Ciência da Computação pode ser resolvida por um nível adicional de indireção."</i> Larman, p 427.
 
 #### Benefícios 
 - Uma classe fracamente acoplada não é afetada (ou pouco afetada por mudanças em outras classes).
@@ -197,34 +195,36 @@ Este padrão irá atribuir a responsabilidade a um objeto intermediário para me
 
 #### Rastreamento com o projeto
 - É possível adaptar a forma de organização do nosso projeto a esse padrão? 
-  - Sim
+    - Sim
 - Quais documentos necessitam de refatoração para a implementação desse padrão? 
-  - Diagrama de classes, de sequência, comunicação e talvez atividades. 
+    - Diagrama de classes, de sequência, comunicação e talvez de atividades. 
 
 ### 2.9 Variações Protegidas
 
 Padrão responsável por auxiliar na identificação de variações previsíveis ou instabilidade, além de atribuir responsabilidade para a criação de interfaces mais estáveis. Pode-se dizer que ele é uma forma de indireção, porém focada no aspecto de proteção, garantido que por exemplo um código da parte B esteja <b>protegida</b> contra mudanças do código da parte A.
 
 Sua proposta de solução também envolve:
+
 - Encapsulamento, interfaces, polimorfismo, indireção e uso de outros padrões;
 - Não haver comunicação entre objetos muitos distantes.
 
-### Benefícios
+#### Benefícios
 - Garante a produção de interfaces mais estáveis (Que sofrem pouca ou quase nenhuma mudança caso ocorra alteração no código).
 - Fácil compreensão.
-- Reuso do cádigo.
+- Reuso do código.
 
-### Rastreamento com o projeto
+#### Rastreamento com o projeto
 - É possível adaptar a forma de organização do nosso projeto a esse padrão?
     - Sim
 - Quais documentos necessitam de refatoração para a implementação desse padrão? 
-    - Semelhante ao de Indireção acreditamos que ocorrá alteração nos diagramas de classe, sequência, comunicação e diagramas referentes ao banco de dados. 
+    - Semelhante ao de Indireção, acreditamos que ocorrá alteração nos diagramas de classe, sequência, comunicação e diagramas referentes ao banco de dados. 
 ## Histórico de Versão
 
 |Data|Versão|Descrição|Autor(es)|
 |:--------:|:---:|:-------------------: |:-----------------------:|
 |11/09/2021| 0.1 | Criação do documento e elaboração dos tópicos 1, 2, 2.3 e 2.4 | Antonio Ruan, Vinicius Vieira, Victor Samuel |
 |12/09/2021| 0.2 | Elaboração dos demais subtópicos do tópico 2 | Antonio Ruan, Vinicius Vieira, Victor Samuel |
+|15/09/2021| 0.3 | Revisão textual, atualização de conteúdo e correções de formatação do documento | Gabriela Pivetta, Arthur Sena |
 
 ## Referências
 
