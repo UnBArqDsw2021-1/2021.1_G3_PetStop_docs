@@ -104,6 +104,8 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 
 É possivel a utilização, pois no caso de criação de eventos temos diversos tipos de eventos que precisam ser criados.
 
+#### A nível de modelo
+
 ### Abstract Factory Base
 
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Abstract%20Factory%20Base#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1Bdmn4WVo7Au1DQzjRgwFcXYlUgNlxj7t%26export%3Ddownload"></iframe>
@@ -112,6 +114,80 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Abstract%20Fatory%20Projeto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1zaLFZURbo-HfaTTqQ4NUhU5Bkt3sPnME%26export%3Ddownload"></iframe>
 
+#### A nível de código
+
+```js
+import {Animal} from ../Animal
+
+export interface EventoFactory{
+  createCause(animalCause: string, description: string): Animal;
+  verificarEvento(obj: Evento): Evento;
+}
+```
+
+~~~javascript
+import {Animal} from ../Animal
+
+export class CreateEventoAdocaoFactory{
+  createCause(animalCause: string, description: string): Animal{
+    create new Animal(animalCause);
+  };
+  verificarEvento(obj: Evento): Evento{
+    // implement function that verify if event already exits
+  };
+}
+~~~
+
+~~~javascript
+import {Animal} from ../Animal
+
+export class CreateEventoBanhoFactory{
+  createCause(animalCause: string, description: string): Animal{
+    create new Animal(animalCause);
+  };
+  verificarEvento(obj: Evento): Evento{
+    // implement function that verify if event already exits
+  };
+}
+~~~
+
+~~~javascript
+import {Animal} from ../Animal
+
+export class CreateEventoTosaFactory{
+  createCause(animalCause: string, description: string): Animal{
+    create new Animal(animalCause);
+  };
+  verificarEvento(obj: Evento): Evento{
+    // implement function that verify if event already exits
+  };
+}
+~~~
+
+~~~javascript
+import {Animal} from ../Animal
+
+export class CreateEventoDoacaoFactory{
+  createCause(animalCause: string, description: string, valor: double): Animal{
+    create new Animal(animalCause);
+  };
+  verificarEvento(obj: Evento): Evento{
+    // implement function that verify if event already exits
+  };
+}
+~~~
+
+~~~javascript
+import {CreateEventoDoacaoFactory} from ../EventoDoacao;
+import {CreateEventoAdocaoFactory} from ../EventoAdocao;
+
+const eventoSilvestre = new CreateEventoDoacaoFactory();
+const eventoDomestico = new CreateEventoAdocaoFactory();
+
+const evento1 = eventoSilveste.CreateEventoDoacaoFactory("mico leao", "evento para arrecadar...", 1000.00);
+const evento2 = eventoDomestico.CreateEventoAdocaoFactory("cachorro", "evento para doacoes...");
+
+~~~
 ## Prototype
 
 <p>Esse padrão de projeto prossibilita a criação de novos objetos a partir da cópia de objetos existentes.</p>
@@ -132,11 +208,11 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 
 Sim, é possivel utilizarmos o conceito de protótipo na criação de usuários, sendo o usuário padrão um protótipo e o voluntário utilizar-se do protótipo usuário para a sua criação.
 
-### Abstract Factory Base
+### Prototype Base
 
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Prototype%20Base.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1WMCZ95SNYxnvo93w8W4xWJi_2BvJdZ29%26export%3Ddownload"></iframe>
 
-### Abstract Factory Projeto
+### Prototype Projeto
 
 #### A nível de modelo
 
@@ -217,6 +293,7 @@ Client();
 | 16/09/2021 |  0.7   |   Adição do padrão singleton a nível de código   |                         Arthur Sena                          |
 | 16/09/2021 |  0.8   |   Adição do padrão Factory Method a nível de código   |                         Gabriela Pivetta                         |
 | 17/09/2021 |  0.9   |   Adição do padrão Prototype   |                         Antonio Ruan                        |
+| 17/09/2021 |  0.10   |   Atualização iframe abstract factory e adição nivel de código   |                         Vinícius Vieira                        |
 
 ## Referências
 
