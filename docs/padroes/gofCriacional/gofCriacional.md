@@ -67,7 +67,23 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 
 ### Factory Method Projeto
 
+#### A nível de modelagem
+
 ![Factory Method Projeto](./images/factory-method-projeto.png)
+
+#### A nível de código
+
+<span>CREATORS</span>
+<div styles="width: 100%; display: flex; align-items: center">
+  <img style="width: 45%" src="./images/creator-fm.png">
+  <img style="width: 41%" src="./images/concretecreator-fm.png">
+</div>
+
+<span>PRODUCTS</span>
+<div styles="width: 100%; display: flex;">
+  <img style="width: 45%" src="./images/product-fm.png">
+  <img style="width: 52%;" src="./images/concreteproduct-fm.png">
+</div>
 
 ## Abstract Factory
 
@@ -108,6 +124,7 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 | 16/09/2021 |  0.6   |         Revisão do Padrão Factory Method         |                     Paulo Gonçalves Lima                     |
 | 16/09/2021 | 0.6.1  |         Revisão textual e de formatação          | Arthur Sena, Vinícius Vieira, Antonio Ruan, Gabriela Pivetta |
 | 16/09/2021 |  0.7   |   Adição do padrão singleton a nível de código   |                         Arthur Sena                          |
+| 16/09/2021 |  0.8   |   Adição do padrão Factory Method a nível de código   |                         Gabriela Pivetta                         |
 
 ## Referências
 
@@ -117,3 +134,4 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 - [Dev Media](https://www.devmedia.com.br/patterns-factory-method/18954)
 - [Wikpedia Factory Pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
 - [Refactoring Guru Factory Method](https://refactoring.guru/design-patterns/factory-method)
+- [Playlist Sobre Padrões de Projeto](https://youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H) 
