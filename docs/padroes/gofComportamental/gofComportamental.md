@@ -1,25 +1,29 @@
 # GoF Comportamental
 
-<p>O padrão GoF Comportamental resumidamente atua sobre qual o comportamento das entidades, ou seja, quais são as responsabilidades que são atribuídas a cada uma das entidades.</p>
+O padrão GoF Comportamental resumidamente atua sobre o comportamento das entidades, ou seja, quais são as responsabilidades atribuídas a cada uma das entidades.
 
 ## Strategy
 
-<p>Esse padrão de projeto de forma clara é o que delega as responsabilidades adquiridas pelas entidades, atribuindo, portanto, o comportamento. Assim a comunicação entre os objetos é aprimorada, pois há a distribuição das responsabilidades. O objetivo é representar uma operação a ser realizada sobre os elementos de uma estrutura de objetos.</p>
-<p>Esse padrão é facilmente implementado utilizando as classes abstratas e/ou interfaces da programação orientada a objetos. O contexto relaciona-se com a parte mais abstrata, onde ainda não se sabe o como deve ser feito, apenas com quem. Dessa forma, cabe a camada mais concreta a implementação do método em si, fornecendo uma escalabilidade maior ao software, onde novas soluções para aquele contexto são facilmente acopladas ao sistema.</p>
-<p>O Strategy geralmente descreve diferentes maneiras de fazer a mesma coisa, permitindo que você troque esses algoritmos dentro de uma única classe contexto. Ele trabalha a nível de objeto, permitindo que você troque os comportamentos durante a execução.</p>
+Esse padrão de projeto atribui o comportamento das entidades e garante que seus objetos sejam intercambiáveis. O objetivo é implementar diferentes maneiras de realizar operações e tornar simples a troca entre cada estratégia. Logo, tornando também mais fácil a criação e remoção de estratégias.
+
+Esse padrão é implementado utilizando classes abstratas e/ou interfaces da programação orientada a objetos. A interface relaciona-se com a parte mais abstrata sabendo-se apenas seu contexto, porém ainda não se sabe os detalhes específicos de implementação. Dessa forma, cabe à camada mais concreta, a implementação do método em si, fornecendo uma escalabilidade maior ao produto, permitindo novas soluções para aquele contexto serem facilmente adicionadas ao sistema.
+
+O Strategy geralmente descreve diferentes maneiras de fazer a mesma coisa, permitindo que você troque esses algoritmos dentro de uma única classe contexto. Ele trabalha a nível de objeto, permitindo que você troque os comportamentos durante a execução.
 
 ## Pontos Positivos
 
-- Melhoria da manutenção do código o qual é frequentemente usado durante o desenvolvimento de uma aplicação
+- Aumento da manutebilidade do produto
+- Redução do acoplamento das estratégias, podendo muda-las sem alterar a entidade de contexto
+
 
 ## Pontos Negativos
 
-- Necessidade de conjuntos de classe para serem usadas em execução
-- Vários níveis de abstração, pode se fazer necessário em determinado contexto, porém isso poderá impactar significativamente na performance da aplicação.
+- Necessidade de conjuntos de classe para uso em execução
+- Vários níveis de abstração podem se fazer necessários em determinados contextos, podendo impactar significativamente a performance da aplicação.
 
 ### É possível utilizá-lo no projeto?
 
-É possível sua utilização no projeto, visto que temos formas de doação, dessa forma com o uso do Strategy podemos definir diferentes responsabilidades para cada forma de doação.
+Visto que o projeto possui diferentes formas de doação, o uso do Strategy pode garantir uniformidade na implementação de cada doação, facilitando o uso de várias estratégias de doações diferentes.
 
 ### Strategy Base
 
@@ -88,6 +92,7 @@ Acredito que não, visto que as classes utilizadas são simples.
 |09/09/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
 |11/09/2021| 0.2 | Adição do Padrão Template Method | Paulo Gonçalves Lima |
 |11/09/2021| 0.3 | Adição do Padrão Mediator | Paulo Gonçalves Lima, Pedro Vítor de Salles Cella |
+|16/09/2021| 0.4 | Revisão, correções ortográficas e ajuste de conteúdo do padrão Strategy  | Júlio César Schneider, Sara Campos, Edvan Gomes |
 
 ## Referências
 
