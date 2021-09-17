@@ -206,7 +206,7 @@ const evento2 = eventoDomestico.CreateEventoAdocaoFactory("cachorro", "evento pa
 
 #### É possível usar no projeto?
 
-Sim, é possivel utilizarmos o conceito de protótipo na criação de usuários, sendo o usuário padrão um protótipo e o voluntário utilizar-se do protótipo usuário para a sua criação.
+Sim, é possivel utilizarmos o conceito de protótipo na criação de eventos, como eventos presencias e virtuais.
 
 ### Prototype Base
 
@@ -220,64 +220,71 @@ Sim, é possivel utilizarmos o conceito de protótipo na criação de usuários,
 
 #### A nível de código
 
-~~~javascript
-class Usuario{
-  constructor(nome, email, senha, descricao){
-    this.nome= nome;
-    this.email= email;
-    this.senha= senha;
-    this.descricao= descricao;
-    this.pets= [];
-  }
-
-  addPet(pet){
-    // implement function that adds pet to person
-  }
-  transferirPet(usuario, pet){
-    // implement function that transfers pet
-  }
-  joinEvent(evento){
-    // implement function that join user in event
-  }
-  realizarDoacao(){
-    // implement function that make donation
-  }
-  criarAdocao(){
-    // implement function that create adoption
-  }
-  removerAdocao(){
-    // implement function that remove adoption
-  }
+```typescript
+export interface PrototypeEvento {
+    clone(): PrototypeEvento;
 }
 
-class Voluntario extends Usuario{
-  constructor(nome, email, senha, descricao, telefone, endereco, dtNascimento){
-    super(nome, email, senha, descricao);
-    this.telefone = telefone;
-    this.endereco = endereco;
-    this.dtNascimento = dtNascimento;
-  }
+export class EventoPresencial implements PrototypeEvento {
 
-  criarEvento(){
-    // implement function that create adoption
-  }
-  removerEvento(){
-    // implement function that remove event
-  }
-  cadastrarLocal(){
-    // implement function that register location
-  }
+    constructor(
+        public dtInicio: Date,
+        public dtFinal: Date,
+        public hrInicial: Date,
+        public hrFinal: Date,
+        public titulo: string,
+        public descricao: string,
+        public cidade: string,
+        public cep: number,
+        public complemento: string,
+        public bairro: string) { }
+
+    clone(): EventoPresencial {
+        const newObj = new EventoPresencial(
+            this.dtInicio,
+            this.dtFinal,
+            this.hrInicial,
+            this.hrFinal,
+            this.titulo,
+            this.descricao,
+            this.cidade,
+            this.cep,
+            this.complemento,
+            this.bairro);
+        return newObj;
+    }
+
+    verificarEvento(): void {
+        console.log(
+            `O evento ${this.titulo} ira ocorrer em ${this.cidade}`,
+            `no bairro ${this.bairro} no dia ${this.dtInicio} as`,
+            `${this.hrInicial} até o dia ${this.dtFinal} as ${this.hrFinal}`);
+    }
 }
 
-function Client(){
-  let usuarioComum = new Usuario('ruan', 'ruan@gmail.com', 'segredo', 'Ola');
-  let usuarioVoluntario = new Voluntario('joao', 'joao@gmail.com', 'segredo', 'Ola', 999999999, 'Brasilia', '01/01/1970');
-  console.log(usuarioComum);
-  console.log(usuarioVoluntario);
-}
+export class EventoOnline implements PrototypeEvento {
 
-Client();
-~~~
+    constructor(
+        public titulo: string,
+        public descricao: string,
+        public itemDoado: string,
+        public contato: string) { }
+
+    clone(): EventoOnline {
+        const newObj = new EventoOnline(
+            this.titulo,
+            this.descricao,
+            this.itemDoado,
+            this.contato);
+        return newObj;
+    }
+    verificarEvento(): void {
+        console.log(
+            `O evento ${this.titulo} daoara ${this.itemDoado}`,
+            `e o doador pode ser contatado por: ${this.contato}`);
+    }
+}
+```
 
 ## Versionamentos
 
