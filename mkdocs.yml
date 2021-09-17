@@ -62,7 +62,7 @@ nav:
       - Estudo Dirigido: padroes/estudoDirigido.md
       - GRASP: padroes/grasp/grasp.md
       - GoFs:
-          - GoF Criacionais: padroes/gofCriacional/gofCriacional.md
-          - GoF Estruturais: padroes/gofEstrutural/gofEstrutural.md
-          - GoF Comportamentais: padroes/gofComportamental/gofComportamental.md
+          - GoFs Criacionais: padroes/gofCriacional/gofCriacional.md
+          - GoFs Estruturais: padroes/gofEstrutural/gofEstrutural.md
+          - GoFs Comportamentais: padroes/gofComportamental/gofComportamental.md
   - Manual GhPages: manual.md

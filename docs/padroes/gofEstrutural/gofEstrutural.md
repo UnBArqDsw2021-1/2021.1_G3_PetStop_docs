@@ -1,23 +1,23 @@
-# GoF Estrutural
+# GoFs Estruturais
 
-O padrão GoF de estrutura tem um foco em como objetos e classes são compostos para formar estruturas maiores. A flexibilidade obtida pela composição de objetos provém da capacidade de mudar a composição em tempo de execução o que não é possível com a composição estática. Esse padrão tem um foco em diminuir a dependência de um sistema gerada pela interação de seus objetos, facilitando assim sua manutenção/evolução.
+Os padrões GoFs de estrutura têm seu foco em como objetos e classes são compostos para formar estruturas maiores. A flexibilidade obtida pela composição dinâmica de objetos provém da capacidade de mudar a composição em tempo de execução o que não é possível com a composição estática. Visam diminuir a dependência de um sistema gerada pela interação de seus objetos, facilitando assim sua manutenção e escalabilidade.
 
 ## Decorator
 
-O padrão Decorator adiciona funcionalidades a objetos de forma dinâmica (em tempo de execução), permitindo assim a expansão do objeto de maneira mais flexível, ou seja, utilizando esse padrão nós podemos expandir uma instância sem precisar utilizar herança, somente composição, algo que é não somente recomendado na orientação a objetos como também um princípio. Basicamente o Decorator envelopa um objeto para fornecer novos comportamentos.
+O padrão Decorator adiciona funcionalidades a objetos de forma dinâmica (em tempo de execução), permitindo assim a expansão do objeto de maneira mais flexível, ou seja, utilizando esse padrão nós podemos expandir uma instância sem precisar utilizar herança, somente composição, algo que é não somente recomendado na orientação a objetos como também um princípio da mesma. Basicamente o Decorator envelopa um objeto para fornecer novos comportamentos.
 
-### Pontos Positivos
+#### Pontos Positivos
 
-- Facilidade na compreensão
 - Facilidade na aplicação
 - Capacidade de adicionar diversos comportamentos
 - Poder adicionar e remover comportamentos em tempo de execução
 
-### Pontos Negativos
+#### Pontos Negativos
 
 - Dificuldade na compreensão do código
+- Quanto mais decorators em camadas, mais complexo seu código se torna
 
-### É possível adaptar esse padrão para o projeto?
+#### É possível adaptar esse padrão para o projeto?
 
 Sim, dentro do projeto existe uma variação nas categorias do tipo de pessoa o qual irá comparecer o evento, sendo o tipo usuário o qual aproveita dos serviços ofertados e o tipo voluntário que participa trabalhando dos serviços ofertados. Dessa forma u Decorator poderá servir para implementar esses dois comportamentos.
 
@@ -27,47 +27,48 @@ Sim, dentro do projeto existe uma variação nas categorias do tipo de pessoa o 
 
 ### Decorator Projeto
 
+#### A nível de modelagem
+
 ![Decorator Projeto](./images/DecoratorProjeto.jpg)
 
 ## Adapter
 
-<p>Esse padrão de projeto, é um padrão q permite que uma inteface de uma classe existente seja usada como uma outra interface.</p>
-<p>Ela é usada normalmente comom uma forma de fazer outras classes funcionarem sem ter que modificar o codigo fonte.</p>
+Esse padrão de projeto permite a conversão uma inteface de uma classe existente em outra. Utilizada para permitir a comunicação entre classes que são incompatíveis (ex.: libs, plugins, códigos legado).
 
-### Pontos Positivos
+#### Pontos Positivos
 
-- Faz com que classes possam ser reutilizadas para uma interface que o cliente requer.
-- Faz com que se possa introduzir novos tipos de adaptadores sem que quebre o codigo fonte.
+- Faz com que classes possam ser reutilizadas para uma interface que o cliente requer
+- Faz com que se possa introduzir novos tipos de adaptadores sem que o código fonte quebre
 
-### Pontos Negativos
+#### Pontos Negativos
 
-- Pode aumenta a complexidade do codigo, pois se é introduzido novos conjuntos de interfaces e classes
+- Pode aumentar a complexidade do código, pois são introduzidos novos conjuntos de interfaces e classes
 
-### É possível utilizar esse padrão para o projeto?
+#### É possível utilizar esse padrão para o projeto?
 
-Não será necessario a utilização desse padrão, pois como estamos construindo todo o projeto do zero, não seria necessario a criação de adpters para interfaces ja existentes.
+O esperado é que este padrão não se faça necessário, considerando que o projeto está sendo construído do início, não existem interfaces prévias.
 
 ### Adapter Base
 
-<iframe frameborder="0" style="width:100%;height:500;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Adapter%20base#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1nNK93rKBx29pL-MQizBiRo8VODXcrGMJ%26export%3Ddownload"></iframe>
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Adapter%20base#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1nNK93rKBx29pL-MQizBiRo8VODXcrGMJ%26export%3Ddownload"></iframe>
 
-## Facede
+## Facade
 
-<p>Esse padrão de projetoserve para como uma interface/mascara para uma estrutra de codigo mais complexa.</p>
+Esse padrão de projeto serve como uma interface/máscara para uma estrutra de código mais complexa. Cria pontos de entrada para determinadas partes do sistema, como serviços externos, camadas da aplicação e objetos complexos dentro em determinadas partes do código.
 
-### Pontos Positivos
+#### Pontos Positivos
 
-- Consegue isolar o codigo da complexidade dos subsistemas.
-- As dependencias dos substemas serão possivelmentes minimizadas.
-- Subsistemas são mais faceis de ser usados.
+- Consegue isolar o código da complexidade dos subsistemas
+- As dependências dos subsistemas serão possivelmentes minimizadas
+- Subsistemas são mais fáceis de serem utilizados
 
-### Pontos Negativos
+#### Pontos Negativos
 
-- Pode se tornar um [objeto deus](https://en.wikipedia.org/wiki/God_object).
+- Pode se tornar um [objeto deus](https://en.wikipedia.org/wiki/God_object)
 
-### É possível utilizar esse padrão para o projeto?
+#### É possível utilizar esse padrão para o projeto?
 
-É possivel a utilização desse padrão, mas não necessaria pois não teremos subsistemas complexos o suficiente para que uma fachada seja necessaria.
+É, porém ainda não necessária, já que o projeto não possui subsistemas complexos o suficientes para a implementação de uma fachada.
 
 ### Facede Base
 
@@ -75,20 +76,22 @@ Não será necessario a utilização desse padrão, pois como estamos construind
 
 ## Versionamentos
 
-|Data|Versão|Descrição|Autor|
-|:--------:|:---:|:-------------------: |:-----------------------:|
-|08/09/2021| 0.1 | Criação do documento | Pedro Vítor de Salles Cella |
-|08/09/2021| 0.2 | Adição do Decorator  | Pedro Vítor de Salles Cella |
-|11/09/2021| 0.3 | Adição do Adapter  | Paulo Gonçalves Lima |
-|14/09/2021| 0.4 | Adição do Facade  | Paulo Gonçalves Lima |
+|    Data    | Versão |        Descrição         |             Autor              |
+| :--------: | :----: | :----------------------: | :----------------------------: |
+| 08/09/2021 |  0.1   |   Criação do documento   |  Pedro Vítor de Salles Cella   |
+| 08/09/2021 |  0.2   |   Adição do Decorator    |  Pedro Vítor de Salles Cella   |
+| 11/09/2021 |  0.3   |    Adição do Adapter     |      Paulo Gonçalves Lima      |
+| 14/09/2021 |  0.4   |     Adição do Facade     |      Paulo Gonçalves Lima      |
+| 16/09/2021 | 0.4.1  | Revisão e adição textual | Arthur Sena e Gabriela Pivetta |
 
 ## Referências
 
-- Site: <https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software#Padr%C3%B5es_estruturais>
-- Repositório: <https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Estudos/estrutural>
-- Site: <https://www.devmedia.com.br/design-patterns-padroes-gof/16781>
-- Site: <http://www.macoratti.net/13/02/net_decor1.htm>
-- Site: <https://en.wikipedia.org/wiki/Adapter_pattern>
-- Site: <https://refactoring.guru/design-patterns/adapter>
-- Site: <https://en.wikipedia.org/wiki/Facade_pattern>
-- Site: <https://refactoring.guru/design-patterns/facade>
+- [Playlist Sobre Padrões de Projeto](https://youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H)
+- [Wikipedia, Padrões de Projeto](https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software#Padr%C3%B5es_estruturais)
+- [Wikipedia, Adapter Pattern](https://en.wikipedia.org/wiki/Adapter_pattern)
+- [Wikipedia, Facade Pattern](https://en.wikipedia.org/wiki/Facade_pattern)
+- [Refactoring Guru Adapter](https://refactoring.guru/design-patterns/adapter)
+- [Refactoring Guru Facade](https://refactoring.guru/design-patterns/facade)
+- [Macoratti](http://www.macoratti.net/13/02/net_decor1.htm)
+- [Dev Media](https://www.devmedia.com.br/design-patterns-padroes-gof/16781)
+- [Grupo Stock](https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Estudos/estrutural)
