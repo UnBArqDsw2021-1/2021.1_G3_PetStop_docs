@@ -112,6 +112,97 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Abstract%20Fatory%20Projeto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1zaLFZURbo-HfaTTqQ4NUhU5Bkt3sPnME%26export%3Ddownload"></iframe>
 
+## Prototype
+
+<p>Esse padrão de projeto prossibilita a criação de novos objetos a partir da cópia de objetos existentes.</p>
+<p>Tem como intenção especificar os tipos de objetos a serem criados usando uma instância-protótipo e criar novos objetos pela cópia desse protótipo.</p>
+
+#### Pontos Positivos
+
+- Acrescenta e remove produtos em tempo de execução;
+- Especifica novos objetos pela variação de valore sou estrutura;
+- Reduz do número de subclasses;
+- Configura dinamicamente uma aplicação com classes.
+
+#### Pontos Negativos
+
+- Implementação da operação Clone em cada subclasse do Prototype.
+
+#### É possível usar no projeto?
+
+Sim, é possivel utilizarmos o conceito de protótipo na criação de usuários, sendo o usuário padrão um protótipo e o voluntário utilizar-se do protótipo usuário para a sua criação.
+
+### Abstract Factory Base
+
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Prototype%20Base.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1WMCZ95SNYxnvo93w8W4xWJi_2BvJdZ29%26export%3Ddownload"></iframe>
+
+### Abstract Factory Projeto
+
+#### A nível de modelo
+
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Prototype%20Projeto.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1KRI-TcggXUQFKQ5WAfADm97XzHn9qZDT%26export%3Ddownload"></iframe>
+
+#### A nível de código
+
+~~~javascript
+class Usuario{
+  constructor(nome, email, senha, descricao){
+    this.nome= nome;
+    this.email= email;
+    this.senha= senha;
+    this.descricao= descricao;
+    this.pets= [];
+  }
+
+  addPet(pet){
+    // implement function that adds pet to person
+  }
+  transferirPet(usuario, pet){
+    // implement function that transfers pet
+  }
+  joinEvent(evento){
+    // implement function that join user in event
+  }
+  realizarDoacao(){
+    // implement function that make donation
+  }
+  criarAdocao(){
+    // implement function that create adoption
+  }
+  removerAdocao(){
+    // implement function that remove adoption
+  }
+}
+
+class Voluntario extends Usuario{
+  constructor(nome, email, senha, descricao, telefone, endereco, dtNascimento){
+    super(nome, email, senha, descricao);
+    this.telefone = telefone;
+    this.endereco = endereco;
+    this.dtNascimento = dtNascimento;
+  }
+
+  criarEvento(){
+    // implement function that create adoption
+  }
+  removerEvento(){
+    // implement function that remove event
+  }
+  cadastrarLocal(){
+    // implement function that register location
+  }
+}
+
+function Client(){
+  let usuarioComum = new Usuario('ruan', 'ruan@gmail.com', 'segredo', 'Ola');
+  let usuarioVoluntario = new Voluntario('joao', 'joao@gmail.com', 'segredo', 'Ola', 999999999, 'Brasilia', '01/01/1970');
+  console.log(usuarioComum);
+  console.log(usuarioVoluntario);
+}
+
+Client();
+~~~
+
 ## Versionamentos
 
 |    Data    | Versão |                    Descrição                     |                            Autor                             |
@@ -125,10 +216,12 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 | 16/09/2021 | 0.6.1  |         Revisão textual e de formatação          | Arthur Sena, Vinícius Vieira, Antonio Ruan, Gabriela Pivetta |
 | 16/09/2021 |  0.7   |   Adição do padrão singleton a nível de código   |                         Arthur Sena                          |
 | 16/09/2021 |  0.8   |   Adição do padrão Factory Method a nível de código   |                         Gabriela Pivetta                         |
+| 17/09/2021 |  0.9   |   Adição do padrão Prototype   |                         Antonio Ruan                        |
 
 ## Referências
 
 - SERRANO, Milene. Vídeo aulas sobre Padrões de Projeto. Último acesso em 12/09/2021.
+- Gamma, Erich. et al. Padrões de Projeto: Soluções reutilizáveis de software orientado a objetos. 1ª Edição. Porto Alegre: Bookman, 2007.
 - [Refactoring Guru](https://refactoring.guru/design-patterns/singleton)
 - [Grupo STOCK](https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/EstudoDirigido?id=estudos)
 - [Dev Media](https://www.devmedia.com.br/patterns-factory-method/18954)
