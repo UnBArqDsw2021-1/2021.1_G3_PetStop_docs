@@ -33,7 +33,13 @@ Ciente disto a equipe escolheu os seguites GoFs criacionais:
 
 ### Singleton Projeto
 
+#### A nível de modelagem
+
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=000000&layers=1&nav=1&title=Singleton%20Projeto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oUqkK33QCT20yyZGkXfmdpyATDGJpBqx%26export%3Ddownload"></iframe>
+
+#### A nível de código
+
+![Singleton Code](./images/singleton-code.png)
 
 ## Factory Method
 
@@ -101,6 +107,7 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 | 14/09/2021 |  0.5   |        Adição do Padrão Abstract Factory         |                     Paulo Gonçalves Lima                     |
 | 16/09/2021 |  0.6   |         Revisão do Padrão Factory Method         |                     Paulo Gonçalves Lima                     |
 | 16/09/2021 | 0.6.1  |         Revisão textual e de formatação          | Arthur Sena, Vinícius Vieira, Antonio Ruan, Gabriela Pivetta |
+| 16/09/2021 |  0.7   |   Adição do padrão singleton a nível de código   |                         Arthur Sena                          |
 
 ## Referências
 
