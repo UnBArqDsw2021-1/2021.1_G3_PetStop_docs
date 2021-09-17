@@ -1,27 +1,29 @@
-# GoF Criacional
+# GoFs Criacionais
 
-<p>Os padrões GoF Criacionais são utilizados quando existe uma hierarquia que é muito acessada e têm muitas criações de instâncias sendo demandadas para ela, o que geralmente é complicado de ser administrado. Também atuam em dois principais problemas:
+Os padrões GoF Criacionais são utilizados quando existe uma hierarquia que é muito acessada e têm muitas criações de instâncias sendo demandadas para ela, o que geralmente é complicado de ser administrado. Também atuam em dois principais problemas:
 
 - "Definir qual classe concreta deve ser utilizada para criar o objeto"
 - "Definir como os objetos devem ser criados e como eles se
-relacionam com outros objetos do sistema"</p>
+  relacionam com outros objetos do sistema"
+
+Ciente disto a equipe escolheu os seguites GoFs criacionais:
 
 ## Singleton
 
 <p>O Singleton é considerado como um (anti)-padrão de projeto, isso se deve ao fato dele seguir uma metodologia contrária aos outros padrões. Basicamente sua implementação garante que só exista uma instância daquele objeto. Sua implementação serve para programas que necessitam que um objeto seja instanciado uma única vez, um bom exemplo disso é um Banco de Dados, nele serão feitos diversos acessos e seu desempenho seria afetado caso a chamada para o mesmo gerasse sempre uma nova instância. Por este motivo o uso de um Singleton garante essa evasão, também garantindo que qualquer local da aplicação possa acessá-lo.</p>
 
-### Pontos Positivos
+#### Pontos Positivos
 
 - Garante que nenhuma outra classe crie novas instâncias, sem necessidade.
 - Auxilia no Desempenho.
 - Ganha um ponto de acesso global para aquela instância.
 
-### Pontos Negativos
+#### Pontos Negativos
 
 - Nenhuma outra classe pode instanciá-la, é necessário que sua própria classe a instancie.
 - Pode mascarar um desing ruim, onde um componente sabe muito sobre outro.
 
-### É possível usar no projeto?
+#### É possível usar no projeto?
 
 - Sim, visto que assim como no exemplo, também temos um banco de dados, garantindo desempenho duarante o uso do banco.
 
@@ -37,21 +39,21 @@ relacionam com outros objetos do sistema"</p>
 
 O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento do software, assim como no padrão de [Mediator](../gofComportamental/gofComportamental.md#Mediator). Para isso são retiradas as dependências explícitas através do encapsulamento da escolha da classe concreta a ser utilizada na criação de objetos de um determinado tipo. Assim a instanciação é delegada às subclasses. Este padrão deve ser usado, principalmente, quando uma classe não pode antecipar ou conhecer a classe dos objetos que deve criar e quando uma classe quer suas subclasses para especificar os objetos que cria.
 
-### Pontos Positivos
+#### Pontos Positivos
 
 - O principal ponto positivo é o baixo acoplamento. Se a implementação de um Product for alterado, não afeta sua Creator, pois a Creator não está fortemente ligada a alguma ConcreteProduct.
 - Há também uma melhora na coesão, já que cada classe tem funções específicas e bem definidas.
 - Maior flexibilidade para as classes.
 - Para acrescentar novos tipos concretos basta criar uma nova classe ConcreteCreator, sem alterar as demais, apenas
-criando instâncias para esse ConcreteProductX() no método createProduct() de ConcreteCreator. Portanto, ganhamos em  reutilização, manutenibilidade, coesão, dentre outros aspectos relevantes para a programação de sistemas Orientados a Objetos.
+  criando instâncias para esse ConcreteProductX() no método createProduct() de ConcreteCreator. Portanto, ganhamos em reutilização, manutenibilidade, coesão, dentre outros aspectos relevantes para a programação de sistemas Orientados a Objetos.
 
-### Pontos Negativos
+#### Pontos Negativos
 
 - Especializar uma classe apenas para instanciar um objeto de uma subclasse de outra superclasse acaba sendo muito trabalho desnecessário, por isso deve-se analizar com cautela se o padrão é adequado para o projeto em questão.
 
-### É possível usar no projeto?
+#### É possível usar no projeto?
 
-- Sim, como mostra no exemplo, no projeto a classe Eventos pode ser de alguns tipos diferentes e cada um tem suas peculiaridades. Para baixar o nível de acoplamento e repetição de código, pode ser utilizado o Factory Method.
+- Sim, como mostra no exemplo, no projeto a classe Eventos pode ser de alguns tipos diferentes e cada um pode possuir propriedades individuais. Para baixar o nível de acoplamento e repetição de código, pode ser utilizado o Factory Method.
 
 ### Factory Method Base
 
@@ -66,17 +68,17 @@ criando instâncias para esse ConcreteProductX() no método createProduct() de C
 <p>Esse padão de projeto sugere que se deve explicitamente criar uma interface para cada variação de um produto.</p>
 <p>Tem como o objetivo isolar a criação dos objetos do seu uso e criar famílias de objetos relacionados sem depender das classes concretas.</p>
 
-### Pontos Positivos
+#### Pontos Positivos
 
 - Evita a acoplação entre os produtos concretos e o codigo do cliente.
 - Pode incluir novas variantes sem quebrar o codigo existente.
 - Extrai a criação do produto para um lugar, fazendo o codigo ser mais facil de ter suporte.
 
-### Pontos Negativos
+#### Pontos Negativos
 
 - O codigo pode se tornar mais complicado que deveria, ja que novas interfaces e classes são introduzidas junto com o padrão.
 
-### É possível usar no projeto?
+#### É possível usar no projeto?
 
 É possivel a utilização, pois no caso de criação de eventos temos diversos tipos de eventos que precisam ser criados.
 
@@ -90,14 +92,15 @@ criando instâncias para esse ConcreteProductX() no método createProduct() de C
 
 ## Versionamentos
 
-|Data|Versão|Descrição|Autor|
-|:--------:|:---:|:-------------------: |:-----------------------:|
-|11/09/2021| 0.1 | Criação do documento, adição do Padrão Singleton | Paulo Gonçalves Lima, Pedro Vítor de Salles Cella |
-|12/09/2021| 0.2 | Revisão do Padrão Singleton | Gabriela Pivetta |
-|12/09/2021| 0.3 | Adição da descrição geral dos GoFs Criacionais | Gabriela Pivetta |
-|12/09/2021| 0.4 | Adição do Padrão Factory Method | Gabriela Pivetta |
-|14/09/2021| 0.5 | Adição do Padrão Abstract Factory | Paulo Gonçalves Lima |
-|16/09/2021| 0.6 | Revisão do Padrão Factory Method | Paulo Gonçalves Lima |
+|    Data    | Versão |                    Descrição                     |                            Autor                             |
+| :--------: | :----: | :----------------------------------------------: | :----------------------------------------------------------: |
+| 11/09/2021 |  0.1   | Criação do documento, adição do Padrão Singleton |      Paulo Gonçalves Lima, Pedro Vítor de Salles Cella       |
+| 12/09/2021 |  0.2   |           Revisão do Padrão Singleton            |                       Gabriela Pivetta                       |
+| 12/09/2021 |  0.3   |  Adição da descrição geral dos GoFs Criacionais  |                       Gabriela Pivetta                       |
+| 12/09/2021 |  0.4   |         Adição do Padrão Factory Method          |                       Gabriela Pivetta                       |
+| 14/09/2021 |  0.5   |        Adição do Padrão Abstract Factory         |                     Paulo Gonçalves Lima                     |
+| 16/09/2021 |  0.6   |         Revisão do Padrão Factory Method         |                     Paulo Gonçalves Lima                     |
+| 16/09/2021 | 0.6.1  |         Revisão textual e de formatação          | Arthur Sena, Vinícius Vieira, Antonio Ruan, Gabriela Pivetta |
 
 ## Referências
 
