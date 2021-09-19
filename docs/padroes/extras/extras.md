@@ -2,75 +2,25 @@
 
 ## React Provider Pattern
 
-- A utilização da biblioteca React é extremamente atrelada aos
-componentes, funcionalidade que basicamente caracteriza a
-ferramenta e seu funcionamento, dentro delas temos as conhecidas
-props que seriam as propriedades passadas através da hierarquia
-na árvore de componentes, porém acaba dando muito trabalho
-visto que para chegarmos de A até o componente D por exemplo,
-necessitaríamos passar por B e C antes. É nesse momento em que
-utilizar do Provider Pattern pode se tornar mais vantajoso.
-- O Provider é uma forma mais eficiente de fazer esse
-compartilhamento, ele funciona da seguinte forma: O componente
-Provider recebe o estado como props e, depois disso, cada
-componente filho tem acesso implícito ao estado gerenciado, ou
-seja, uma parte nesse padrão torna as propriedades acessíveis no
-context e a outra parte torna disponibiliza o context para os
-componentes que precisam consumí-lo.
+React é uma biblioteca de JavaScript extremamente atrelada ao uso de componentes. Essa componentização é responsável por caracterizar ferramentas e seus respectivos funcionamentos. Além destes, existem as *props*, que são as propriedades passadas através da hierarquia na árvore de componentes. Entretanto, esse método é mais custoso, visto que, para ter acesso aos componentes filhos, é preciso passar por todos os intermediários. Nesse cenário, o Provider Pattern pode se tornar mais eficiente.
 
-### Pontos Positivos
-
-- Facilita na manutenção assim como melhora possivelmente o
-desempenho da aplicação.
-
-### Pontos Negativos
-
-- Por se tratar de React, pode-se ter dúvidas durante sua
-implementação, visto que é necessário conhecimentos prévios
-da bilbioteca.
-
-### É possível de se utilizar no projeto?
-
-- É possível porém é necessário uma decisão por parte dos
-membros que tenham mexido com essa ferramenta antes.
+O Provider Pattern é capaz de ignorar o sistema de hierarquia do React, recebendo como estado as *props*. Graças a isso, todo componente filho tem acesso implícito àquele estado. Dessa forma, enquanto uma parte torna as propriedades acessíveis no *context*, a outra disponibiliza o *context* para os componentes que precisam consumí-lo. Essa implementação facilita a manutenção e possivelmente melhora o desempenho do produto. 
 
 ## Continuation-passing
 
-- Associado à ferramenta muito utilizada para o Back-End de
-aplicações em JavaScript, chamada de NodeJS existem alguns
-padrões de projeto que também podem ser utilizados, dentre eles
-falaremos do Continuation-passing
-- Esse padrão serviria principalmente em funções assíncronas,
-mas de que forma usamos Continuation-passing? A forma para se
-utilizar esse padrão é basicamente criar uma função com um
-parâmetro extra, nela será passado uma outra função com apenas
-um parâmetro, dessa forma quando a função terminar ela fará a
-continuação utilizando a outra função de um parâmetro. Desse jeito
-teremos no código diversos fatores que se tornarão mais explícitos
-do que implícitos utilizando o padrão de design usual.
+Associado ao NodeJs, ferramenta muito utilizada para o Back-End de aplicações em JavaScript, o Continuation-passing é um padrão de projeto presente principalmente em funções assíncronas. Seu uso se dar pela criação de uma função com um parâmetro extra, na qual será passada uma outra função com apenas um parâmetro. Dessa forma, quando a função acabar de ser executada, será feita a continuação utilizando a outra função. Assim, o código terá diversos fatores que se tornarão mais explícitos do que implícitos. 
 
-### Pontos Postivos
-
-- Facilita a manutenção do código, visto que o erro se dá em
-uma função criada, e não um erro implementado pela
-linguagem.
-
-### Pontos Negativos
-
-- Caso seja um projeto grande pode ser problemático de se
-implementar muitas funções o que dificulta manutenção e
-prejudica no desempenho.
-
-### É possível de se utilizar no projeto?
-
-- Tendo a visão de que o nosso projeto é algo relativamente
-pequeno, é possível sim a utilização desse padrão.
+Sua implementação facilita a manutenção do código, visto que em caso de erro, ele ocorre na função criada e não na implementação da linguagem. Por outro lado, caso o projeto seja robusto, pode se tornar problemática a implementação de muitas funções, pois haveria prejuízo no desempenho e dificuldade na rastreabilidade de erros. 
 
 ## Referências
 
-- <https://oieduardorabelo.medium.com/padr%C3%B5es-em-rea>
-ct-provider-pattern-b520c37ed733
-- Contato com a Milene
-- <https://en.wikipedia.org/wiki/Continuation-passing_style>
-- <https://medium.com/emanuelg-blog/reflex%C3%A3o-em-padr>
-%C3%B5es-de-projeto-para-node-js-b7344f2529c7
+- [React Provider Pattern](https://oieduardorabelo.medium.com/padr%C3%B5es-em-react-provider-pattern-b520c37ed733)
+- [Continuation-passing](https://en.wikipedia.org/wiki/Continuation-passing_style)
+- [Padrões de projeto](https://medium.com/emanuelg-blog/reflex%C3%A3o-em-padr%C3%B5es-de-projeto-para-node-js-b7344f2529c7)
+
+## Histórico de versionamento
+
+| Versão | Descrição | Autor |
+| - | - | - |
+| 0.1 | Criação do documento | Pedro Cella e Paulo Gonçalves |
+| 0.2 | Revisão do documento, correções ortográficas, adição de conteúdo, correção das referências e criação do histórico de versionamento | Sara Campos, Edvan Gomes e Júlio Schneider| 
