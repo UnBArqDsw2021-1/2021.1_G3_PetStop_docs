@@ -31,6 +31,66 @@ Sim, dentro do projeto existe uma variação nas categorias do tipo de pessoa o 
 
 ![Decorator Projeto](./images/DecoratorProjeto.jpg)
 
+#### A nível de código
+
+```js
+
+export class Pessoa{
+  this.verificarEvento(filters: Event): List[Event];
+  this.joinEvento(obj: Evento): Evento;
+}
+```
+
+```js
+export interface DecoratorPessoa extends Pessoa {
+  addPet(){}
+
+  removerAdocao(): Void{}
+
+  criarAdocao(): Void{}
+
+  realizarDoacao(): Void{}
+
+  transferirPet(): Void{}
+  
+}
+```
+
+```js
+export class DecoratorUsuario extends DecoratorPessoa {
+  addPet(pet: Pet): Pet{}
+
+  removerAdocao(evento: Evento): bool{}
+
+  criarAdocao(pet: Pet): bool{}
+
+  realizarDoacao(): Doacao{}
+
+  transferirPet(usuario: Usuario, pet: Pet): Void{}
+}
+```
+
+```js
+export class DecoratorUsuario extends DecoratorVoluntario {
+  criarEvento(evento: Evento): Evento{} 
+
+  removerEvento(evento: Evento): Bool {}
+
+  cadstrarLocal(local: Local): Local {}
+
+  addPet(pet: Pet): Pet{}
+
+  removerAdocao(evento: Evento): bool{}
+
+  criarAdocao(pet: Pet): bool{}
+
+  realizarDoacao(): Doacao{}
+
+  transferirPet(usuario: Usuario, pet: Pet): Void{}
+}
+
+```
+
 ## Adapter
 
 Esse padrão de projeto permite a conversão uma inteface de uma classe existente em outra. Utilizada para permitir a comunicação entre classes que são incompatíveis (ex.: libs, plugins, códigos legado).
@@ -83,6 +143,7 @@ Esse padrão de projeto serve como uma interface/máscara para uma estrutra de c
 | 11/09/2021 |  0.3   |    Adição do Adapter     |      Paulo Gonçalves Lima      |
 | 14/09/2021 |  0.4   |     Adição do Facade     |      Paulo Gonçalves Lima      |
 | 16/09/2021 | 0.4.1  | Revisão e adição textual | Arthur Sena e Gabriela Pivetta |
+| 16/09/2021 | 0.5  | Adição do nível de código do Decorator | Paulo Gonçalves Lima, Pedro Vítor de Salles |
 
 ## Referências
 
