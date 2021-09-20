@@ -1,63 +1,64 @@
 # Objetivo
 
-O documento foi criado com o objetivo de assegurar um fluxo de trabalho contínuo e padronizado. Isso possibilitará rastreamento das funcionalidades desenvolvidas e facilitará a implementação de *pipeline* de integração (CI - Continuous Integration) e entrega contínua (CD - Continuous Delivery). Dessa forma, será usada a estratégia de Git Flow.
+O documento foi criado com o objetivo de assegurar um fluxo de trabalho contínuo e padronizado. Isso possibilitará rastreamento das funcionalidades desenvolvidas e facilitará a implementação de _pipeline_ de integração (CI - Continuous Integration) e entrega contínua (CD - Continuous Delivery). Dessa forma, será usada a estratégia de Git Flow.
 
 # Glossário
 
 - **Branch** → ramificação da correspondente versão do código fonte, podendo conter adições, correções, testes e/ou documentação;
-- **Commit** → conjunto de alterações da respectiva *branch* acompanhado de uma mensagem explicativa; 
-- **Master/Main** → *branch* onde a versão mais estável do produto;
-- **Devel/Development** → *branch* de desenvolvimento do produto;
+- **Commit** → conjunto de alterações da respectiva _branch_ acompanhado de uma mensagem explicativa;
+- **Master/Main** → _branch_ onde a versão mais estável do produto;
+- **Devel/Development** → _branch_ de desenvolvimento do produto;
 
 # Política de Branch
 
 ## Nomenclatura
 
-Nos repositórios de desenvolvimento, todas *branchs* criadas devem estar relacionadas a uma funcionalidade, correção ou teste. Consequentemente, nesse caso, ela estará associada a uma *issue*. 
+Nos repositórios de desenvolvimento, todas _branchs_ criadas devem estar relacionadas a uma funcionalidade, correção ou teste. Consequentemente, nesse caso, ela estará associada a uma _issue_.
 
-Para o caso do repositório de documentação, as *branchs* não precisam estar relacionadas a *issues*, funcionalidades ou correções, sendo que o que as define é o tipo de documento a que ela está associada.  
+Para o caso do repositório de documentação, as _branchs_ não precisam estar relacionadas a _issues_, funcionalidades ou correções, sendo que o que as define é o tipo de documento a que ela está associada.
 
-O padrão usado para nomear as *branchs* é número da *feature* e o número da *issue* seguida do título, que deve estar na língua inglesa com separação feita por *underline* ao invés de espaço. 
+O padrão usado para nomear as _branchs_ é número da _feature_ e o número da _issue_ seguida do título, que deve estar na língua inglesa com separação feita por _underline_ ao invés de espaço.
 
->> Exemplo do repositório de desenvolvimento:  
->> us02i03-crud_publication
+> > Exemplo do repositório de desenvolvimento:  
+> > us02i03-crud_publication
 
->> Exemplo do repositório de desenvolvimento:  
->> us05i07-navigation_route
+> > Exemplo do repositório de desenvolvimento:  
+> > us05i07-navigation_route
 
->> Exemplo do repositório de documentação:  
->> backlog
-
+> > Exemplo do repositório de documentação:  
+> > backlog
 
 # Política de commits
 
-O padrão usado nas mensagens dos *commits* será a escrita na língua inglesa com verbos no infinitivo. A mensagem deve ser construída pelo tipo seguido da descrição, que deve possuir no máximo 50 caracteres. Caso for preciso mais, cria-se um resumo, adiciona-se uma linha em branco e descreve-se o *commit* com o número de caracteres necessários, onde cada linha deve conter no máximo 72 caracteres. Além disso, um *commit* deve ser feito a cada nova adição/correção. Esses são os chamados *commits* atômicos. 
+O padrão usado nas mensagens dos _commits_ será a escrita na língua inglesa com verbos no infinitivo. A mensagem deve ser construída pelo tipo seguido da descrição, que deve possuir no máximo 50 caracteres. Caso for preciso mais, cria-se um resumo, adiciona-se uma linha em branco e descreve-se o _commit_ com o número de caracteres necessários, onde cada linha deve conter no máximo 72 caracteres. Além disso, um _commit_ deve ser feito a cada nova adição/correção. Esses são os chamados _commits_ atômicos.
 
->> Exemplos:  
->> - **feat: create component button**
->> - **fix: fix error of home page**
+> > Exemplos:
+> >
+> > - **feat: create component button**
+> > - **fix: fix error of home page**
 
-O *commit* deve corresponder a um dos seguintes tipos: 
+O _commit_ deve corresponder a um dos seguintes tipos:
 
-- **Build** →  alteração que afeta o sistema ou dependências externas;
-- **CI** → alteração da configuração dos arquivos de *Continuous Integration*;
+- **Build** → alteração que afeta o sistema ou dependências externas;
+- **CI** → alteração da configuração dos arquivos de _Continuous Integration_;
 - **Docs** → alterações na documentação;
 - **Feat** → nova funcionalidade;
-- **Fix** → conserto de *bug*;
+- **Fix** → conserto de _bug_;
 - **Perf** → alteração de código que aperfeiçoa a performance;
-- **Refactor** → alteração do código que não conserta *bugs* nem adiciona funcionalidade;
+- **Refactor** → alteração do código que não conserta _bugs_ nem adiciona funcionalidade;
 - **Style** → alterações que não afetam o significade do código;
 - **Test** → adição/correção de testes.
 
-## Histórico de versão 
+## Histórico de versão
 
-| Versão | Descrição | Autor |
-| - | - | - |
-| 1.0 | Criação do documento de boas práticas | Sara Campos, Edvan Gomes e Júlio Schneider | 
-| 1.1 | Revisão de documento de boas práticas e correção do marckdown| Thiago Luiz, Vitor Samuel |
+| Versão | Descrição                                                    | Autor                                      |
+| ------ | ------------------------------------------------------------ | ------------------------------------------ |
+| 1.0    | Criação do documento de boas práticas                        | Sara Campos, Edvan Gomes e Júlio Schneider |
+| 1.1    | Revisão de documento de boas práticas e correção do markdown | Thiago Luiz, Vitor Samuel                  |
+| 1.2    | Correção dos links das referências                           | Thiago Luiz, Arthur Sena, Edvan Gomes      |
 
 ### Referências bibliográficas
 
-- Conventional Commits - [conventionalcommits.org/en/v1.0.0/](conventionalcommits.org/en/v1.0.0/) (Acessado em 15/09/2021)
-- Commit message guidelines - [github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines](github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) (Acessando em 15/09/2021)
-- Política de commmits - [fga-eps-mds.github.io/2019.2-Git-Breakdown/docs/commits](fga-eps-mds.github.io/2019.2-Git-Breakdown/docs/commits) (Acessado em 15/09/2021)
+- [Conventional Commits](https://conventionalcommits.org/en/v1.0.0/) (Acessado em 15/09/2021)
+- [Commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) (Acessando em 15/09/2021)
+- [Política de commmits](https://fga-eps-mds.github.io/2019.2-Git-Breakdown/docs/commits) (Acessado em 15/09/2021)
