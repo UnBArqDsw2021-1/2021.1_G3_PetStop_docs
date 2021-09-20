@@ -23,22 +23,24 @@ Conforme é verificado no Diagrama de Pacotes, com o uso do pacote "controllers"
 <img src="../../images/ControllerGrasp.JPG" alt="Diagrama de pacotes">
 
 ## GRASP Polimorfismo 
-Para a utilização desse padrão, foram realizadas mudanças no Diagrama de Classes, que se basearam na aplicação de Herança entre as classes filhas (Doacao_Monetaria e Doacao_Modal) com a classe abstrata pai (Doacao). A implementação desse padrão aumenta a manutenabilidade do produto.
+Para a utilização desse padrão, foram realizadas mudanças no Diagrama de Classes, que se basearam na aplicação de Herança entre as classes filhas (Doacao_Monetaria e Doacao_Modal) com a classe abstrata pai (Doacao). 
+
+- Vantagem
+  - A implementação desse padrão aumenta a manutenabilidade do produto.
 
 - Antes
 <div style="display: flex; width: 100%;">
-<img style="width: 80%; margin: 0 auto;" src="../../images/diagrama_classe_antes.png" alt="Antes da alteração">
+<img style="width: 40%; margin: 0 auto;" src="../../images/diagrama_classe_antes.png" alt="Antes da alteração">
 </div>
 
 - Depois
 
 <div style="display: flex; width: 100%;">
-<img style="width: 80%; margin: 0 auto;" src="../../images/diagrama_classe_depois.png" alt="Depois da alteração">
+<img style="width: 40%; margin: 0 auto;" src="../../images/diagrama_classe_depois.png" alt="Depois da alteração">
 </div>
 
 # Referências bibliográficas
 [Análise sobre a ISO 9126](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/). Acessado em 16 de setembro de 2021;
-
 
 # Histórico de  versão
 |Data|Versão|Descrição|Autor(es)|
