@@ -61,6 +61,7 @@ nav:
   - Módulo Padrões de Projeto:
       - Estudo Dirigido: padroes/estudoDirigido.md
       - GRASP: padroes/grasp/grasp.md
+      - GRASPs escolhidos: padroes/grasp/grasps_escolhidos.md
       - GoFs:
           - GoFs Criacionais: padroes/gofCriacional/gofCriacional.md
           - GoFs Estruturais: padroes/gofEstrutural/gofEstrutural.md
