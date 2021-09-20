@@ -74,16 +74,14 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 #### A nível de código
 
 <span>CREATORS</span>
-<div styles="width: 100%; display: flex; align-items: center">
-  <img style="width: 45%" src="./images/creator-fm.png">
-  <img style="width: 41%" src="./images/concretecreator-fm.png">
-</div>
+
+![Factory Creators](./images/creator-fm.png)
+![Factory Creators](./images/concretecreator-fm.png)
 
 <span>PRODUCTS</span>
-<div styles="width: 100%; display: flex;">
-  <img style="width: 45%" src="./images/product-fm.png">
-  <img style="width: 52%;" src="./images/concreteproduct-fm.png">
-</div>
+
+![Factory Products](./images/product-fm.png)
+![Factory Products](./images/concreteproduct-fm.png)
 
 ## Abstract Factory
 
@@ -112,6 +110,8 @@ O Padrão Factory Method tem como objetivo auxiliar na redução do acoplamento 
 
 ### Abstract Factory Projeto
 
+#### A nível de modelagem
+
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Abstract%20Fatory%20Projeto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1zaLFZURbo-HfaTTqQ4NUhU5Bkt3sPnME%26export%3Ddownload"></iframe>
 
 #### A nível de código
@@ -125,7 +125,7 @@ export interface EventoFactory{
 }
 ```
 
-~~~javascript
+```javascript
 import {Animal} from ../Animal
 
 export class CreateEventoAdocaoFactory{
@@ -136,9 +136,9 @@ export class CreateEventoAdocaoFactory{
     // implement function that verify if event already exits
   };
 }
-~~~
+```
 
-~~~javascript
+```javascript
 import {Animal} from ../Animal
 
 export class CreateEventoBanhoFactory{
@@ -149,9 +149,9 @@ export class CreateEventoBanhoFactory{
     // implement function that verify if event already exits
   };
 }
-~~~
+```
 
-~~~javascript
+```javascript
 import {Animal} from ../Animal
 
 export class CreateEventoTosaFactory{
@@ -162,9 +162,9 @@ export class CreateEventoTosaFactory{
     // implement function that verify if event already exits
   };
 }
-~~~
+```
 
-~~~javascript
+```javascript
 import {Animal} from ../Animal
 
 export class CreateEventoDoacaoFactory{
@@ -175,9 +175,9 @@ export class CreateEventoDoacaoFactory{
     // implement function that verify if event already exits
   };
 }
-~~~
+```
 
-~~~javascript
+```javascript
 import {CreateEventoDoacaoFactory} from ../EventoDoacao;
 import {CreateEventoAdocaoFactory} from ../EventoAdocao;
 
@@ -187,7 +187,8 @@ const eventoDomestico = new CreateEventoAdocaoFactory();
 const evento1 = eventoSilveste.CreateEventoDoacaoFactory("mico leao", "evento para arrecadar...", 1000.00);
 const evento2 = eventoDomestico.CreateEventoAdocaoFactory("cachorro", "evento para doacoes...");
 
-~~~
+```
+
 ## Prototype
 
 <p>Esse padrão de projeto prossibilita a criação de novos objetos a partir da cópia de objetos existentes.</p>
@@ -222,85 +223,89 @@ Sim, é possivel utilizarmos o conceito de protótipo na criação de eventos, c
 
 ```typescript
 export interface PrototypeEvento {
-    clone(): PrototypeEvento;
+  clone(): PrototypeEvento;
 }
 
 export class EventoPresencial implements PrototypeEvento {
+  constructor(
+    public dtInicio: Date,
+    public dtFinal: Date,
+    public hrInicial: Date,
+    public hrFinal: Date,
+    public titulo: string,
+    public descricao: string,
+    public cidade: string,
+    public cep: number,
+    public complemento: string,
+    public bairro: string
+  ) {}
 
-    constructor(
-        public dtInicio: Date,
-        public dtFinal: Date,
-        public hrInicial: Date,
-        public hrFinal: Date,
-        public titulo: string,
-        public descricao: string,
-        public cidade: string,
-        public cep: number,
-        public complemento: string,
-        public bairro: string) { }
+  clone(): EventoPresencial {
+    const newObj = new EventoPresencial(
+      this.dtInicio,
+      this.dtFinal,
+      this.hrInicial,
+      this.hrFinal,
+      this.titulo,
+      this.descricao,
+      this.cidade,
+      this.cep,
+      this.complemento,
+      this.bairro
+    );
+    return newObj;
+  }
 
-    clone(): EventoPresencial {
-        const newObj = new EventoPresencial(
-            this.dtInicio,
-            this.dtFinal,
-            this.hrInicial,
-            this.hrFinal,
-            this.titulo,
-            this.descricao,
-            this.cidade,
-            this.cep,
-            this.complemento,
-            this.bairro);
-        return newObj;
-    }
-
-    verificarEvento(): void {
-        console.log(
-            `O evento ${this.titulo} ira ocorrer em ${this.cidade}`,
-            `no bairro ${this.bairro} no dia ${this.dtInicio} as`,
-            `${this.hrInicial} até o dia ${this.dtFinal} as ${this.hrFinal}`);
-    }
+  verificarEvento(): void {
+    console.log(
+      `O evento ${this.titulo} ira ocorrer em ${this.cidade}`,
+      `no bairro ${this.bairro} no dia ${this.dtInicio} as`,
+      `${this.hrInicial} até o dia ${this.dtFinal} as ${this.hrFinal}`
+    );
+  }
 }
 
 export class EventoOnline implements PrototypeEvento {
+  constructor(
+    public titulo: string,
+    public descricao: string,
+    public itemDoado: string,
+    public contato: string
+  ) {}
 
-    constructor(
-        public titulo: string,
-        public descricao: string,
-        public itemDoado: string,
-        public contato: string) { }
-
-    clone(): EventoOnline {
-        const newObj = new EventoOnline(
-            this.titulo,
-            this.descricao,
-            this.itemDoado,
-            this.contato);
-        return newObj;
-    }
-    verificarEvento(): void {
-        console.log(
-            `O evento ${this.titulo} daoara ${this.itemDoado}`,
-            `e o doador pode ser contatado por: ${this.contato}`);
-    }
+  clone(): EventoOnline {
+    const newObj = new EventoOnline(
+      this.titulo,
+      this.descricao,
+      this.itemDoado,
+      this.contato
+    );
+    return newObj;
+  }
+  verificarEvento(): void {
+    console.log(
+      `O evento ${this.titulo} daoara ${this.itemDoado}`,
+      `e o doador pode ser contatado por: ${this.contato}`
+    );
+  }
 }
 ```
 
 ## Versionamentos
 
-|    Data    | Versão |                    Descrição                     |                            Autor                             |
-| :--------: | :----: | :----------------------------------------------: | :----------------------------------------------------------: |
-| 11/09/2021 |  0.1   | Criação do documento, adição do Padrão Singleton |      Paulo Gonçalves Lima, Pedro Vítor de Salles Cella       |
-| 12/09/2021 |  0.2   |           Revisão do Padrão Singleton            |                       Gabriela Pivetta                       |
-| 12/09/2021 |  0.3   |  Adição da descrição geral dos GoFs Criacionais  |                       Gabriela Pivetta                       |
-| 12/09/2021 |  0.4   |         Adição do Padrão Factory Method          |                       Gabriela Pivetta                       |
-| 14/09/2021 |  0.5   |        Adição do Padrão Abstract Factory         |                     Paulo Gonçalves Lima                     |
-| 16/09/2021 |  0.6   |         Revisão do Padrão Factory Method         |                     Paulo Gonçalves Lima                     |
-| 16/09/2021 | 0.6.1  |         Revisão textual e de formatação          | Arthur Sena, Vinícius Vieira, Antonio Ruan, Gabriela Pivetta |
-| 16/09/2021 |  0.7   |   Adição do padrão singleton a nível de código   |                         Arthur Sena                          |
-| 16/09/2021 |  0.8   |   Adição do padrão Factory Method a nível de código   |                         Gabriela Pivetta                         |
-| 17/09/2021 |  0.9   |   Adição do padrão Prototype   |                         Antonio Ruan                        |
-| 17/09/2021 |  0.10   |   Atualização iframe abstract factory e adição nivel de código   |                         Vinícius Vieira                        |
+|    Data    | Versão |                          Descrição                           |                            Autor                             |
+| :--------: | :----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| 11/09/2021 |  0.1   |       Criação do documento, adição do Padrão Singleton       |      Paulo Gonçalves Lima, Pedro Vítor de Salles Cella       |
+| 12/09/2021 |  0.2   |                 Revisão do Padrão Singleton                  |                       Gabriela Pivetta                       |
+| 12/09/2021 |  0.3   |        Adição da descrição geral dos GoFs Criacionais        |                       Gabriela Pivetta                       |
+| 12/09/2021 |  0.4   |               Adição do Padrão Factory Method                |                       Gabriela Pivetta                       |
+| 14/09/2021 |  0.5   |              Adição do Padrão Abstract Factory               |                     Paulo Gonçalves Lima                     |
+| 16/09/2021 |  0.6   |               Revisão do Padrão Factory Method               |                     Paulo Gonçalves Lima                     |
+| 16/09/2021 | 0.6.1  |               Revisão textual e de formatação                | Arthur Sena, Vinícius Vieira, Antonio Ruan, Gabriela Pivetta |
+| 16/09/2021 |  0.7   |         Adição do padrão singleton a nível de código         |                         Arthur Sena                          |
+| 16/09/2021 |  0.8   |      Adição do padrão Factory Method a nível de código       |                       Gabriela Pivetta                       |
+| 17/09/2021 |  0.9   |                  Adição do padrão Prototype                  |                         Antonio Ruan                         |
+| 17/09/2021 |  0.10  | Atualização iframe abstract factory e adição nivel de código |                       Vinícius Vieira                        |
 
 ## Referências
 
@@ -311,4 +316,4 @@ export class EventoOnline implements PrototypeEvento {
 - [Dev Media](https://www.devmedia.com.br/patterns-factory-method/18954)
 - [Wikpedia Factory Pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
 - [Refactoring Guru Factory Method](https://refactoring.guru/design-patterns/factory-method)
-- [Playlist Sobre Padrões de Projeto](https://youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H) 
+- [Playlist Sobre Padrões de Projeto](https://youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H)

@@ -34,48 +34,47 @@ Visto que o projeto possui diferentes formas de doação, o uso do Strategy pode
 
 ![Strategy Projeto](./images/StrategyProjeto.jpg)
 
-### A nível de código
+#### A nível de código
 
- ```js
-
+```js
 export class Strategy {
-  realizarDoacao(tipoDoacao: Array):Void{
-    tipoDoacao.forEach(tipo => {
-      pagamento = null
-      switch(tipo){
-        case 'credito':
-          pagamento = new StrategyCredito()
-        case 'Outros':
-          pagamento = new StrategyOutros()
-        case 'Debito':
-          pagamento = new StategyDebito()
+  realizarDoacao(tipoDoacao: Array): Void {
+    tipoDoacao.forEach((tipo) => {
+      pagamento = null;
+      switch (tipo) {
+        case "credito":
+          pagamento = new StrategyCredito();
+        case "Outros":
+          pagamento = new StrategyOutros();
+        case "Debito":
+          pagamento = new StategyDebito();
 
         default:
-          pagamento = null
+          pagamento = null;
       }
-      
-      if(pagamento != null){
-        pagamento.doar()
+
+      if (pagamento != null) {
+        pagamento.doar();
       }
     });
   }
 }
 ```
 
- ```js
+```js
 export class StrategyCredito(){
-  doar(){}
+ doar(){}
 }
 ```
 
- ```js
+```js
 export class StrategyOutros(){
 
-  criarDoacao():Bool{}
-  confirmarLocal():Local{}
+ criarDoacao():Bool{}
+ confirmarLocal():Local{}
 
 }
- ```
+```
 
 ## Template Method
 
@@ -110,7 +109,7 @@ export class StrategyOutros(){
 
 #### A nível de código
 
-```js
+```
 
 export class Doacao{
   constructor(){
@@ -166,7 +165,7 @@ Acredito que não, visto que as classes utilizadas são simples.
 | 11/09/2021 |  0.3   |                        Adição do Padrão Mediator                        | Paulo Gonçalves Lima, Pedro Vítor de Salles Cella |
 | 16/09/2021 |  0.4   | Revisão, correções ortográficas e ajuste de conteúdo do padrão Strategy |  Júlio César Schneider, Sara Campos, Edvan Gomes  |
 | 16/09/2021 | 0.4.1  |              Revisão textual e de formatação do documento               |          Arthur Sena e Gabriela Pivetta           |
-| 19/09/2021 | 0.5  |              Adicionado o nivel de codigo para os padrões Strategy e template method               |          Paulo Gonçalves Lima, Pedro Vítor de Salles Cella           |
+| 19/09/2021 |  0.5   | Adicionado o nivel de codigo para os padrões Strategy e template method | Paulo Gonçalves Lima, Pedro Vítor de Salles Cella |
 
 ## Referências
 

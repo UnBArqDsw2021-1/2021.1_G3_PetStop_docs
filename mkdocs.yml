@@ -65,4 +65,5 @@ nav:
           - GoFs Criacionais: padroes/gofCriacional/gofCriacional.md
           - GoFs Estruturais: padroes/gofEstrutural/gofEstrutural.md
           - GoFs Comportamentais: padroes/gofComportamental/gofComportamental.md
+      - Extras: padroes/extras/extras.md
   - Manual GhPages: manual.md
