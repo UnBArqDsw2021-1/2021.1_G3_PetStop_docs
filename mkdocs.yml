@@ -17,54 +17,56 @@ extra_css:
 nav:
   - Início: index.md
   - Módulo Desenho de Software Base:
-    - Projeto não orientado a abordagens específicas:
-      - Reuniões:
-        - Reunião 1 - (20/07): reunioes/reuniao1.md
-        - Reunião 2 - (27/07): reunioes/reuniao2.md
-        - Reunião 3 (Unpack) - (28/07): reunioes/reuniao3.md
-        - Reunião 4 (Unpack) - (29/07): reunioes/reuniao4.md
-        - Reunião 5 (Decision) - (03/08): reunioes/reuniao5.md
-      - Design Sprint:
-        - About: designSprint/about.md 
-        - <i>Unpack</i>: 
-          - 5W2H: artefatos/5w2h.md
-          - Causa-Efeito: artefatos/causa-efeito.md
-          - <i>Brainstorm</i>: artefatos/brainstorm.md 
-        - <i>Sketch</i>: designSprint/sketch.md
-        - <i>Decision</i>: 
-          - Escolha: designSprint/decision.md
-          - <i>Storyboard</i>: artefatos/storyboard.md
-          - Introspecção: artefatos/introspeccao.md
-          - Priorização:
-            - Brainstorm: priorizacao/brainstorm-moscow.md
-        - <i>Prototype</i>: designSprint/prototype.md
-    - Processos, metodologias e abordagens:
-      - BPMN: artefatos/bpmn.md
-      - Glossário: artefatos/glossario.md
+      - Projeto não orientado a abordagens específicas:
+          - Reuniões:
+              - Reunião 1 - (20/07): reunioes/reuniao1.md
+              - Reunião 2 - (27/07): reunioes/reuniao2.md
+              - Reunião 3 (Unpack) - (28/07): reunioes/reuniao3.md
+              - Reunião 4 (Unpack) - (29/07): reunioes/reuniao4.md
+              - Reunião 5 (Decision) - (03/08): reunioes/reuniao5.md
+          - Design Sprint:
+              - About: designSprint/about.md
+              - <i>Unpack</i>:
+                  - 5W2H: artefatos/5w2h.md
+                  - Causa-Efeito: artefatos/causa-efeito.md
+                  - <i>Brainstorm</i>: artefatos/brainstorm.md
+              - <i>Sketch</i>: designSprint/sketch.md
+              - <i>Decision</i>:
+                  - Escolha: designSprint/decision.md
+                  - <i>Storyboard</i>: artefatos/storyboard.md
+                  - Introspecção: artefatos/introspeccao.md
+                  - Priorização:
+                      - Brainstorm: priorizacao/brainstorm-moscow.md
+              - <i>Prototype</i>: designSprint/prototype.md
+      - Processos, metodologias e abordagens:
+          - BPMN: artefatos/bpmn.md
+          - Glossário: artefatos/glossario.md
   - Módulo Desenho de Software Modelagem:
-    - Módulo Projeto Orientado a Abordagens Tradicionais:
-      - Modelagem UML Estática:
-        - Diagrama de Classes: modelagem/umlEstaticos/classes.md
-        - Diagrama de Pacotes: modelagem/umlEstaticos/pacotes.md
-        - Diagrama de Componentes: modelagem/umlEstaticos/componentes.md
-      - Modelagem UML Dinâmica: 
-        - Diagrama de Atividades: modelagem/umlDinamicos/atividades.md
-        - Diagrama de Estados: modelagem/umlDinamicos/estados.md
-        - Diagrama de Comunicação: modelagem/umlDinamicos/comunicacao.md
-        - Diagrama de Sequência: modelagem/umlDinamicos/sequencia.md
-      - Módulo Modelagem Ágil:
-        - Backlog: backlog/backlog.md
-        - Personas: backlog/personas.md
-    - Iniciativas Extras: 
-      - Modelagem Banco de Dados: modelagemDB/modelagem_db.md
-      - Personas: backlog/personas.md
-  - Módulo Padrões de Projeto: 
+      - Módulo Projeto Orientado a Abordagens Tradicionais:
+          - Modelagem UML Estática:
+              - Diagrama de Classes: modelagem/umlEstaticos/classes.md
+              - Diagrama de Pacotes: modelagem/umlEstaticos/pacotes.md
+              - Diagrama de Componentes: modelagem/umlEstaticos/componentes.md
+          - Modelagem UML Dinâmica:
+              - Diagrama de Atividades: modelagem/umlDinamicos/atividades.md
+              - Diagrama de Estados: modelagem/umlDinamicos/estados.md
+              - Diagrama de Comunicação: modelagem/umlDinamicos/comunicacao.md
+              - Diagrama de Sequência: modelagem/umlDinamicos/sequencia.md
+          - Módulo Modelagem Ágil:
+              - Backlog: backlog/backlog.md
+              - Personas: backlog/personas.md
+      - Iniciativas Extras:
+          - Modelagem Banco de Dados: modelagemDB/modelagem_db.md
+          - Personas: backlog/personas.md
+  - Módulo Padrões de Projeto:
       - Estudo Dirigido: padroes/estudoDirigido.md
       - GRASP: padroes/grasp/grasp.md
       - GRASPs escolhidos: padroes/grasp/grasps_escolhidos.md
-      - GoF Criacional: padroes/gofCriacional/gofCriacional.md
-      - GoF Estrutural: padroes/gofEstrutural/gofEstrutural.md
-      - GoF Comportamental: padroes/gofComportamental/gofComportamental.md 
-      - Iniciativas extras: 
-        - Boas práticas: goodpractices.md
+      - GoFs:
+          - GoFs Criacionais: padroes/gofCriacional/gofCriacional.md
+          - GoFs Estruturais: padroes/gofEstrutural/gofEstrutural.md
+          - GoFs Comportamentais: padroes/gofComportamental/gofComportamental.md
+      - Padrões Extras: padroes/extras/extras.md
+      - Iniciativas extras:
+          - Boas práticas: goodpractices.md
   - Manual GhPages: manual.md
