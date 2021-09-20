@@ -19,40 +19,57 @@ Para confecção, foi usado o <a href="https://draw.io/">Draw.io</a>, que é um 
 * Cadastrar pet para adoção
 * Visualizar adoções
 
-## Versão 0.1
-
+## Versões 
+### Versão 0.1
 Para esta primeira versão do Diagrama de Atividades foram escolhidos diagramas voltados a principal regra de negócio da aplicação, que relembrando, baseia-se em ser um mecanismo de união entre prestadores de atividades voluntárias e donos de animais domésticos de pequeno porte, por meio de eventos beneficentes. 
+
+### Versão 0.2
+Para esta segunda versão do Diagrama de Atividades, os diagramas foram atualizados devido a mudanças de padrões de projeto implementadas.
+
+## Diagramas
 
 ### Processo de logar e cadastrar
 
+#### v0.1
 <img src="../../../images/atividades_login.png">
 
 ### Processo de cadastro de pets
 
+#### v0.1
 <img src="../../../images/atividades_cadastrar_pets.png">
 
 ### Processo de cadastro como voluntário
 
+#### v0.1
 <img src="../../../images/atividades_ser_voluntario.png">
 
 ### Processo de criar e publicar evento
 
+#### v0.1
 <img src="../../../images/atividades_criar_eventos.png">
 
 ### Processo de visualizar e inscrever-se em eventos 
 
+#### v0.1
 <img src="../../../images/atividades_eventos.png">
 
 ### Processo de realizar doações
 
+#### v0.1
 <img src="../../../images/atividades_doacao.png">
+
+#### v0.2
+Nessa atualização foi implementada a ramificação para o fluxo de pedir ou realizar doação.
+<img src="../../../images/atividades_doacao_02.png">
 
 ### Processo de cadastrar pet para adoção
 
+#### v0.1
 <img src="../../../images/atividades_cadastro_pet_adocao.png">
 
 ### Processo de visualizar adoções
 
+#### v0.1
 <img src="../../../images/atividades_adocao.png">
 
 ## Referências
@@ -70,4 +87,5 @@ Para esta primeira versão do Diagrama de Atividades foram escolhidos diagramas 
 |20/08/2021| 0.3 | Inserção do Diagrama de processo de cadastro de usuário | Victor Samuel | 
 |20/08/2021| 0.4 | Inserção do Diagrama de processo de cadastro de pets | Victor Samuel | 
 |20/08/2021| 0.5 | Inserção do Diagrama de processo de criação de evento | Victor Samuel | 
-|20/08/2021| 0.5 | Inserção do Diagrama de processo de cadastramento de pets para adoção | Victor Samuel | 
+|20/08/2021| 0.6 | Inserção do Diagrama de processo de cadastramento de pets para adoção | Victor Samuel | 
+|14/09/2021| 0.7 | Atualizando versão do diagrama de doação e adicionando rastrebilidade entre documentos | Victor Samuel, Vinicius Vieira e Antonio Ruan | 
