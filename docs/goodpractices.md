@@ -17,37 +17,41 @@ Nos repositórios de desenvolvimento, todas _branchs_ criadas devem estar relaci
 
 Para o caso do repositório de documentação, as _branchs_ não precisam estar relacionadas a _issues_, funcionalidades ou correções, sendo que o que as define é o tipo de documento a que ela está associada.
 
-O padrão usado para nomear as _branchs_ é número da _feature_ e o número da _issue_ seguida do título, que deve estar na língua inglesa com separação feita por _underline_ ao invés de espaço.
+A nomenclatura das *branchs* deve seguir o seguinte padrão:
 
-> > Exemplo do repositório de desenvolvimento:  
-> > us02i03-crud_publication
+- **f**(número da *feature*)**i**(número da *issue*)**-**(título)
 
-> > Exemplo do repositório de desenvolvimento:  
-> > us05i07-navigation_route
+O título deve estar na língua inglesa, usando *underlines* para substituir os espaços. 
 
-> > Exemplo do repositório de documentação:  
-> > backlog
+- Exemplo do repositório de desenvolvimento:  
+    f02i03-crud_publication
+
+- Exemplo do repositório de desenvolvimento:  
+    f05i07-navigation_route
+
+- Exemplo do repositório de documentação:  
+    backlog
 
 # Política de commits
 
 O padrão usado nas mensagens dos _commits_ será a escrita na língua inglesa com verbos no infinitivo. A mensagem deve ser construída pelo tipo seguido da descrição, que deve possuir no máximo 50 caracteres. Caso for preciso mais, cria-se um resumo, adiciona-se uma linha em branco e descreve-se o _commit_ com o número de caracteres necessários, onde cada linha deve conter no máximo 72 caracteres. Além disso, um _commit_ deve ser feito a cada nova adição/correção. Esses são os chamados _commits_ atômicos.
 
-> > Exemplos:
-> >
-> > - **feat: create component button**
-> > - **fix: fix error of home page**
+- Exemplos:  
+    **feat: create component button**
+
+    **fix: fix error of home page**
 
 O _commit_ deve corresponder a um dos seguintes tipos:
 
-- **Build** → alteração que afeta o sistema ou dependências externas;
-- **CI** → alteração da configuração dos arquivos de _Continuous Integration_;
-- **Docs** → alterações na documentação;
-- **Feat** → nova funcionalidade;
-- **Fix** → conserto de _bug_;
-- **Perf** → alteração de código que aperfeiçoa a performance;
-- **Refactor** → alteração do código que não conserta _bugs_ nem adiciona funcionalidade;
-- **Style** → alterações que não afetam o significade do código;
-- **Test** → adição/correção de testes.
+- **build** → alteração que afeta o sistema ou dependências externas;
+- **ci** → alteração da configuração dos arquivos de _Continuous Integration_;
+- **docs** → alterações na documentação;
+- **feat** → nova funcionalidade;
+- **fix** → conserto de _bug_;
+- **perf** → alteração de código que aperfeiçoa a performance;
+- **refactor** → alteração do código que não conserta _bugs_ nem adiciona funcionalidade;
+- **style** → alterações que não afetam o significade do código;
+- **test** → adição/correção de testes.
 
 ## Histórico de versão
 
@@ -56,6 +60,7 @@ O _commit_ deve corresponder a um dos seguintes tipos:
 | 1.0    | Criação do documento de boas práticas                        | Sara Campos, Edvan Gomes e Júlio Schneider |
 | 1.1    | Revisão de documento de boas práticas e correção do markdown | Thiago Luiz, Vitor Samuel                  |
 | 1.2    | Correção dos links das referências                           | Thiago Luiz, Arthur Sena, Edvan Gomes      |
+| 1.3    | Revisão e atualização do documento                           | Thiago Luiz, Gabriela Pivetta, Edvan Gomes      |
 
 ### Referências bibliográficas
 
