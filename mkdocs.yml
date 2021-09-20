@@ -66,5 +66,7 @@ nav:
           - GoFs Criacionais: padroes/gofCriacional/gofCriacional.md
           - GoFs Estruturais: padroes/gofEstrutural/gofEstrutural.md
           - GoFs Comportamentais: padroes/gofComportamental/gofComportamental.md
-      - Extras: padroes/extras/extras.md
+      - Padrões Extras: padroes/extras/extras.md
+      - Iniciativas extras:
+          - Boas práticas: goodpractices.md
   - Manual GhPages: manual.md
