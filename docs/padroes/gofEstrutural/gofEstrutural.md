@@ -134,6 +134,108 @@ Esse padrão de projeto serve como uma interface/máscara para uma estrutra de c
 
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Facade%20Base#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1lVHbGQwmJsBhUOxOhxa-FYy9FbISRQWb%26export%3Ddownload"></iframe>
 
+## Proxy
+
+O proxy controla a chamada a um objeto através de outro objeto de mesma interface.
+
+O padrão Proxy é aplicável sempre que há necessidade de uma referência mais versátil, ou sofisticada, do que um simples apontador para um objeto. É aplicável nos seguintes contextos:
+
+- Remote proxy: fornece um representante local para um objeto num espaço de endereçamento diferente.
+- Virtual proxy: cria objetos caros sob demanda
+- Protection proxy: controla o acesso ao objeto original.
+- Smart reference: é um substituto para um simples pointer que executa ações adicionais quando um objeto é acessado.
+
+#### Pontos Positivos
+
+- Possibilita a inclusão de tarefas adicionais de organização (housekeeping) quando um objeto é acessado
+- Ocultar o fato de que um objeto reside num espaço de endereçamento diferente.
+- Criação de um objeto sob demanda.
+
+#### Pontos Negativos
+
+- Aumento da complexidade
+
+#### É possível utilizar esse padrão para o projeto?
+
+Sim. Podemos utilizar o proxy no contexto do Protection proxy para a implementação de permissões na criação de um evento.
+
+### Proxy Base
+
+![Decorator Base](./images/ProxyBase.png)
+
+### Proxy Projeto
+
+#### A nível de modelagem
+
+![Decorator Base](./images/ProxyProjeto.jpg)
+
+#### A nível de código
+
+```typescript
+abstract class Evento {
+  public dtInicio: Date;
+  public dtFinal: Date;
+  public hrInicial: Date;
+  public hrFinal: Date;
+  public titulo: string;
+  public descricao: string;
+  public tipos[]: Tipo[];
+ 
+  verificarEvento(): String {
+    let res = 
+      `O evento ${titulo} ocorrera no dia ${dtInicio} as ${hrInicial} `+
+      `ate o dia ${dtFinal} as ${hrFinal}, e possui os seguintes tipos:\n`;
+    for(int i = 0; i < tipos.length; i++)
+      res += `-> ${tipos[i]}\n`
+    return res;
+  }
+
+  abstract criarEvento(usuario: Usuario): RealEvento;
+  abstract removerEvento(usuario: Usuario): void;
+}
+
+class RealEvento extends Evento{
+  constructor(
+    public dtInicio: Date,
+    public dtFinal: Date,
+    public hrInicial: Date,
+    public hrFinal: Date,
+    public titulo: string,
+    public descricao: string,
+    public tipos[]: Tipo[]){}
+}
+
+class Proxy extends Evento{
+
+  #evento: RealEvento
+
+  public criarEvento(usuario: Usuario): RealEvento{
+    if(usuario.voluntario === True)
+    {
+      evento = new RealEvento(
+        public dtInicio: Date,
+        public dtFinal: Date,
+        public hrInicial: Date,
+        public hrFinal: Date,
+        public titulo: string,
+        public descricao: string,
+        public tipos[]: Tipo[]);
+      return evento;
+    }
+  }
+
+  public removerEvento(usuario: Usuario): Bool{
+    if(usuario.voluntario === True)
+    {
+      delete evento;
+      return true;
+    }
+    return false;
+  }
+}
+
+```
+
 ## Versionamentos
 
 |    Data    | Versão |        Descrição         |             Autor              |
@@ -144,9 +246,11 @@ Esse padrão de projeto serve como uma interface/máscara para uma estrutra de c
 | 14/09/2021 |  0.4   |     Adição do Facade     |      Paulo Gonçalves Lima      |
 | 16/09/2021 | 0.4.1  | Revisão e adição textual | Arthur Sena e Gabriela Pivetta |
 | 16/09/2021 | 0.5  | Adição do nível de código do Decorator | Paulo Gonçalves Lima, Pedro Vítor de Salles |
+| 20/09/2021 | 0.6  | Adição do Proxy | Antonio Ruan |
 
 ## Referências
 
+- Gamma, Erich. et al. Padrões de Projeto: Soluções reutilizáveis de software orientado a objetos. 1ª Edição. Porto Alegre: Bookman, 2007.
 - [Playlist Sobre Padrões de Projeto](https://youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H)
 - [Wikipedia, Padrões de Projeto](https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software#Padr%C3%B5es_estruturais)
 - [Wikipedia, Adapter Pattern](https://en.wikipedia.org/wiki/Adapter_pattern)
