@@ -54,9 +54,10 @@ O *commit* deve corresponder a um dos seguintes tipos:
 | Versão | Descrição | Autor |
 | - | - | - |
 | 1.0 | Criação do documento de boas práticas | Sara Campos, Edvan Gomes e Júlio Schneider | 
+| 1.1 | Revisão de documento de boas práticas e correção do marckdown| Thiago Luiz, Vitor Samuel |
 
 ### Referências bibliográficas
 
-- Conventional Commits - conventionalcommits.org/en/v1.0.0/ (Acessado em 15/09/2021)
-- Commit message guidelines - github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines (Acessando em 15/09/2021)
-- Política de commmits - fga-eps-mds.github.io/2019.2-Git-Breakdown/docs/commits (Acessado em 15/09/2021)
+- Conventional Commits - [conventionalcommits.org/en/v1.0.0/](conventionalcommits.org/en/v1.0.0/) (Acessado em 15/09/2021)
+- Commit message guidelines - [github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines](github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) (Acessando em 15/09/2021)
+- Política de commmits - [fga-eps-mds.github.io/2019.2-Git-Breakdown/docs/commits](fga-eps-mds.github.io/2019.2-Git-Breakdown/docs/commits) (Acessado em 15/09/2021)
