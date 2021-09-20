@@ -195,9 +195,9 @@ Este padrão irá atribuir a responsabilidade a um objeto intermediário para fa
 
 #### Rastreamento com o projeto
 - É possível adaptar a forma de organização do nosso projeto a esse padrão? 
-    - Sim
+    - Sim, esse padrão já está sendo utilizado em nosso projeto. 
 - Quais documentos necessitam de refatoração para a implementação desse padrão? 
-    - Diagrama de classes, de sequência, comunicação e talvez de atividades. 
+    - Diagrama de classes e de atividades. 
 
 ### 2.9 Variações Protegidas
 

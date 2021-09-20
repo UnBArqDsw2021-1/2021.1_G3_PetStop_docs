@@ -1,5 +1,12 @@
 # Escolha de GRASPs
 
+
+## Padrões Escolhidos
+  - Especialista
+  - Controlador 
+  - Polimorfismo 
+  - Indireção 
+
 ## GRASP Especialista
 
 Para a aplicação do padrão especialista, foram revistos os métodos do diagrama de classe e a seguinte alteração foi feita: Realocação do método verificarEvento().
@@ -39,6 +46,18 @@ Para a utilização desse padrão, foram realizadas mudanças no Diagrama de Cla
 <img style="width: 40%; margin: 0 auto;" src="../../images/diagrama_classe_depois.png" alt="Depois da alteração">
 </div>
 
+
+## GRAPS Indireção 
+A princípio para a utilização desse padrão não foi vista necessidade de alterar artefatos anteriores.
+
+Esse padrão é encontrado em nosso projeto no Diagrama de Classes, mais explicitamente na classe "Tipo", que tem a responsabilidade de ser um objeto intermediário entre as classes "Evento" e "Doação", tornando-os indiretamente acomplados.
+
+<div style="display: flex; width: 100%;">
+<img style="width: 40%; margin: 0 auto;" src="../../images/indirecao_graps.png" alt="">
+</div>
+
+
+
 # Referências bibliográficas
 [Análise sobre a ISO 9126](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/). Acessado em 16 de setembro de 2021;
 
@@ -50,3 +69,5 @@ Para a utilização desse padrão, foram realizadas mudanças no Diagrama de Cla
 |14/09/2021 | 0.3 | Adição do tópico Polimorfismo | Victor Samuel |
 |15/09/2021 | 0.4 | Revisão e atualização do documento | Gabriela Pivetta, Arthur Sena |
 |16/09/2021 | 0.5 | Revisão do documento, correção das rotas das imagens, correções ortográficas e ajuste de texto | Edvan Gomes, Sara Campos, Júlio Schneider |
+|20/09/2021 | 0.6 | Adição do padrão de Indireção | Antônio Ruan, Victor Samuel e Vinícius Vieira |
+
