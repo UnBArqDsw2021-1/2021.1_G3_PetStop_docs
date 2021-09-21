@@ -49,7 +49,6 @@ O PetStop é uma Plataforma Web de fácil acesso, que desenvolvida por estudante
 https://drive.google.com/file/d/1s6C7L65R517N8h6CABqgup6tIsr6Dxj5/view?usp=sharing
 
 
-
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 
 ### Diagrama de Pacotes
@@ -70,15 +69,34 @@ https://drive.google.com/file/d/1s6C7L65R517N8h6CABqgup6tIsr6Dxj5/view?usp=shari
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
 https://drive.google.com/file/d/1-YvOTz77LuzXzfbfebm3dp7mOAN38tWj/view?usp=sharing
 
-<!--
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
+
+### Grasp Especialista 
+![Grasps Especialista](./docs/images/grapsEspecialista.png)
+
+### Grasp Controlador
+![Grasps Controlador](./docs/images/grapsControlador.png)
+
+### Grasp Indireção
+![Grasps Indireção](./docs/images/grapsIndirecao.png)
+
+### GoF Criacional - Singleton 
+![Singleton](./docs/images/singletonReadme.png)
+
+### GoF Estrutural - Adapter 
+![Adapter](./docs/images/adapterReadme.png)
+
+### GoF Comportamental - Strategy 
+![Strategy](./docs/images/strategyReadme.png)
+
+### Padrão Extra - React Provider Pattern
+![Strategy](./docs/images/reactReadme.png)
 
 ## Vídeo(s) Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
-Adicione o(s)s vídeo(s) da Terceira Entrega.
+https://drive.google.com/drive/folders/1BXR8_Pt_rSLSdFHpmWW38HRj_L2EGEDz
 
-
+<!--
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
