@@ -71,7 +71,7 @@ export class DecoratorUsuario extends DecoratorPessoa {
 ```
 
 ```js
-export class DecoratorUsuario extends DecoratorVoluntario {
+export class DecoratorVoluntario extends DecoratorPessoa {
   criarEvento(evento: Evento): Evento{} 
 
   removerEvento(evento: Evento): Bool {}
