@@ -117,18 +117,24 @@ export class Doacao{
       throw new Error("Não pode instanciar uma classe abstrata.");
     }
   }
-  doarDinheiro():Void{}
+  doarDinheiro():Void{
+    pagar()
+  }
   pagar():Void {}
 }
 
 export class DoacaoPorPix extends Doacao{
-  doarDinheiro():Number{}
-  pagar():Bool{}
+
+  pagar():Bool{
+    // Pagamento por Pix
+  }
 }
 
 export class DoacaoPorBoleto extends Doacao{
-  doarDinheiro():Number{}
-  pagar():Bool{}
+
+  pagar():Bool{
+    // Pagamento com Boleto
+  }
 }
 
 ```
