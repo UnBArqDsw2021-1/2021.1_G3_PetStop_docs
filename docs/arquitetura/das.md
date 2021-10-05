@@ -43,6 +43,10 @@
 
 ### 3.2 Diagrama de Contexto
 
+<p style="text-align: justify; text-indent: 20px;">O Diagrama de contexto representa de uma forma de mais alto nível a comunicação estabelecida entre as tecnologias, bem como o projeto em um contexto geral.</p>
+
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFFFFFF&edit=_blank&layers=1&nav=1&title=Diagrama%20de%20Contexto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D13VTp-aDIl5Z-XHXIlwDf3uXGa_WIyTeu%26export%3Ddownload"></iframe>
+
 ## 4. Objetivos Arquiteturais e Restrições
 
 ## 5. Visão de Casos de Uso
@@ -72,3 +76,5 @@
 |    Data    | Versão |      Descrição       |                                               Autor                                               |
 | :--------: | :----: | :------------------: | :-----------------------------------------------------------------------------------------------: |
 | 05/10/2021 |  0.1   | Criação do Documento | Arthur Sena, Edvan Gomes, Pedro Vítor de Salles Cella, Sara Campos, Victor Samuel, Vinícius Souza |
+| 05/10/2021 |  0.2   | Adição das tecnologias usadas | Arthur Sena |
+| 05/10/2021 |  0.2.1   | Adição do Diagrama de Contexto | Pedro Vítor de Salles Cella |
