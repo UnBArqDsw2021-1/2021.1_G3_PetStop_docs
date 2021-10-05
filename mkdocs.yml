@@ -69,4 +69,9 @@ nav:
       - Padrões Extras: padroes/extras/extras.md
       - Iniciativas extras:
           - Boas práticas: goodpractices.md
+  - Módulo Arquitetura de Software & Reutilização:
+    - Módulo Estilos e Padrões Arquiteturais:
+        - DAS: arquitetura/das.md
+    # - Módulo Reutilização de Software:
+    #     - 
   - Manual GhPages: manual.md
