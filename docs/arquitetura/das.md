@@ -62,7 +62,7 @@
 
 ## 8. Visão de Implantação
 
-<!-- Devops -->
+![Diagrama de Implantação](../images/Diagrama_implantação.png)
 
 ## 9. Visão de Implementação
 
@@ -80,3 +80,4 @@
 | 05/10/2021 |  0.2   | Adição das tecnologias usadas | Arthur Sena |
 | 05/10/2021 |  0.2.1   | Adição do Diagrama de Contexto | Pedro Vítor de Salles Cella |
 | 05/10/2021 | 0.2.2 | Revisão do documento e sugestão de mudança | Sara Campos, Edvan Gomes e Júlio Schneider |
+| 05/10/2021 | 0.2.3 | Adição do diagrama de implantação | Sara Campos, Edvan Gomes e Júlio Schneider |
