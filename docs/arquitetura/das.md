@@ -83,6 +83,21 @@ Dadas as vantagens desse modelo arquitetural somado a preferência da equipe, o 
 
 ## 5. Visão de Casos de Uso
 
+Na linguagem de Modelagem Unificada (UML), o diagrama de caso de uso resume os detalhes dos usuários do seu sistema (Também chamados de atores) e as suas interações. Seu objetivo é demonstrar as diferentes maneiras que o usuário pode interagir com as funcionalidades de um determinado sistema, listando-as e representando-as de maneira centralizada e significativa para os cenários consideráveis, além de, definir e organizar os requisitos funcionais, especificiar o contexto e modelar os fluxos de eventos.
+
+A visão de caso de uso é um aspecto arquitetônico que demonstra os casos e cenários de uso que abrangem comportamento e/ou classes significativas do ponto de vista arquitetônico. Essa visão mostra um subconjunto arquitetonicamente significativo dos casos de uso e atores, que no projeto PetStop são: Usuário e Voluntário.
+
+Os casos de uso levantados foram aqueles com maior impacto significativo para arquitetura do projeto, são eles:
+
+  * UC01 - Login e Cadastro 
+  * UC02 - Cadastro de Pets
+  * UC03 - Cadastro como voluntário
+  * UC04 - Criar e publicar evento
+  * UC05 - Visualizar e inscrever-se em eventos
+  * UC06 - Realizar doações
+  * UC07 - Cadastrar pet para adoção
+  * UC08 - Visualizar adoções
+
 ## 6. Visão Lógica
 
 <!-- Classe, Componentes, Pacotes(?) -->
@@ -210,8 +225,8 @@ Tendo uma representação do seu [modelo lógico](../modelagemDB/modelagem_db.md
 | 05/10/2021 | 0.2.3 | Adição do diagrama de implantação | Sara Campos, Edvan Gomes e Júlio Schneider |
 | 05/10/2021 | 0.2.4 | Revisão e adição de diagrama de implantação | Antonio Ruan e Vinícius Souza |
 | 05/10/2021 | 0.2.5 | Correção do Diagrama de implantação | Edvan Gomes, Júlio Schneider, Sara Campos |
-| 07/10/2021 | 0.2.6 | Revisão do documento e sugestão de mudança | Gabriela Pivetta, Paulo Gonçalves |
-| 06/10/2021 | 0.3 | Adição dos Objetivos Arquiteturais e Restrições | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
+| 05/10/2021 | 0.2.6 | Adição da Visão de Casos de Uso | Antonio Ruan, Pedro Cella, Victor Samuel e Vinícius Souza |
+| 07/10/2021 | 0.2.7 | Revisão do documento e sugestão de mudança | Gabriela Pivetta, Paulo Gonçalves |
+| 06/10/2021 | 0.3   | Adição dos Objetivos Arquiteturais e Restrições | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
 | 07/10/2021 | 0.3.1 | Adição da Visão de Dados | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
-| 07/10/2021 | 0.3.2 | Revisão do documento | Edvan Gomes, Paulo Gonçalves, Pedro Cella, Viníciuas Souza |
-
+| 07/10/2021 | 0.3.2 | Revisão do documento | Edvan Gomes, Paulo Gonçalves, Pedro Cella, Vinícius Souza |
