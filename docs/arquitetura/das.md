@@ -28,11 +28,12 @@
 
 #### BackEnd
 
+<!-- mudar modelo para lista -->
 <p style="text-align: justify; text-indent: 20px;">
     A tecnologia escolhida pelo grupo para o servidor do projeto foi o <b>Node</b>. Utilizado para executar JavaScript fora do navegador, este framework permite a criação de aplicações web em geral e se mostrou interessante para o grupo pelo mesmo motivo que o React e também para que aqueles que não tinham familiaridade com o desenvolvimento Web necessitassem do contato com apenas uma linguagem.
 </p>
 <p style="text-align: justify; text-indent: 20px;">
-    O nosso banco de dados utilizará do <b>Postgres</b>, um sistema de banco de dados Open Source de fácil instalação que possui interfaces simples e intuitivas que facilitam o processo de aprendizado.
+    O banco de dados do projeto utilizará do <b>Postgres</b>, um sistema de banco de dados Open Source de fácil instalação que possui interfaces simples e intuitivas que facilitam o processo de aprendizado.
 </p>
 
 #### Outros
@@ -75,6 +76,7 @@
 
 |    Data    | Versão |      Descrição       |                                               Autor                                               |
 | :--------: | :----: | :------------------: | :-----------------------------------------------------------------------------------------------: |
-| 05/10/2021 |  0.1   | Criação do Documento | Arthur Sena, Edvan Gomes, Pedro Vítor de Salles Cella, Sara Campos, Victor Samuel, Vinícius Souza |
+| 05/10/2021 |  0.1   | Criação do Documento | Arthur Sena, Edvan Gomes, Júlio Schneider, Gabriela Pivetta, Pedro Vítor de Salles Cella, Sara Campos, Victor Samuel, Vinícius Souza |
 | 05/10/2021 |  0.2   | Adição das tecnologias usadas | Arthur Sena |
 | 05/10/2021 |  0.2.1   | Adição do Diagrama de Contexto | Pedro Vítor de Salles Cella |
+| 05/10/2021 | 0.2.2 | Revisão do documento e sugestão de mudança | Sara Campos, Edvan Gomes e Júlio Schneider |
