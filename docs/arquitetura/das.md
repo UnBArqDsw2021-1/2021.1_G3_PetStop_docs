@@ -50,6 +50,22 @@
 
 ## 4. Objetivos Arquiteturais e Restrições
 
+| Objetivos | |
+| :--- | --- |
+| Deploy | O deploy da aplicação deve ser automatizado |
+| Escalabilidade | A aplicação deve ser escalável |
+| Segurança | A aplicação deve tratar de forma de segura os dados sensíveis dos usuários |
+| Usabilidade | A aplicação deve ser intuitiva e interativa |
+
+| Restrições | |
+| :--- | --- |
+| Conectividade | É necessário ter conexão com internet para acessar a aplicação |
+| Linguagem | A linguagem padrão da aplicação é a Língua Portuguesa do Brasil |
+| Plataforma | É necessário o uso de um navegador tanto em dispositivos desktop, quanto mobile |
+| Público | Brasileiros que se interessam ou possuem necessidade envolvendo animais domésticos |
+| Prazo | A aplicação há de ser finalizada até o fim da disciplina |
+| Infraestrutura | Criar um sistema otimizado que não necessite de uma infraestrutura robusta para sustentar a aplicação |
+
 ## 5. Visão de Casos de Uso
 
 ## 6. Visão Lógica
@@ -80,3 +96,4 @@
 | 05/10/2021 |  0.2   | Adição das tecnologias usadas | Arthur Sena |
 | 05/10/2021 |  0.2.1   | Adição do Diagrama de Contexto | Pedro Vítor de Salles Cella |
 | 05/10/2021 | 0.2.2 | Revisão do documento e sugestão de mudança | Sara Campos, Edvan Gomes e Júlio Schneider |
+| 06/10/2021 | 0.3 | Adição dos Objetivos Arquiteturais e Restrições | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
