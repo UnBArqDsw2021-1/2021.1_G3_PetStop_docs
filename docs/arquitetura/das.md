@@ -86,7 +86,99 @@
 
 ## 10. Visão de Dados
 
-<!-- Exemplos das models etc, DER, DLD -->
+Este tópico descreve o modelo de persistência de dados utilizado no sistema, representado através dos modelos persistidos no banco de dados Postgres.
+
+Tendo uma representação do seu [modelo lógico](../modelagemDB/modelagem_db.md#Diagrama%20Lógico) e o seu [modelo de entidade e relacionamentos](../modelagemDB/modelagem_db.md#Diagrama%20Entidade%20Relacionamento%20(DER)).
+
+### Modelo Ajuda
+
+- Formato dos dados
+  
+![Dicionario Ajuda](../modelagemDB/img/dicionario_ajuda.png)
+
+- Exemplo
+
+![Exemplo Ajuda](./img_data_vision/ajuda.png)
+
+### Modelo Cria
+
+- Formato dos dados
+
+![Dicionario Cria](../modelagemDB/img/dicionario_cria.png)
+
+- Exemplo
+
+![Exemplo Cria](./img_data_vision/cria.png)
+
+### Modelo Evento
+
+- Formato dos dados
+
+![Dicionario Evento](../modelagemDB/img/dicionario_evento.png)
+
+- Exemplo
+
+![Exemplo Evento](./img_data_vision/evento.png)
+
+### Modelo Local
+
+- Formato dos dados
+
+![Dicionario Local](../modelagemDB/img/dicionario_local.png)
+
+- Exemplo
+
+![Exemplo Local](./img_data_vision/local.png)
+
+### Modelo Participa
+
+- Formato dos dados
+
+![Dicionario Participa](../modelagemDB/img/dicionario_participa.png)
+
+- Exemplo
+
+![Exemplo Participa](./img_data_vision/participa.png)
+
+### Modelo Pet
+
+- Formato dos dados
+
+![Dicionario Pet](../modelagemDB/img/dicionario_pet.png)
+
+- Exemplo
+
+![Exemplo Pet](./img_data_vision/pet.png)
+
+### Modelo Tipo
+
+- Formato dos dados
+
+![Dicionario Tipo](../modelagemDB/img/dicionario_tipo.png)
+
+- Exemplo
+
+![Exemplo Tipo](./img_data_vision/tipo.png)
+
+### Modelo Usuario
+
+- Formato dos dados
+
+![Dicionario Usuario](../modelagemDB/img/dicionario_usuario.png)
+
+- Exemplo
+
+![Exemplo Usuario](./img_data_vision/usuario.png)
+
+### Modelo Voluntário
+
+- Formato dos dados
+
+![Dicionario Voluntario](../modelagemDB/img/dicionario_voluntario.png)
+
+- Exemplo
+
+![Exemplo Voluntario](./img_data_vision/voluntario.png)
 
 ## Versionamentos
 
@@ -97,3 +189,4 @@
 | 05/10/2021 |  0.2.1   | Adição do Diagrama de Contexto | Pedro Vítor de Salles Cella |
 | 05/10/2021 | 0.2.2 | Revisão do documento e sugestão de mudança | Sara Campos, Edvan Gomes e Júlio Schneider |
 | 06/10/2021 | 0.3 | Adição dos Objetivos Arquiteturais e Restrições | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
+| 07/10/2021 | 0.3.1 | Adição da Visão de Dados | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
