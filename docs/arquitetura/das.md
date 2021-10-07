@@ -62,7 +62,7 @@
 
 ## 8. Visão de Implantação
 
-Abaixo é possivel observar dois diagramas de implantação, o primeiro explicitando o caso de deploy da e o segundo os nós na execução da aplicação.
+Abaixo é possivel observar dois diagramas de implantação, o primeiro explicitando o caso de deploy da aplicação, já o segundo explicita os nós na execução da aplicação.
 
 ![Diagrama de Implantação](../images/Diagrama_implantação.png)
 
@@ -87,3 +87,4 @@ Abaixo é possivel observar dois diagramas de implantação, o primeiro explicit
 | 05/10/2021 | 0.2.3 | Adição do diagrama de implantação | Sara Campos, Edvan Gomes e Júlio Schneider |
 | 05/10/2021 | 0.2.4 | Revisão e adição de diagrama de implantação | Antonio Ruan e Vinícius Souza |
 | 05/10/2021 | 0.2.5 | Correção do Diagrama de implantação | Edvan Gomes, Júlio Schneider, Sara Campos |
+| 07/10/2021 | 0.2.6 | Revisão do documento e sugestão de mudança | Gabriela Pivetta, Paulo Gonçalves |
