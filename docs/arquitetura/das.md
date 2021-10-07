@@ -86,3 +86,4 @@ Abaixo é possivel observar dois diagramas de implantação, o primeiro explicit
 | 05/10/2021 | 0.2.2 | Revisão do documento e sugestão de mudança | Sara Campos, Edvan Gomes e Júlio Schneider |
 | 05/10/2021 | 0.2.3 | Adição do diagrama de implantação | Sara Campos, Edvan Gomes e Júlio Schneider |
 | 05/10/2021 | 0.2.4 | Revisão e adição de diagrama de implantação | Antonio Ruan e Vinícius Souza |
+| 05/10/2021 | 0.2.5 | Correção do Diagrama de implantação | Edvan Gomes, Júlio Schneider, Sara Campos |
