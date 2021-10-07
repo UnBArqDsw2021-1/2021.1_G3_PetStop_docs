@@ -93,6 +93,11 @@ Os casos de uso levantados podem ser visualizados em [Diagramas de Casos de Uso]
 
 ## 6. Visão Lógica
 
+### 6.1. Diagrama de Classes
+O Diagrama de Classes demonstra a forma como será feito a implementação do projeto, especificando as classes a serem criadas bem como seus atributos e métodos.
+
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFF&edit=_blank&layers=1&nav=1&title=Diagrama_Classe%20DAS#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D160DfLDBn9FTCP1_5ln_MvpnORhUTzFDV%26export%3Ddownload%22%3E</iframe>
+
 <!-- Classe, Componentes, Pacotes(?) -->
 
 ## 7. Visão de Processo
@@ -218,9 +223,12 @@ Tendo uma representação do seu [modelo lógico](../modelagemDB/modelagem_db.md
 | 05/10/2021 | 0.2.3  | Adição do diagrama de implantação | Sara Campos, Edvan Gomes e Júlio Schneider |
 | 05/10/2021 | 0.2.4  | Revisão e adição de diagrama de implantação | Antonio Ruan e Vinícius Souza |
 | 05/10/2021 | 0.2.5  | Correção do Diagrama de implantação | Edvan Gomes, Júlio Schneider, Sara Campos |
-| 05/10/2021 | 0.2.6  | Adição da Visão de Casos de Usos | Victor Samuel, Pedro Vítor de Salles Cella, Antonio Ruan e Vinicíus Vieira |
+| 05/10/2021 | 0.2.6  | Adição da Visão de Casos de Usos | Victor Samuel, Pedro Vítor de Salles Cella, Antonio Ruan e Vinicíus Souza |
+| 05/10/2021 | 0.2.7  | Adição do diagrama de classes para visão lógica | Victor Samuel, Pedro Vítor de Salles Cella, Antonio Ruan e Vinicíus Souza |
 | 06/10/2021 | 0.2.7  | Adição dos Objetivos Arquiteturais e Restrições | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
 | 07/10/2021 | 0.3    | Revisão do documento e sugestão de mudança | Gabriela Pivetta, Paulo Gonçalves |
 | 07/10/2021 | 0.3.1  | Adição da Visão de Dados | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
 | 07/10/2021 | 0.3.2  | Revisão do documento | Edvan Gomes, Paulo Gonçalves, Pedro Cella, Vinícius Souza |
+
+
 
