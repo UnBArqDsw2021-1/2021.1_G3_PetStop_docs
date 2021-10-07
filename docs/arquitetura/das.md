@@ -50,6 +50,22 @@
 
 ## 4. Objetivos Arquiteturais e Restrições
 
+| Objetivos | |
+| :--- | --- |
+| Deploy | O deploy da aplicação deve ser automatizado |
+| Escalabilidade | A aplicação deve ser escalável |
+| Segurança | A aplicação deve tratar de forma de segura os dados sensíveis dos usuários |
+| Usabilidade | A aplicação deve ser intuitiva e interativa |
+
+| Restrições | |
+| :--- | --- |
+| Conectividade | É necessário ter conexão com internet para acessar a aplicação |
+| Linguagem | A linguagem padrão da aplicação é a Língua Portuguesa do Brasil |
+| Plataforma | É necessário o uso de um navegador tanto em dispositivos desktop, quanto mobile |
+| Público | Brasileiros que se interessam ou possuem necessidade envolvendo animais domésticos |
+| Prazo | A aplicação há de ser finalizada até o fim da disciplina |
+| Infraestrutura | Criar um sistema otimizado que não necessite de uma infraestrutura robusta para sustentar a aplicação |
+
 ## 5. Visão de Casos de Uso
 
 ## 6. Visão Lógica
@@ -74,7 +90,99 @@ Abaixo é possivel observar dois diagramas de implantação, o primeiro explicit
 
 ## 10. Visão de Dados
 
-<!-- Exemplos das models etc, DER, DLD -->
+Este tópico descreve o modelo de persistência de dados utilizado no sistema, representado através dos modelos persistidos no banco de dados Postgres.
+
+Tendo uma representação do seu [modelo lógico](../modelagemDB/modelagem_db.md#Diagrama%20Lógico) e o seu [modelo de entidade e relacionamentos](../modelagemDB/modelagem_db.md#Diagrama%20Entidade%20Relacionamento%20(DER)).
+
+### Modelo Ajuda
+
+- Formato dos dados
+  
+![Dicionario Ajuda](../modelagemDB/img/dicionario_ajuda.png)
+
+- Exemplo
+
+![Exemplo Ajuda](./img_data_vision/ajuda.png)
+
+### Modelo Cria
+
+- Formato dos dados
+
+![Dicionario Cria](../modelagemDB/img/dicionario_cria.png)
+
+- Exemplo
+
+![Exemplo Cria](./img_data_vision/cria.png)
+
+### Modelo Evento
+
+- Formato dos dados
+
+![Dicionario Evento](../modelagemDB/img/dicionario_evento.png)
+
+- Exemplo
+
+![Exemplo Evento](./img_data_vision/evento.png)
+
+### Modelo Local
+
+- Formato dos dados
+
+![Dicionario Local](../modelagemDB/img/dicionario_local.png)
+
+- Exemplo
+
+![Exemplo Local](./img_data_vision/local.png)
+
+### Modelo Participa
+
+- Formato dos dados
+
+![Dicionario Participa](../modelagemDB/img/dicionario_participa.png)
+
+- Exemplo
+
+![Exemplo Participa](./img_data_vision/participa.png)
+
+### Modelo Pet
+
+- Formato dos dados
+
+![Dicionario Pet](../modelagemDB/img/dicionario_pet.png)
+
+- Exemplo
+
+![Exemplo Pet](./img_data_vision/pet.png)
+
+### Modelo Tipo
+
+- Formato dos dados
+
+![Dicionario Tipo](../modelagemDB/img/dicionario_tipo.png)
+
+- Exemplo
+
+![Exemplo Tipo](./img_data_vision/tipo.png)
+
+### Modelo Usuario
+
+- Formato dos dados
+
+![Dicionario Usuario](../modelagemDB/img/dicionario_usuario.png)
+
+- Exemplo
+
+![Exemplo Usuario](./img_data_vision/usuario.png)
+
+### Modelo Voluntário
+
+- Formato dos dados
+
+![Dicionario Voluntario](../modelagemDB/img/dicionario_voluntario.png)
+
+- Exemplo
+
+![Exemplo Voluntario](./img_data_vision/voluntario.png)
 
 ## Versionamentos
 
@@ -88,3 +196,7 @@ Abaixo é possivel observar dois diagramas de implantação, o primeiro explicit
 | 05/10/2021 | 0.2.4 | Revisão e adição de diagrama de implantação | Antonio Ruan e Vinícius Souza |
 | 05/10/2021 | 0.2.5 | Correção do Diagrama de implantação | Edvan Gomes, Júlio Schneider, Sara Campos |
 | 07/10/2021 | 0.2.6 | Revisão do documento e sugestão de mudança | Gabriela Pivetta, Paulo Gonçalves |
+| 06/10/2021 | 0.3 | Adição dos Objetivos Arquiteturais e Restrições | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
+| 07/10/2021 | 0.3.1 | Adição da Visão de Dados | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
+| 07/10/2021 | 0.3.2 | Revisão do documento | Edvan Gomes, Paulo Gonçalves, Pedro Cella, Viníciuas Souza |
+
