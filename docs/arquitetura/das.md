@@ -84,8 +84,11 @@ Dadas as vantagens desse modelo arquitetural somado a preferência da equipe, o 
 
 ## 6. Visão Lógica
 
-### 6.1 Diagrama de Componentes 
 <!-- Componentes, Pacotes(?) -->
+### 6.1 Diagrama de Componentes
+O [Diagrama de Componentes](../modelagem/umlEstaticos/componentes.md) serve para demonstrar um funcionamento do software com maior detalhamento e suas partes específicas, abaixo tem-se o diagrama do projeto:
+
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFF&edit=_blank&layers=1&nav=1&title=Diagrama_Componentes#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1qb7gG-TzegixnUGcc7K_iEgqFBzxzjdx%26export%3Ddownload"></iframe>
 
 ## 7. Visão de Processo
 
@@ -215,6 +218,7 @@ Tendo uma representação do seu [modelo lógico](../modelagemDB/modelagem_db.md
 | 06/10/2021 | 0.3 | Adição dos Objetivos Arquiteturais e Restrições | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
 | 07/10/2021 | 0.3.1 | Adição da Visão de Dados | Gabriela Pivetta, Paulo Gonçalves, Thiago Luiz |
 | 07/10/2021 | 0.3.2 | Revisão do documento | Edvan Gomes, Paulo Gonçalves, Pedro Cella, Viníciuas Souza |
+| 07/10/2021 | 0.6.1 | Adição do diagrama de componentes | Antonio Ruan, Pedro Cella, Viníciuas Souza |
 | 07/10/2021 | 0.9.1 | Adição do diagrama de implementação | Antonio Ruan, Pedro Cella, Viníciuas Souza |
 
 ## Versionamentos
