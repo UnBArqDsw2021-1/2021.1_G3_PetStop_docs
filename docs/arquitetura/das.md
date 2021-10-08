@@ -34,14 +34,13 @@ Dadas as vantagens desse modelo arquitetural somado a preferência da equipe, o 
 ## 3. Representação Arquitetural
 
 ### 3.1 Tecnologias
-
-#### FrontEnd
+#### 3.1.1 FrontEnd
 
 <p style="text-align: justify; text-indent: 20px;">
    O framework <b>React</b> já era conhecido pela maioria dos integrantes da equipe e também possui grande comunidade ativa, o que permite o acesso rápido a conteúdos e treinamentos para aqueles que não possuiam desenvoltura com a tecnologia.
 </p>
 
-#### BackEnd
+#### 3.1.2 BackEnd
 
 <!-- mudar modelo para lista -->
 <p style="text-align: justify; text-indent: 20px;">
@@ -51,7 +50,7 @@ Dadas as vantagens desse modelo arquitetural somado a preferência da equipe, o 
     O banco de dados do projeto utilizará do <b>Postgres</b>, um sistema de banco de dados Open Source de fácil instalação que possui interfaces simples e intuitivas que facilitam o processo de aprendizado.
 </p>
 
-#### Outros
+#### 3.1.3 Outros
 
 <p style="text-align: justify; text-indent: 20px;">
     O <b>Docker</b> se mostrou indispensável para o desenvolvimento do nosso projeto, já que a uniformização e contêinerização do ambiente de execução da equipe evita problemas que são mitigados por este empacotamento.
