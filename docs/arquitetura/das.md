@@ -83,12 +83,19 @@ Dadas as vantagens desse modelo arquitetural somado a preferência da equipe, o 
 ## 5. Visão de Casos de Uso
 
 ## 6. Visão Lógica
+O propósito da visão lógica é descrever as partes significativas do projeto do ponto de vista da arquitetura do modelo de design.
 
 <!-- Componentes, Pacotes(?) -->
 ### 6.1 Diagrama de Componentes
 O [Diagrama de Componentes](../modelagem/umlEstaticos/componentes.md) serve para demonstrar um funcionamento do software com maior detalhamento e suas partes específicas, abaixo tem-se o diagrama do projeto:
 
 <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFF&edit=_blank&layers=1&nav=1&title=Diagrama_Componentes#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1qb7gG-TzegixnUGcc7K_iEgqFBzxzjdx%26export%3Ddownload"></iframe>
+
+### 6.1 Diagrama de Pacotes
+
+Abaixo é disponibilizada a visualização da última versão do nosso <a href="https://unbarqdsw2021-1.github.io/2021.1_G3_PetStop_docs/modelagem/umlEstaticos/pacotes/">Diagrama de Pacotes</a>, artefato que permite visualizar a organização de diretórios e arquivos do projeto.
+
+<iframe frameborder="0" style="width:100%;height:650px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Diagrama%20de%20Pacotes%20-%20Detalhado#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1_hAiu-3ojxPBdjDLXdze3OCvxcyUdxgN%26export%3Ddownload"></iframe>
 
 ## 7. Visão de Processo
 
@@ -220,6 +227,7 @@ Tendo uma representação do seu [modelo lógico](../modelagemDB/modelagem_db.md
 | 07/10/2021 | 0.3.2 | Revisão do documento | Edvan Gomes, Paulo Gonçalves, Pedro Cella, Viníciuas Souza |
 | 07/10/2021 | 0.6.1 | Adição do diagrama de componentes | Antonio Ruan, Pedro Cella, Viníciuas Souza |
 | 07/10/2021 | 0.9.1 | Adição do diagrama de implementação | Antonio Ruan, Pedro Cella, Viníciuas Souza |
+| 07/10/2021 | 0.9.2 | Adição do diagrama de pacotes e atualização do tópico de visão lógica | Arthur Sena, Viníciuas Souza |
 
 ## Versionamentos
 - [Diagrama de Arquitetura de Software - Grupo Stock](https://unbarqdsw.github.io/2020.1_G12_Stock/#/Architecture/das)

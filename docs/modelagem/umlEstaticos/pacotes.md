@@ -4,6 +4,10 @@
 
 Diagramas de pacotes são diagramas estruturais usados para mostrar, em uma forma de pacotes, a organização e disposição de vários elementos de modelos. No desenvolvimento deste diagrama foi utlizada a ferramenta <a target="_blank" href="https://draw.io/">Draw.io</a>.
 
+## Versão 1.0 
+
+<iframe frameborder="0" style="width:100%;height:650px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Diagrama%20de%20Pacotes%20-%20Detalhado#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1_hAiu-3ojxPBdjDLXdze3OCvxcyUdxgN%26export%3Ddownload"></iframe>
+
 ## Versão 0.1
 
 <img src="../../../images/diag_pacotes.png">
@@ -19,3 +23,4 @@ Diagramas de pacotes são diagramas estruturais usados para mostrar, em uma form
 |Data|Versão|Descrição|Autor|
 |:--------:|:---:|:-------------------: |:-----------:|
 |19/08/2021| 0.1 | Criação do documento | Arthur Sena | 
+|07/10/2021| 1.0 | Criação do documento | Arthur Sena e Vinicius Souza | 
