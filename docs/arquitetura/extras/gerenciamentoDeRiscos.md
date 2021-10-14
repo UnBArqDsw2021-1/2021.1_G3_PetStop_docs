@@ -17,12 +17,23 @@ Possíveis riscos e detectáveis para cada fase (determinadas pelo andamento das
 | 9          |  Membro ou Familiar infectar-se pela Covid-19.  | Se possível, mantenha-se em casa. | Repartir carga do membro impossibilitado entre os membros restantes. |
 | 10          |  Entregas erradas ou atrasadas.  | Manter-se atualizado em relação ao conteúdo e sempre que possível, tirar as dúvidas com professores e monitores. | Refatoramento dos documentos entregues. |
 | 11          |  Alteração no Escopo.  | Manter a comunicação sempre ativa. | Documentar e aprimorar os novos tópicos |
-| 11          |  Descomprometimento de membros e/ou equipe | Realizar conversas com membros para mantê-los sempre motivados. | Reunir a equipe, entender todos os lados e motivá-los. |
+| 12          |  Descomprometimento de membros e/ou equipe | Realizar conversas com membros para mantê-los sempre motivados. | Reunir a equipe, entender todos os lados e motivá-los. |
 
+Análise dos riscos por meio de reuniões na plataforma Planning Poker. 
+
+|    Probabilidade  |    %      |  Peso (Definido em reunião)  |
+| :---------------: | :-------: | :--------------------------: |
+| Muito Baixa | 0%  a 20% | 1 |
+| Baixa | 20%  a 40% | 2 |
+| Média| 40%  a 60% | 3 |
+| Alta | 60%  a 80% | 4 |
+| Muito Alta | 80%  a 100% | 5 |
 
 ## Versionamentos
 
 |    Data    | Versão |      Descrição       |                                               Autor                                               |
 | :--------: | :----: | :------------------: | :-----------------------------------------------------------------------------------------------: |
-| 13/10/2021 |  0.1   | Criação do Documento | Victor Samuel |  
+| 13/10/2021 |  0.1   | Criação do Documento | Victor Samuel  |  
+| 14/10/2021 |  0.2   | Adição de Riscos | Victor Samuel e Thiago Luiz  |  
+
 
