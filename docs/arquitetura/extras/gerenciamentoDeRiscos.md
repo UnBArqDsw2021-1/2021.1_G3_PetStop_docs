@@ -1,5 +1,6 @@
 # Gerenciamento de Riscos
 
+## Sobre o Documento
 O plano que iremos realizar visa relatar em uma listagem os possíveis riscos durante todas as fases do ciclo de vida do software, bem como as alternativas para contornar cada um destes riscos. Contornando estas situações adversas, pode-se manter o ritmo de trabalho da equipe de desenvolvimento.
 
 Possíveis riscos e detectáveis para cada fase (determinadas pelo andamento das unidades da disciplina) do projeto:
@@ -29,11 +30,26 @@ Análise dos riscos por meio de reuniões na plataforma Planning Poker.
 | Alta | 60%  a 80% | 4 |
 | Muito Alta | 80%  a 100% | 5 |
 
+O grau de Risco é definido pela multiplicação da probabilidade de ocorrência por seu impacto dentro do desenvolvimento. Logo, temos o seguinte planejamento de risco para a entrega 4: 
+
+|    Número  |    Descrição     |  Probabilidade  | Impacto | Risco | 
+| :--------: | :--------------: | :-------------: | :-----: | :----:|
+| 1 | Membro faltar uma reunião. | 2 | 3 | 6 |
+| 2 | Baixa produtividade da equipe.  | 2 | 4 | 8 |
+| 3 | Dificuldades com a tecnologia de desenvolvimento.  | 2 | 3 | 6 |
+| 4 | Quebra ou furto de equipamentos da equipe.  | 1 | 2 | 2 |
+| 5 | Desistência de algum membro.  | 2 | 4 | 8 |
+| 6 | Problemas na configuração do ambiente de desenvolvimento. | 2 | 2 | 4 |
+| 7 | Indisponibilidade de membros. | 2 | 3 | 6 |
+| 8 | Falta de comunicação. | 1 | 3 | 3 |
+| 9 | Membro ou Familiar infectar-se pela Covid-19. | 21 (Infelizmente essa previsão se torna impossível pela situação atual que é enfrentada pela população brasileira, muitos integrantes têm parentes que precisam sair de casa para trabalhar, o que torna essa probabilidade incerta) | 5 | 5 |
+| 10 | Entregas erradas ou atrasadas. | 1 | 3 | 3 |
+| 11 | Alteração no Escopo. | 1 | 3 | 3 |
+| 12 | Descomprometimento de membros e/ou equipe. | 1 | 3 | 3 |
+
 ## Versionamentos
 
-|    Data    | Versão |      Descrição       |                                               Autor                                               |
-| :--------: | :----: | :------------------: | :-----------------------------------------------------------------------------------------------: |
+|    Data    | Versão |      Descrição       |      Autor      |
+| :--------: | :----: | :------------------: | :-------------: |
 | 13/10/2021 |  0.1   | Criação do Documento | Victor Samuel  |  
 | 14/10/2021 |  0.2   | Adição de Riscos | Victor Samuel e Thiago Luiz  |  
-
-
