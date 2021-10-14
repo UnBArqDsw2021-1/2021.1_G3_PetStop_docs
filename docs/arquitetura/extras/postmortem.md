@@ -12,20 +12,32 @@ Além disso, a escrita de postmortems ajuda a estabelecer uma memória instituci
 |    Responsável    |  Papel  |  Descrição  |
 | :---------------: |  :----: | :-----: |
 |  Vinicius Vieira e Pedro Cella |  Facilitador(es) | Coordena e organiza em uma timeline tudo o que o time todo pensou a respeito das perguntas estabelecidas. |
-| Victor Samuel | Escrivão | Realiza anotações relevantes a cerca dos comentários dos integrantes. |
+| Victor Samuel e Arthur Sena | Escrivão | Realiza anotações relevantes a cerca dos comentários dos integrantes. |
 
 ### Perguntas
 
-  * 
+| Descrição | 
+|  :----: |
+|   Quais milestones anteriormente levantadas foram positivas? |
+|   Quais milestones anteriormente levantadas foram negativas? |
+|   Mantivemos-nos focados no escopo? Seguimos a forma correta do processo? |
+|   O time trabalhou bem junto? A comunicação foi facil/boa/regular/efetiva? |
+|   O planejamento do projeto foi bem feito ou houve coisas que poderiam ter sido previstas mas não foram, ou então não foram bem delineadas etc? |
+|   Qual é a qualidade do projeto atualmente? |
+|   Que tipo de processo pode melhorar? que tipo de processo pode ser adicionado? mais pareamentos? dojos? |
+|   Que tipo de reestruturações no projeto podem ser feitas? |
 
+### Discussão
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_lqIpQR4=/?moveToViewport=-1422,-845,4123,2149" frameBorder="0" scrolling="no" allowFullScreen></iframe>
 
 ## Bibliografia 
 DISOUZA, Leonardo. OKRs e a importância de Postmortems em projetos complexos. Disponível em [Medium](https://medium.com/@leonardodisouza_59333/okrs-e-a-import%C3%A2ncia-de-postmortems-em-projetos-complexos-f7aa82229351). Acesso em: 14 Out 2021.
-
 
 
 ## Versionamentos
 
 |    Data    | Versão |      Descrição       |      Autor      |
 | :--------: | :----: | :------------------: | :-------------: |
-| 14/10/2021 |  0.1   | Criação do Documento | Victor Samuel, Vinicius Vieira, Arthur Sena, Antônio Ruan e Pedro Cella |
+| 14/10/2021 |  0.1   | Criação do Documento | Victor Samuel, Vinicius Vieira, Arthur Sena, Antônio Ruan, Pedro Cella e Thiago Luiz |
+| 14/10/2021 |  0.2   | Inserção do iframe de discussão | Victor Samuel, Vinicius Vieira, Arthur Sena, Antônio Ruan, Pedro Cella e Thiago Luiz |
