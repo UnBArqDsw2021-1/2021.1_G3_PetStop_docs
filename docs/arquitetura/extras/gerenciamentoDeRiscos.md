@@ -1,11 +1,16 @@
 # Gerenciamento de Riscos
 
 ## Sobre o Documento
+<p style="text-align: justify">
 O plano que iremos realizar visa relatar em uma listagem os possíveis riscos durante todas as fases do ciclo de vida do software, bem como as alternativas para contornar cada um destes riscos. Contornando estas situações adversas, pode-se manter o ritmo de trabalho da equipe de desenvolvimento.
+</p>
 
+## Análise de Riscos
+<p style="text-align: justify">
 Possíveis riscos e detectáveis para cada fase (determinadas pelo andamento das unidades da disciplina) do projeto:
+</p>
 
-|    Número  | Descrição |      Prevenção       |                                               Contenção                                           |
+|    Risco  | Descrição |      Prevenção       |                                               Contenção                                           |
 | :--------: | :-------: | :------------------: | :-----------------------------------------------------------------------------------------------: |
 | 1          |  Membro faltar uma reunião | Notificar membros no dia da reunião e reforçar sua importância | Repassar o que foi discutido para membros indisponíveis no horário da reunião. | 
 | 2          |  Baixa produtividade da equipe. | É de responsabilidade individual de cada membro colaborar com o andamento do projeto e restante da equipe. | Acompanhamento da evolução individual por parte de todos os membros. | 
@@ -20,7 +25,9 @@ Possíveis riscos e detectáveis para cada fase (determinadas pelo andamento das
 | 11          |  Alteração no Escopo.  | Manter a comunicação sempre ativa. | Documentar e aprimorar os novos tópicos |
 | 12          |  Descomprometimento de membros e/ou equipe | Realizar conversas com membros para mantê-los sempre motivados. | Reunir a equipe, entender todos os lados e motivá-los. |
 
+<p style="text-align: justify">
 Análise dos riscos por meio de reuniões na plataforma Planning Poker. 
+</p>
 
 |    Probabilidade  |    %      |  Peso (Definido em reunião)  |
 | :---------------: | :-------: | :--------------------------: |
@@ -30,9 +37,11 @@ Análise dos riscos por meio de reuniões na plataforma Planning Poker.
 | Alta | 60%  a 80% | 4 |
 | Muito Alta | 80%  a 100% | 5 |
 
+<p style="text-align: justify">
 O grau de Risco é definido pela multiplicação da probabilidade de ocorrência por seu impacto dentro do desenvolvimento. Logo, temos o seguinte planejamento de risco para a entrega 4: 
+</p>
 
-|    Número  |    Descrição     |  Probabilidade  | Impacto | Risco | 
+|    Risco  |    Descrição     |  Probabilidade  | Impacto | Grau | 
 | :--------: | :--------------: | :-------------: | :-----: | :----:|
 | 1 | Membro faltar uma reunião. | 2 | 3 | 6 |
 | 2 | Baixa produtividade da equipe.  | 2 | 4 | 8 |
@@ -42,14 +51,19 @@ O grau de Risco é definido pela multiplicação da probabilidade de ocorrência
 | 6 | Problemas na configuração do ambiente de desenvolvimento. | 2 | 2 | 4 |
 | 7 | Indisponibilidade de membros. | 2 | 3 | 6 |
 | 8 | Falta de comunicação. | 1 | 3 | 3 |
-| 9 | Membro ou Familiar infectar-se pela Covid-19. | 21 (Infelizmente essa previsão se torna impossível pela situação atual que é enfrentada pela população brasileira, muitos integrantes têm parentes que precisam sair de casa para trabalhar, o que torna essa probabilidade incerta) | 5 | 5 |
+| 9 | Membro ou Familiar infectar-se pela Covid-19. | * | 5 |  |
 | 10 | Entregas erradas ou atrasadas. | 1 | 3 | 3 |
 | 11 | Alteração no Escopo. | 1 | 3 | 3 |
 | 12 | Descomprometimento de membros e/ou equipe. | 1 | 3 | 3 |
+
+<i style="text-align: justify">
+\* Infelizmente essa previsão se torna impossível pela situação atual que é enfrentada pela população brasileira, muitos integrantes têm parentes que precisam sair de casa para trabalhar, o que torna essa probabilidade incerta.
+</i>
 
 ## Versionamentos
 
 |    Data    | Versão |      Descrição       |      Autor      |
 | :--------: | :----: | :------------------: | :-------------: |
 | 13/10/2021 |  0.1   | Criação do Documento | Victor Samuel  |  
-| 14/10/2021 |  0.2   | Adição de Riscos | Victor Samuel e Thiago Luiz  |  
+| 14/10/2021 |  0.2   | Adição de Riscos | Victor Samuel e Thiago Luiz  |
+| 15/10/2021 |  0.3   | Formatação e revisão textual | Antonio Ruan, Arthur Sena e Thiago Luiz  |
