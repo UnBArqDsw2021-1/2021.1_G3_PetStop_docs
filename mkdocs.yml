@@ -74,4 +74,7 @@ nav:
         - DAS: arquitetura/das.md
         - Módulo Reutilização de Software: arquitetura/reuse.md
     #     - 
+        - Iniciativas Extras:
+            - Gerenciamento de riscos: arquitetura/extras/gerenciamentoDeRiscos.md
+            - Post Mortem: arquitetura/extras/postmortem.md
   - Manual GhPages: manual.md
