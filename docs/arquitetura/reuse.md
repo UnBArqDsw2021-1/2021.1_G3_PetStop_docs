@@ -4,7 +4,7 @@
 
 A capacidade de reutilização de software é o reaproveitamento de componentes disponíveis, tornando possível a redução significativa de tempo e custos tanto de computação quanto de recursos humanos. 
 
-No código fonte, os componentes que são desenvolvidos podem ser posteriormente usa
+No código fonte, os componentes que são desenvolvidos podem ser posteriormente usados
 
 | Pontos Positivos |
 | ---------------- |
