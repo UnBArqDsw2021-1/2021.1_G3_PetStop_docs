@@ -1,0 +1,2315 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.3">
+    
+    
+      
+        <title>GoFs Estruturais - Petshop docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.5143246d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gofs-estruturais" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="Petshop docs" class="md-header__button md-logo" aria-label="Petshop docs" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Petshop docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GoFs Estruturais
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Petshop docs" class="md-nav__button md-logo" aria-label="Petshop docs" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Petshop docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Início
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Módulo Desenho de Software Base
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Módulo Desenho de Software Base" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Módulo Desenho de Software Base
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          Projeto não orientado a abordagens específicas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projeto não orientado a abordagens específicas" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Projeto não orientado a abordagens específicas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_1" type="checkbox" id="__nav_2_1_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_1">
+          Reuniões
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reuniões" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Reuniões
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reunioes/reuniao1/" class="md-nav__link">
+        Reunião 1 - (20/07)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reunioes/reuniao2/" class="md-nav__link">
+        Reunião 2 - (27/07)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reunioes/reuniao3/" class="md-nav__link">
+        Reunião 3 (Unpack) - (28/07)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reunioes/reuniao4/" class="md-nav__link">
+        Reunião 4 (Unpack) - (29/07)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reunioes/reuniao5/" class="md-nav__link">
+        Reunião 5 (Decision) - (03/08)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_2" type="checkbox" id="__nav_2_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_2">
+          Design Sprint
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Design Sprint" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Design Sprint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../designSprint/about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_2_2" type="checkbox" id="__nav_2_1_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_2_2">
+          <i>Unpack</i>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="<i>Unpack</i>" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_1_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          <i>Unpack</i>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../artefatos/5w2h/" class="md-nav__link">
+        5W2H
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../artefatos/causa-efeito/" class="md-nav__link">
+        Causa-Efeito
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../artefatos/brainstorm/" class="md-nav__link">
+        <i>Brainstorm</i>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../designSprint/sketch/" class="md-nav__link">
+        <i>Sketch</i>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_2_4" type="checkbox" id="__nav_2_1_2_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_2_4">
+          <i>Decision</i>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="<i>Decision</i>" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_1_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          <i>Decision</i>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../designSprint/decision/" class="md-nav__link">
+        Escolha
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../artefatos/storyboard/" class="md-nav__link">
+        <i>Storyboard</i>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../artefatos/introspeccao/" class="md-nav__link">
+        Introspecção
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_2_4_4" type="checkbox" id="__nav_2_1_2_4_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_2_4_4">
+          Priorização
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Priorização" data-md-level="5">
+        <label class="md-nav__title" for="__nav_2_1_2_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Priorização
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../priorizacao/brainstorm-moscow/" class="md-nav__link">
+        Brainstorm
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../designSprint/prototype/" class="md-nav__link">
+        <i>Prototype</i>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Processos, metodologias e abordagens
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Processos, metodologias e abordagens" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Processos, metodologias e abordagens
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../artefatos/bpmn/" class="md-nav__link">
+        BPMN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../artefatos/glossario/" class="md-nav__link">
+        Glossário
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Módulo Desenho de Software Modelagem
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Módulo Desenho de Software Modelagem" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Módulo Desenho de Software Modelagem
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          Módulo Projeto Orientado a Abordagens Tradicionais
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Módulo Projeto Orientado a Abordagens Tradicionais" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Módulo Projeto Orientado a Abordagens Tradicionais
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1" type="checkbox" id="__nav_3_1_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_1">
+          Modelagem UML Estática
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Modelagem UML Estática" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Modelagem UML Estática
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/umlEstaticos/classes/" class="md-nav__link">
+        Diagrama de Classes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/umlEstaticos/pacotes/" class="md-nav__link">
+        Diagrama de Pacotes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/umlEstaticos/componentes/" class="md-nav__link">
+        Diagrama de Componentes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2" type="checkbox" id="__nav_3_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_2">
+          Modelagem UML Dinâmica
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Modelagem UML Dinâmica" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Modelagem UML Dinâmica
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/umlDinamicos/atividades/" class="md-nav__link">
+        Diagrama de Atividades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/umlDinamicos/estados/" class="md-nav__link">
+        Diagrama de Estados
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/umlDinamicos/comunicacao/" class="md-nav__link">
+        Diagrama de Comunicação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/umlDinamicos/sequencia/" class="md-nav__link">
+        Diagrama de Sequência
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_3" type="checkbox" id="__nav_3_1_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_3">
+          Módulo Modelagem Ágil
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Módulo Modelagem Ágil" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Módulo Modelagem Ágil
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../backlog/backlog/" class="md-nav__link">
+        Backlog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../backlog/personas/" class="md-nav__link">
+        Personas
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Iniciativas Extras
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Iniciativas Extras" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Iniciativas Extras
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagemDB/modelagem_db/" class="md-nav__link">
+        Modelagem Banco de Dados
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../backlog/personas/" class="md-nav__link">
+        Personas
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Módulo Padrões de Projeto
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Módulo Padrões de Projeto" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Módulo Padrões de Projeto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudoDirigido/" class="md-nav__link">
+        Estudo Dirigido
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../grasp/grasp/" class="md-nav__link">
+        GRASP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../grasp/grasps_escolhidos/" class="md-nav__link">
+        GRASPs escolhidos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          GoFs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="GoFs" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          GoFs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gofCriacional/gofCriacional/" class="md-nav__link">
+        GoFs Criacionais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GoFs Estruturais
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        GoFs Estruturais
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decorator" class="md-nav__link">
+    Decorator
+  </a>
+  
+    <nav class="md-nav" aria-label="Decorator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pontos-positivos" class="md-nav__link">
+    Pontos Positivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pontos-negativos" class="md-nav__link">
+    Pontos Negativos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-possivel-adaptar-esse-padrao-para-o-projeto" class="md-nav__link">
+    É possível adaptar esse padrão para o projeto?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorator-base" class="md-nav__link">
+    Decorator Base
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorator-projeto" class="md-nav__link">
+    Decorator Projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="Decorator Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-nivel-de-modelagem" class="md-nav__link">
+    A nível de modelagem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-nivel-de-codigo" class="md-nav__link">
+    A nível de código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adapter" class="md-nav__link">
+    Adapter
+  </a>
+  
+    <nav class="md-nav" aria-label="Adapter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pontos-positivos_1" class="md-nav__link">
+    Pontos Positivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pontos-negativos_1" class="md-nav__link">
+    Pontos Negativos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-possivel-utilizar-esse-padrao-para-o-projeto" class="md-nav__link">
+    É possível utilizar esse padrão para o projeto?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adapter-base" class="md-nav__link">
+    Adapter Base
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#facade" class="md-nav__link">
+    Facade
+  </a>
+  
+    <nav class="md-nav" aria-label="Facade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pontos-positivos_2" class="md-nav__link">
+    Pontos Positivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pontos-negativos_2" class="md-nav__link">
+    Pontos Negativos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-possivel-utilizar-esse-padrao-para-o-projeto_1" class="md-nav__link">
+    É possível utilizar esse padrão para o projeto?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facede-base" class="md-nav__link">
+    Facede Base
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proxy" class="md-nav__link">
+    Proxy
+  </a>
+  
+    <nav class="md-nav" aria-label="Proxy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pontos-positivos_3" class="md-nav__link">
+    Pontos Positivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pontos-negativos_3" class="md-nav__link">
+    Pontos Negativos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-possivel-utilizar-esse-padrao-para-o-projeto_2" class="md-nav__link">
+    É possível utilizar esse padrão para o projeto?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-base" class="md-nav__link">
+    Proxy Base
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-projeto" class="md-nav__link">
+    Proxy Projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="Proxy Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-nivel-de-modelagem_1" class="md-nav__link">
+    A nível de modelagem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-nivel-de-codigo_1" class="md-nav__link">
+    A nível de código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionamentos" class="md-nav__link">
+    Versionamentos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gofComportamental/gofComportamental/" class="md-nav__link">
+        GoFs Comportamentais
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extras/extras/" class="md-nav__link">
+        Padrões Extras
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          Iniciativas extras
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Iniciativas extras" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Iniciativas extras
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../goodpractices/" class="md-nav__link">
+        Boas práticas
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Módulo Arquitetura de Software & Reutilização
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Módulo Arquitetura de Software & Reutilização" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Módulo Arquitetura de Software & Reutilização
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_1">
+          Módulo Estilos e Padrões Arquiteturais
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Módulo Estilos e Padrões Arquiteturais" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          Módulo Estilos e Padrões Arquiteturais
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../arquitetura/das/" class="md-nav__link">
+        DAS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../arquitetura/reuse/" class="md-nav__link">
+        Módulo Reutilização de Software
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1_3" type="checkbox" id="__nav_5_1_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_1_3">
+          Iniciativas Extras
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Iniciativas Extras" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Iniciativas Extras
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../arquitetura/extras/gerenciamentoDeRiscos/" class="md-nav__link">
+        Gerenciamento de riscos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../arquitetura/extras/postmortem/" class="md-nav__link">
+        Post Mortem
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/" class="md-nav__link">
+        Manual GhPages
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decorator" class="md-nav__link">
+    Decorator
+  </a>
+  
+    <nav class="md-nav" aria-label="Decorator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pontos-positivos" class="md-nav__link">
+    Pontos Positivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pontos-negativos" class="md-nav__link">
+    Pontos Negativos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-possivel-adaptar-esse-padrao-para-o-projeto" class="md-nav__link">
+    É possível adaptar esse padrão para o projeto?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorator-base" class="md-nav__link">
+    Decorator Base
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorator-projeto" class="md-nav__link">
+    Decorator Projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="Decorator Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-nivel-de-modelagem" class="md-nav__link">
+    A nível de modelagem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-nivel-de-codigo" class="md-nav__link">
+    A nível de código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adapter" class="md-nav__link">
+    Adapter
+  </a>
+  
+    <nav class="md-nav" aria-label="Adapter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pontos-positivos_1" class="md-nav__link">
+    Pontos Positivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pontos-negativos_1" class="md-nav__link">
+    Pontos Negativos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-possivel-utilizar-esse-padrao-para-o-projeto" class="md-nav__link">
+    É possível utilizar esse padrão para o projeto?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adapter-base" class="md-nav__link">
+    Adapter Base
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#facade" class="md-nav__link">
+    Facade
+  </a>
+  
+    <nav class="md-nav" aria-label="Facade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pontos-positivos_2" class="md-nav__link">
+    Pontos Positivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pontos-negativos_2" class="md-nav__link">
+    Pontos Negativos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-possivel-utilizar-esse-padrao-para-o-projeto_1" class="md-nav__link">
+    É possível utilizar esse padrão para o projeto?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facede-base" class="md-nav__link">
+    Facede Base
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proxy" class="md-nav__link">
+    Proxy
+  </a>
+  
+    <nav class="md-nav" aria-label="Proxy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pontos-positivos_3" class="md-nav__link">
+    Pontos Positivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pontos-negativos_3" class="md-nav__link">
+    Pontos Negativos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-possivel-utilizar-esse-padrao-para-o-projeto_2" class="md-nav__link">
+    É possível utilizar esse padrão para o projeto?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-base" class="md-nav__link">
+    Proxy Base
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-projeto" class="md-nav__link">
+    Proxy Projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="Proxy Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-nivel-de-modelagem_1" class="md-nav__link">
+    A nível de modelagem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-nivel-de-codigo_1" class="md-nav__link">
+    A nível de código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionamentos" class="md-nav__link">
+    Versionamentos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="gofs-estruturais">GoFs Estruturais</h1>
+<p>Os padrões GoFs de estrutura têm seu foco em como objetos e classes são compostos para formar estruturas maiores. A flexibilidade obtida pela composição dinâmica de objetos provém da capacidade de mudar a composição em tempo de execução o que não é possível com a composição estática. Visam diminuir a dependência de um sistema gerada pela interação de seus objetos, facilitando assim sua manutenção e escalabilidade.</p>
+<h2 id="decorator">Decorator</h2>
+<p>O padrão Decorator adiciona funcionalidades a objetos de forma dinâmica (em tempo de execução), permitindo assim a expansão do objeto de maneira mais flexível, ou seja, utilizando esse padrão nós podemos expandir uma instância sem precisar utilizar herança, somente composição, algo que é não somente recomendado na orientação a objetos como também um princípio da mesma. Basicamente o Decorator envelopa um objeto para fornecer novos comportamentos.</p>
+<h4 id="pontos-positivos">Pontos Positivos</h4>
+<ul>
+<li>Facilidade na aplicação</li>
+<li>Capacidade de adicionar diversos comportamentos</li>
+<li>Poder adicionar e remover comportamentos em tempo de execução</li>
+</ul>
+<h4 id="pontos-negativos">Pontos Negativos</h4>
+<ul>
+<li>Dificuldade na compreensão do código</li>
+<li>Quanto mais decorators em camadas, mais complexo seu código se torna</li>
+</ul>
+<h4 id="e-possivel-adaptar-esse-padrao-para-o-projeto">É possível adaptar esse padrão para o projeto?</h4>
+<p>Sim, dentro do projeto existe uma variação nas categorias do tipo de pessoa o qual irá comparecer o evento, sendo o tipo usuário o qual aproveita dos serviços ofertados e o tipo voluntário que participa trabalhando dos serviços ofertados. Dessa forma u Decorator poderá servir para implementar esses dois comportamentos.</p>
+<h3 id="decorator-base">Decorator Base</h3>
+<p><img alt="Decorator Base" src="../images/DecoratorBasico.jpg" /></p>
+<h3 id="decorator-projeto">Decorator Projeto</h3>
+<h4 id="a-nivel-de-modelagem">A nível de modelagem</h4>
+<p><img alt="Decorator Projeto" src="../images/DecoratorProjeto.jpg" /></p>
+<h4 id="a-nivel-de-codigo">A nível de código</h4>
+<pre><code class="language-js">
+export class Pessoa{
+  this.verificarEvento(filters: Event): List[Event];
+  this.joinEvento(obj: Evento): Evento;
+}
+</code></pre>
+<pre><code class="language-js">export interface DecoratorPessoa extends Pessoa {
+  addPet(){}
+
+  removerAdocao(): Void{}
+
+  criarAdocao(): Void{}
+
+  realizarDoacao(): Void{}
+
+  transferirPet(): Void{}
+
+}
+</code></pre>
+<pre><code class="language-js">export class DecoratorUsuario extends DecoratorPessoa {
+  addPet(pet: Pet): Pet{}
+
+  removerAdocao(evento: Evento): bool{}
+
+  criarAdocao(pet: Pet): bool{}
+
+  realizarDoacao(): Doacao{}
+
+  transferirPet(usuario: Usuario, pet: Pet): Void{}
+}
+</code></pre>
+<pre><code class="language-js">export class DecoratorVoluntario extends DecoratorPessoa {
+  criarEvento(evento: Evento): Evento{} 
+
+  removerEvento(evento: Evento): Bool {}
+
+  cadstrarLocal(local: Local): Local {}
+
+  addPet(pet: Pet): Pet{}
+
+  removerAdocao(evento: Evento): bool{}
+
+  criarAdocao(pet: Pet): bool{}
+
+  realizarDoacao(): Doacao{}
+
+  transferirPet(usuario: Usuario, pet: Pet): Void{}
+}
+
+</code></pre>
+<h2 id="adapter">Adapter</h2>
+<p>Esse padrão de projeto permite a conversão uma inteface de uma classe existente em outra. Utilizada para permitir a comunicação entre classes que são incompatíveis (ex.: libs, plugins, códigos legado).</p>
+<h4 id="pontos-positivos_1">Pontos Positivos</h4>
+<ul>
+<li>Faz com que classes possam ser reutilizadas para uma interface que o cliente requer</li>
+<li>Faz com que se possa introduzir novos tipos de adaptadores sem que o código fonte quebre</li>
+</ul>
+<h4 id="pontos-negativos_1">Pontos Negativos</h4>
+<ul>
+<li>Pode aumentar a complexidade do código, pois são introduzidos novos conjuntos de interfaces e classes</li>
+</ul>
+<h4 id="e-possivel-utilizar-esse-padrao-para-o-projeto">É possível utilizar esse padrão para o projeto?</h4>
+<p>O esperado é que este padrão não se faça necessário, considerando que o projeto está sendo construído do início, não existem interfaces prévias.</p>
+<h3 id="adapter-base">Adapter Base</h3>
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Adapter%20base#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1nNK93rKBx29pL-MQizBiRo8VODXcrGMJ%26export%3Ddownload"></iframe>
+
+<h2 id="facade">Facade</h2>
+<p>Esse padrão de projeto serve como uma interface/máscara para uma estrutra de código mais complexa. Cria pontos de entrada para determinadas partes do sistema, como serviços externos, camadas da aplicação e objetos complexos dentro em determinadas partes do código.</p>
+<h4 id="pontos-positivos_2">Pontos Positivos</h4>
+<ul>
+<li>Consegue isolar o código da complexidade dos subsistemas</li>
+<li>As dependências dos subsistemas serão possivelmentes minimizadas</li>
+<li>Subsistemas são mais fáceis de serem utilizados</li>
+</ul>
+<h4 id="pontos-negativos_2">Pontos Negativos</h4>
+<ul>
+<li>Pode se tornar um <a href="https://en.wikipedia.org/wiki/God_object">objeto deus</a></li>
+</ul>
+<h4 id="e-possivel-utilizar-esse-padrao-para-o-projeto_1">É possível utilizar esse padrão para o projeto?</h4>
+<p>É, porém ainda não necessária, já que o projeto não possui subsistemas complexos o suficientes para a implementação de uma fachada.</p>
+<h3 id="facede-base">Facede Base</h3>
+<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags={}&highlight=0000ff&layers=1&nav=1&title=Facade%20Base#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1lVHbGQwmJsBhUOxOhxa-FYy9FbISRQWb%26export%3Ddownload"></iframe>
+
+<h2 id="proxy">Proxy</h2>
+<p>O proxy controla a chamada a um objeto através de outro objeto de mesma interface.</p>
+<p>O padrão Proxy é aplicável sempre que há necessidade de uma referência mais versátil, ou sofisticada, do que um simples apontador para um objeto. É aplicável nos seguintes contextos:</p>
+<ul>
+<li>Remote proxy: fornece um representante local para um objeto num espaço de endereçamento diferente.</li>
+<li>Virtual proxy: cria objetos caros sob demanda</li>
+<li>Protection proxy: controla o acesso ao objeto original.</li>
+<li>Smart reference: é um substituto para um simples pointer que executa ações adicionais quando um objeto é acessado.</li>
+</ul>
+<h4 id="pontos-positivos_3">Pontos Positivos</h4>
+<ul>
+<li>Possibilita a inclusão de tarefas adicionais de organização (housekeeping) quando um objeto é acessado</li>
+<li>Ocultar o fato de que um objeto reside num espaço de endereçamento diferente.</li>
+<li>Criação de um objeto sob demanda.</li>
+</ul>
+<h4 id="pontos-negativos_3">Pontos Negativos</h4>
+<ul>
+<li>Aumento da complexidade</li>
+</ul>
+<h4 id="e-possivel-utilizar-esse-padrao-para-o-projeto_2">É possível utilizar esse padrão para o projeto?</h4>
+<p>Sim. Podemos utilizar o proxy no contexto do Protection proxy para a implementação de permissões na criação de um evento.</p>
+<h3 id="proxy-base">Proxy Base</h3>
+<p><img alt="Decorator Base" src="../images/ProxyBase.png" /></p>
+<h3 id="proxy-projeto">Proxy Projeto</h3>
+<h4 id="a-nivel-de-modelagem_1">A nível de modelagem</h4>
+<p><img alt="Decorator Base" src="../images/ProxyProjeto.jpg" /></p>
+<h4 id="a-nivel-de-codigo_1">A nível de código</h4>
+<pre><code class="language-typescript">abstract class Evento {
+  public dtInicio: Date;
+  public dtFinal: Date;
+  public hrInicial: Date;
+  public hrFinal: Date;
+  public titulo: string;
+  public descricao: string;
+  public tipos[]: Tipo[];
+
+  verificarEvento(): String {
+    let res = 
+      `O evento ${titulo} ocorrera no dia ${dtInicio} as ${hrInicial} `+
+      `ate o dia ${dtFinal} as ${hrFinal}, e possui os seguintes tipos:\n`;
+    for(int i = 0; i &lt; tipos.length; i++)
+      res += `-&gt; ${tipos[i]}\n`
+    return res;
+  }
+
+  abstract criarEvento(usuario: Usuario): RealEvento;
+  abstract removerEvento(usuario: Usuario): void;
+}
+
+class RealEvento extends Evento{
+  constructor(
+    public dtInicio: Date,
+    public dtFinal: Date,
+    public hrInicial: Date,
+    public hrFinal: Date,
+    public titulo: string,
+    public descricao: string,
+    public tipos[]: Tipo[]){}
+}
+
+class Proxy extends Evento{
+
+  #evento: RealEvento
+
+  public criarEvento(usuario: Usuario): RealEvento{
+    if(usuario.voluntario === True)
+    {
+      evento = new RealEvento(
+        public dtInicio: Date,
+        public dtFinal: Date,
+        public hrInicial: Date,
+        public hrFinal: Date,
+        public titulo: string,
+        public descricao: string,
+        public tipos[]: Tipo[]);
+      return evento;
+    }
+  }
+
+  public removerEvento(usuario: Usuario): Bool{
+    if(usuario.voluntario === True)
+    {
+      delete evento;
+      return true;
+    }
+    return false;
+  }
+}
+
+</code></pre>
+<h2 id="versionamentos">Versionamentos</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">08/09/2021</td>
+<td align="center">0.1</td>
+<td align="center">Criação do documento</td>
+<td align="center">Pedro Vítor de Salles Cella</td>
+</tr>
+<tr>
+<td align="center">08/09/2021</td>
+<td align="center">0.2</td>
+<td align="center">Adição do Decorator</td>
+<td align="center">Pedro Vítor de Salles Cella</td>
+</tr>
+<tr>
+<td align="center">11/09/2021</td>
+<td align="center">0.3</td>
+<td align="center">Adição do Adapter</td>
+<td align="center">Paulo Gonçalves Lima</td>
+</tr>
+<tr>
+<td align="center">14/09/2021</td>
+<td align="center">0.4</td>
+<td align="center">Adição do Facade</td>
+<td align="center">Paulo Gonçalves Lima</td>
+</tr>
+<tr>
+<td align="center">16/09/2021</td>
+<td align="center">0.4.1</td>
+<td align="center">Revisão e adição textual</td>
+<td align="center">Arthur Sena e Gabriela Pivetta</td>
+</tr>
+<tr>
+<td align="center">16/09/2021</td>
+<td align="center">0.5</td>
+<td align="center">Adição do nível de código do Decorator</td>
+<td align="center">Paulo Gonçalves Lima, Pedro Vítor de Salles</td>
+</tr>
+<tr>
+<td align="center">20/09/2021</td>
+<td align="center">0.6</td>
+<td align="center">Adição do Proxy</td>
+<td align="center">Antonio Ruan</td>
+</tr>
+</tbody>
+</table>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li>Gamma, Erich. et al. Padrões de Projeto: Soluções reutilizáveis de software orientado a objetos. 1ª Edição. Porto Alegre: Bookman, 2007.</li>
+<li><a href="https://youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H">Playlist Sobre Padrões de Projeto</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software#Padr%C3%B5es_estruturais">Wikipedia, Padrões de Projeto</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adapter_pattern">Wikipedia, Adapter Pattern</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Facade_pattern">Wikipedia, Facade Pattern</a></li>
+<li><a href="https://refactoring.guru/design-patterns/adapter">Refactoring Guru Adapter</a></li>
+<li><a href="https://refactoring.guru/design-patterns/facade">Refactoring Guru Facade</a></li>
+<li><a href="http://www.macoratti.net/13/02/net_decor1.htm">Macoratti</a></li>
+<li><a href="https://www.devmedia.com.br/design-patterns-padroes-gof/16781">Dev Media</a></li>
+<li><a href="https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Estudos/estrutural">Grupo Stock</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Rodapé">
+      
+        
+        <a href="../../gofCriacional/gofCriacional/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: GoFs Criacionais" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              GoFs Criacionais
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../gofComportamental/gofComportamental/" class="md-footer__link md-footer__link--next" aria-label="Próximo: GoFs Comportamentais" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              GoFs Comportamentais
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.term.missing": "Ausente", "select.version.title": "Selecione a vers\u00e3o"}, "search": "../../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f89c2efe.min.js"></script>
+      
+    
+  </body>
+</html>
