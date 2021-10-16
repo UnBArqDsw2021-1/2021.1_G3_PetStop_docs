@@ -96,25 +96,44 @@ https://drive.google.com/file/d/1-YvOTz77LuzXzfbfebm3dp7mOAN38tWj/view?usp=shari
 ## Vídeo(s) Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 https://drive.google.com/drive/folders/1BXR8_Pt_rSLSdFHpmWW38HRj_L2EGEDz
 
-<!--
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+
+### Página Inicial
+
+![Home](./docs/images/home.png)
+
+### Página de Eventos
+
+![Eventos](./docs/images/eventos.png)
+
+### Página de Autenticação
+
+![Login](./docs/images/login.png)
+
 
 ## Vídeo(s) Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
-Adicione o(s)s vídeo(s) da Entrega Final.
+[DAS](https://drive.google.com/file/d/1m4PnastB0mpqFPZnvG2pbBlHmlDygBEM/view)
+
+[Reutilização](https://drive.google.com/file/d/1s3fdtpu6ArkKIv47RzFtgd1kHBHgP85e/view)
 
 ## Descritivo dos Principais Aspectos Técnicos 
-**Principal(is) Metodologia(s) Adotada(s)**: xxxxxx<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
+**Principal(is) Metodologia(s) Adotada(s)**: Scrum e XP<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: Typescript e SQL<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: Docker, Postgres, Node (Backend) e React (Frontend)<br>
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: MVC<br>
 
 ## O Projeto está rodando?
-( ) SIM
-( ) NÃO
-Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.
+Sim, o código da aplicação, assim como uma descrição de como rodá-lo pode ser encontrado nos links
 
-## Informações Complementares 
-Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção.
--->
+[Backend](https://github.com/UnBArqDsw2021-1/2021.1_G3_PetStop_backend)
+
+[Frontend](https://github.com/UnBArqDsw2021-1/2021.1_G3_PetStop_frontend)
+
+Os links de deploy são:
+
+[Backend](https://petstop-backend.herokuapp.com/)
+
+[Frontend](https://petstop-front.netlify.app)
+
+
